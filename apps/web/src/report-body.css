@@ -1,0 +1,28 @@
+.report-reading-layout { color: #383b38; letter-spacing: 0; }
+.agent-document-paper:has(.report-reading-layout) > h1 { font-size: 24px; font-weight: 600; letter-spacing: 0; }
+.report-scope { color: #71756f; font-size: 12px; line-height: 1.6; margin: -8px 0 28px; overflow-wrap: anywhere; }
+.report-scope p { margin: 3px 0; }
+.report-takeaways { margin: 0 0 30px; }
+.report-takeaways h2, .report-reading-layout .tabular-analysis-header h2,
+.report-context.markdown h2 { font-size: 18px; font-weight: 600; line-height: 1.4; letter-spacing: 0; margin: 0 0 12px; color: #343834; }
+.report-takeaways ul { margin: 0; padding-left: 20px; }
+.report-takeaways li { padding-left: 3px; margin: 10px 0; font-size: 14px; line-height: 1.75; overflow-wrap: anywhere; }
+.report-takeaways strong { font-weight: 600; }
+.report-evidence-number { display: inline; padding: 0; border: 0; border-radius: 0; background: none; color: #b3482d; font: inherit; text-decoration: underline; text-decoration-color: #b3482d80; text-underline-offset: 3px; cursor: pointer; white-space: nowrap; }
+.report-evidence-number:hover { color: #89311c; text-decoration-color: currentColor; }
+.report-evidence-number:focus-visible { outline: 2px solid #b3482d; outline-offset: 3px; }
+.report-reading-layout .tabular-analysis { margin-top: 0; }
+.report-reading-layout .tabular-analysis-header { margin-bottom: 10px; }
+.report-reading-layout .tabular-visual { padding: 16px; }
+.report-context.markdown { margin-top: 30px; padding-top: 22px; border-top: 1px solid #e9ebe7; font-size: 14px; line-height: 1.75; }
+.report-context.markdown h2:not(:first-child) { font-size: 16px; margin-top: 24px; }
+.report-reading-layout .source-supporting-table { margin-top: 20px; }
+.source-supporting-table > summary { cursor: pointer; color: #555c55; padding: 10px 0; }
+@media (max-width: 600px) {
+  .report-scope { margin-bottom: 22px; }
+  .report-takeaways li { line-height: 1.7; }
+  .report-reading-layout .tabular-visual { padding: 12px; }
+}
+@media print {
+  .report-evidence-number { color: #89311c; }
+}

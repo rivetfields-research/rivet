@@ -1,0 +1,48 @@
+.source-csv { min-width: 0; }
+.source-csv-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin: 18px 0; }
+.source-csv-toolbar p { margin: 0; font-size: var(--type-meta); color: var(--muted); }
+.source-csv-toolbar .search-field { width: 220px; max-width: 100%; }
+.source-csv-toolbar input { min-width: 0; width: 100%; }
+.source-csv-scroll { overflow: auto; max-width: 100%; max-height: 520px; border: 1px solid var(--border); border-radius: 4px; }
+.source-csv-table { border-collapse: separate; border-spacing: 0; font-size: var(--type-meta); width: max-content; min-width: 100%; }
+.source-csv-table th, .source-csv-table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid var(--border); border-right: 1px solid var(--border); min-width: 80px; max-width: 320px; white-space: nowrap; vertical-align: top; }
+.source-csv-cell { display: block; max-width: 320px; width: max-content; white-space: pre-wrap; overflow-wrap: anywhere; }
+.source-csv-columns { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 14px; font-size: var(--type-meta); color: var(--muted); }
+.source-csv-columns label { display: flex; align-items: center; gap: 6px; cursor: pointer; }
+.source-csv-table thead th { position: sticky; top: 0; z-index: 1; background: #f7f7f7; font-weight: 600; }
+.source-csv-table tbody th, .source-csv-table thead th:first-child { min-width: 64px; color: var(--muted); }
+.source-csv-table tr:last-child td, .source-csv-table tr:last-child th { border-bottom: 0; }
+.source-csv-pagination { display: flex; align-items: center; gap: 8px; padding: 12px 0; font-size: var(--type-meta); color: var(--muted); }
+.source-csv-pagination span { flex: 1; }
+.source-csv-metadata { border-top: 1px solid var(--border); padding-top: 16px; margin-top: 8px; }
+.source-csv-metadata summary { cursor: pointer; color: var(--muted); font-size: var(--type-meta); }
+.source-csv-metadata .markdown { margin-top: 18px; }
+.csv-inspector-dialog { width: min(1440px, calc(100vw - 40px)); max-width: none; max-height: calc(100dvh - 40px); padding: 24px; border: 1px solid var(--border); border-radius: 6px; color: var(--ink); background: white; overflow: auto; }
+.csv-inspector-dialog::backdrop { background: rgb(0 0 0 / 28%); }
+.csv-inspector-dialog > header { display: flex; align-items: flex-start; gap: 16px; }
+.csv-inspector-dialog h2 { font-size: 18px; overflow-wrap: anywhere; flex: 1; min-width: 0; }
+.csv-inspector-dialog .source-csv-scroll { max-height: calc(100dvh - 260px); }
+@media (max-width: 620px) { .csv-inspector-dialog { width: calc(100vw - 16px); max-height: calc(100dvh - 16px); padding: 16px; } }
+.dashboard-page { max-width: 1216px; }
+.dashboard-page > .text-button { margin-bottom: 20px; }
+.dashboard-page .page-heading { flex-wrap: wrap; }
+.dashboard-page .page-heading > div { flex: 1; min-width: 220px; }
+.dashboard-page .page-heading h1 { font-size: 23px; overflow-wrap: anywhere; }
+.module-dashboards .module-library-heading { gap: 12px; }
+.module-dashboards .module-search { flex: 1; min-width: 0; }
+.module-dashboards .module-search input { width: 100%; min-width: 0; }
+.module-dashboards .module-library-count { flex-shrink: 0; }
+.module-dashboards .dashboard-library { min-width: 0; }
+.dashboard-library th:first-child { width: auto; }
+.dashboard-library th:last-child { width: 112px; }
+.dashboard-library th:last-child, .dashboard-library td:last-child { padding-right: 0; text-align: right; }
+.dashboard-library .dashboard-row-text { min-width: 0; }
+.dashboard-library .module-row-icon { flex-shrink: 0; }
+.dashboard-library .dashboard-row-text strong { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; text-overflow: ellipsis; overflow-wrap: anywhere; }
+.dashboard-library .dashboard-row-text small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dashboard-library time { font-variant-numeric: tabular-nums; }
+@media (max-width: 620px) {
+  .module-dashboards .module-library-heading { flex-wrap: nowrap; }
+  .dashboard-library th:last-child { width: 78px; }
+  .dashboard-library .module-row-icon { display: none; }
+}

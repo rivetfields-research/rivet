@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Rivet Alpha</title>
+  <link rel="stylesheet" href="setup.css">
+  <script defer src="setup.js"></script>
+</head>
+<body>
+  <main>
+    <div class="brand">Rivet <span>Local alpha</span></div>
+    <h1>Your local workspace</h1>
+    <p>Choose a locally installed model for AI answers.</p>
+    <form id="model-form">
+      <label for="address">Model server</label>
+      <input id="address" type="url" required disabled spellcheck="false" autocomplete="off" value="http://127.0.0.1:11434/v1">
+      <label for="model">Model</label>
+      <select id="model" disabled aria-describedby="status">
+        <option value="">Check for installed models</option>
+      </select>
+      <button id="check" type="button" disabled>Check for models</button>
+      <p id="status" role="status" aria-live="polite" aria-atomic="true">Loading local settings...</p>
+      <button id="open" class="primary" type="submit" disabled>Open Rivet</button>
+      <button id="browse" type="button" disabled>Browse without a model</button>
+    </form>
+    <details>
+      <summary>Need a local model?</summary>
+      <p>Install Ollama, open it and download a local model there. Then check for models again.</p>
+      <p>Official Mac download:<br><code>https://ollama.com/download/mac</code></p>
+    </details>
+  </main>
+</body>
+</html>

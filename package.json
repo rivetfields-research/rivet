@@ -1,0 +1,51 @@
+{
+  "name": "rivet",
+  "version": "0.1.0-alpha.1",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.13.0 <25"
+  },
+  "scripts": {
+    "check:source": "node tools/check-source.mjs",
+    "audit:staged": "node tools/audit-index.mjs",
+    "typecheck": "node tools/check.mjs typecheck",
+    "test": "node tools/check.mjs test",
+    "build": "node tools/check.mjs build",
+    "check": "node tools/check.mjs all",
+    "desktop:package": "node scripts/package-desktop.mjs",
+    "desktop:verify": "node scripts/package-desktop.mjs --verify",
+    "desktop:launch": "node scripts/package-desktop.mjs --launch"
+  },
+  "dependencies": {
+    "@js-temporal/polyfill": "0.5.1",
+    "echarts": "6.1.0",
+    "jose": "6.2.12",
+    "lucide-react": "1.46.0",
+    "pptxgenjs": "4.0.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-markdown": "10.1.0",
+    "remark-gfm": "4.0.1",
+    "remark-parse": "11.0.0",
+    "simple-statistics": "7.9.3",
+    "unified": "11.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "jszip": "3.10.1",
+    "tsx": "4.23.13",
+    "typescript": "^5.9.3",
+    "vite": "8.3.4"
+  },
+  "overrides": {
+    "pptxgenjs": {
+      "image-size": "2.0.4"
+    }
+  },
+  "license": "Apache-2.0",
+  "description": "Open-source local social and data analyst desktop alpha"
+}

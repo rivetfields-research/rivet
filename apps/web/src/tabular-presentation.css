@@ -1,0 +1,11 @@
+.tabular-metric-summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(170px, 100%), 1fr)); gap: 10px; margin: 0 0 22px; }
+.tabular-interpretation { margin: 0 0 24px; max-width: 80ch; color: var(--ink); font-size: 14px; line-height: 1.7; overflow-wrap: anywhere; }
+.tabular-summary-value { min-width: 0; padding: 17px 18px; border: 1px solid #e5e5e5; border-radius: 7px; background: #fff; color: #333; text-align: left; }
+.tabular-summary-value:hover { border-color: #bfc8cf; background: #fcfcfc; }
+.tabular-summary-value:focus-visible { outline: 2px solid #516dc0; outline-offset: 3px; }
+.tabular-summary-value > span { display: block; font-size: 12px; line-height: 1.5; color: #626262; overflow-wrap: anywhere; }
+.tabular-summary-value > strong { display: block; margin: 7px 0; font-size: 26px; font-weight: 550; line-height: 1.3; letter-spacing: 0; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.tabular-summary-value > small { display: block; font-size: 12px; line-height: 1.5; color: #626262; }
+@media (max-width: 620px) { .tabular-metric-summary { grid-template-columns: 1fr; gap: 8px; } .tabular-summary-value { padding: 13px 15px; } }
+
+.tabular-group-key { display: block; margin-bottom: 3px; color: #444; font-size: 12px; font-weight: 550; }

@@ -1,0 +1,10 @@
+.older-drafts { padding: 24px 0; border-top: 1px solid var(--border); }
+.older-drafts h2 { font-size: 16px; margin: 0 0 16px; }
+.older-draft-note { border-bottom: 1px solid var(--border); padding: 16px 0; }
+.older-draft-note summary { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+.older-draft-note summary > svg { flex-shrink: 0; }
+.older-draft-note summary > span { min-width: 0; overflow-wrap: anywhere; }
+.older-draft-note small { display: block; color: var(--muted); font-size: 12px; margin-top: 4px; }
+.older-draft-note pre { white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; max-height: 360px; overflow: auto; padding: 16px; background: var(--surface, #f7f7f7); }
+.older-draft-note p { overflow-wrap: anywhere; }
+.older-draft-note summary:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }

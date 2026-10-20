@@ -1,0 +1,191 @@
+.tabular-import-trigger { flex-shrink: 0; }
+.tabular-import-dialog, .tabular-chart-dialog { width: min(610px, calc(100vw - 32px)); max-height: calc(100dvh - 40px); margin: auto; padding: 0; border: 1px solid var(--border, #dfdfdf); border-radius: 9px; background: #fff; color: var(--ink, #2a2a2a); box-shadow: 0 20px 70px #0002; }
+.tabular-import-dialog::backdrop, .tabular-chart-dialog::backdrop { background: #25252545; }
+.tabular-import-dialog > header, .tabular-chart-dialog > header { position: sticky; top: 0; z-index: 1; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 24px; border-bottom: 1px solid var(--border, #e6e6e6); background: #fff; }
+.tabular-import-dialog > header > span { display: flex; align-items: center; gap: 10px; }
+.tabular-import-dialog h2, .tabular-chart-dialog h2 { margin: 0; font-size: 16px; font-weight: 550; overflow-wrap: anywhere; }
+.tabular-import-dialog h3 { margin: 0 0 5px; font-size: 15px; font-weight: 550; overflow-wrap: anywhere; }
+.tabular-import-body { display: grid; gap: 20px; padding: 24px; min-width: 0; font-size: var(--type-control, 14px); }
+.tabular-import-body { grid-template-columns: minmax(0, 1fr); }
+.tabular-import-body > * { min-width: 0; }
+.tabular-import-dialog p { margin: 0; color: #626262; font-size: var(--type-control, 14px); line-height: 1.65; overflow-wrap: anywhere; }
+.tabular-import-dialog small { display: block; margin-top: 4px; font-size: var(--type-meta, 12px); color: #777; line-height: 1.5; }
+.tabular-import-dialog summary, .tabular-analysis summary { cursor: pointer; font-size: var(--type-control, 14px); color: #4f4f4f; }
+.tabular-import-dialog details p { margin-top: 12px; }
+.tabular-import-dialog ul { margin: 12px 0 0; padding-left: 19px; line-height: 1.7; color: #626262; }
+.tabular-file { display: block; padding: 17px; border: 1px solid #e2e2e2; border-radius: 6px; background: #fafafa; }
+.tabular-file > span { display: flex; align-items: center; gap: 10px; }
+.tabular-file strong { overflow-wrap: anywhere; font-weight: 500; }
+.tabular-file input { display: block; width: 100%; max-width: 100%; margin-top: 13px; color: #707070; font-size: 12px; }
+.tabular-file input::file-selector-button { margin-right: 9px; padding: 6px 10px; border: 1px solid #ddd; border-radius: 4px; background: #fff; color: var(--ink, #2a2a2a); font: inherit; cursor: pointer; }
+.tabular-sample { display: inline-flex; align-items: center; gap: 7px; margin-top: 14px; }
+.tabular-import-dialog .tabular-mapping { max-height: none; overflow: visible; display: grid; gap: 13px; min-width: 0; margin: 0; padding: 0; border: 0; }
+.tabular-mapping > label:not(.tabular-checkbox), .tabular-mapping-editor > label { display: grid; grid-template-columns: minmax(130px, 1fr) minmax(0, 1fr); gap: 12px; align-items: center; color: #4f4f4f; }
+.tabular-mapping input:not([type=checkbox]), .tabular-mapping select, .tabular-chart-controls select { width: 100%; min-width: 0; padding: 8px 9px; border: 1px solid #dedede; border-radius: 5px; color: var(--ink, #2a2a2a); background: #fff; font: inherit; font-size: 14px; }
+.tabular-mapping .tabular-checkbox { display: flex; align-items: flex-start; gap: 10px; margin-top: 8px; line-height: 1.6; }
+.tabular-checkbox input { flex-shrink: 0; margin-top: 4px; accent-color: #333; }
+.tabular-mapping small { font-size: 12px; }
+.tabular-mapping-editor { display: grid; gap: 13px; min-width: 0; }
+.tabular-mapping-review { min-width: 0; }
+.tabular-mapping-review > p { margin-top: 8px; }
+.tabular-source-details { margin-top: 12px; }
+.tabular-mapping-review-heading { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.tabular-mapping-review-heading strong { font-weight: 550; }
+.tabular-mapping-review dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 18px; margin: 14px 0; }
+.tabular-mapping-review dl > div { min-width: 0; }
+.tabular-mapping-review dt { font-size: 12px; color: #777; }
+.tabular-import-dialog .tabular-mapping-review dd { text-align: left; margin: 2px 0 0; font-size: 13px; overflow-wrap: anywhere; }
+.tabular-import-issue { margin-top: 10px; }
+.tabular-import-issue strong { display: block; font-size: 12px; }
+
+.tabular-import-dialog .tabular-muted { font-size: 12px; color: #777; }
+.tabular-import-dialog footer { position: sticky; bottom: 0; z-index: 1; background: #fff; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 9px; padding: 16px 24px; border-top: 1px solid var(--border, #e6e6e6); }
+.tabular-import-dialog .button { min-height: 37px; font-size: 14px; }
+.tabular-import-success { display: flex; align-items: flex-start; gap: 12px; }
+.tabular-import-success > svg { flex-shrink: 0; color: #626c62; }
+.tabular-import-actions { display: flex; flex-wrap: wrap; gap: 9px; }
+.tabular-import-body > .text-button { justify-self: start; }
+.tabular-notice { padding: 11px 13px; border: 1px solid #e8e4d9; border-radius: 5px; font-size: 12px; line-height: 1.65; overflow-wrap: anywhere; }
+.tabular-notice.is-error { background: #fcf8f7; border-color: #e9dcd7; color: #865548; }
+.tabular-notice p + p, .tabular-notice .text-button { margin-top: 8px; }
+.tabular-analysis { width: 100%; min-width: 0; margin: 28px 0; color: var(--ink, #2a2a2a); background: #fff; }
+.tabular-analysis-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 15px; margin-bottom: 20px; }
+.tabular-analysis-header h2 { margin: 0 0 6px; font-size: 20px; font-weight: 550; }
+.tabular-analysis-header p, .tabular-chart-note, .tabular-footnote { margin: 0; color: #626262; font-size: 12px; line-height: 1.7; }
+.tabular-analysis-header > div { min-width: 0; }
+.tabular-analysis-header p { overflow-wrap: anywhere; }
+.tabular-analysis-header p + p { margin-top: 3px; }
+.tabular-analysis-header > a { flex-shrink: 0; margin-top: 3px; }
+.tabular-analysis .text-button, .tabular-chart-dialog .text-button { display: inline-flex; align-items: center; gap: 7px; padding: 0; color: #525252; font-size: 12px; }
+.tabular-visual { min-width: 0; padding: 20px; border: 1px solid #e5e5e5; border-radius: 6px; background: #fff; }
+.tabular-visual h3 { margin: 0; font-size: 15px; font-weight: 550; }
+.tabular-chart-controls { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin: 18px 0 9px; }
+.tabular-chart-controls label { display: grid; gap: 5px; min-width: 90px; max-width: 190px; flex: 1; }
+.tabular-chart-controls label > span { color: #626262; font-size: 12px; }
+.tabular-chart-controls select { font-size: 14px; }
+.tabular-chart-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 8px 18px; margin: 6px 0 12px; }
+.tabular-chart-actions .text-button { min-height: 32px; }
+.tabular-chart-actions .text-button:disabled { color: #737373; cursor: wait; }
+.tabular-chart-wrap { position: relative; min-width: 0; }
+.tabular-chart-wrap:focus-visible { outline: 2px solid #5b7888; outline-offset: 3px; border-radius: 3px; }
+.tabular-chart { width: 100%; height: 360px; min-width: 0; }
+.tabular-hover-tooltip, .tabular-point-preview { box-sizing: border-box; max-width: min(300px, calc(100% - 24px)); max-height: calc(100% - 24px); overflow: auto; white-space: normal !important; overflow-wrap: anywhere; }
+.tabular-tooltip-content { color: #2a2a2a; font-size: 12px; line-height: 1.5; }
+.tabular-tooltip-content > strong { display: block; font-weight: 600; }
+.tabular-tooltip-content > small { display: block; margin-top: 3px; color: #626262; font-size: 11px; }
+.tabular-tooltip-value { display: flex; justify-content: space-between; gap: 16px; margin-top: 8px; }
+.tabular-tooltip-value > b { min-width: 0; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.tabular-point-preview { position: absolute; top: 12px; right: 12px; z-index: 2; min-width: min(180px, calc(100% - 24px)); padding: 12px; border: 1px solid #d9d9d9; border-radius: 4px; background: #fff; box-shadow: 0 3px 12px #0001; }
+.tabular-point-actions { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 8px; }
+.tabular-point-actions button { min-height: 36px; }
+.tabular-point-actions .icon-button { flex-shrink: 0; }
+.tabular-chart-status { position: absolute; left: 15px; right: 15px; top: 110px; margin: 0; color: #747474; background: #fff; text-align: center; font-size: 13px; line-height: 1.7; }
+.tabular-chart-note { margin-top: 5px; }
+.tabular-view-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 16px; }
+.tabular-view-header h3 { min-width: 0; overflow-wrap: anywhere; }
+.tabular-view-tabs { display: flex; flex-shrink: 0; gap: 2px; padding: 3px; border: 1px solid #e5e5e5; border-radius: 6px; background: #fafafa; }
+.tabular-view-tabs [role=tab] { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 32px; padding: 0; border: 1px solid transparent; border-radius: 4px; background: transparent; color: #626262; }
+.tabular-view-tabs [role=tab][aria-selected=true] { border-color: #dedede; background: #fff; color: var(--ink, #2a2a2a); box-shadow: 0 1px 2px #00000008; }
+.tabular-view-tabs [role=tab]:disabled { color: #999; cursor: default; }
+.tabular-view-tabs [role=tab]:focus-visible, .tabular-visual [role=tabpanel]:focus-visible { outline: 2px solid #5b7888; outline-offset: 3px; }
+.tabular-visual [role=tabpanel][hidden] { display: none; }
+@media (pointer: coarse) { .tabular-view-tabs [role=tab] { width: 40px; height: 40px; } }
+.tabular-chart-dialog { width: min(1120px, calc(100vw - 32px)); }
+.tabular-chart-dialog-body { padding: 20px 24px 24px; }
+.tabular-chart-dialog .tabular-chart { height: min(58dvh, 600px); min-height: 320px; }
+.tabular-chart-dialog-body > .text-button { margin-top: 16px; min-height: 32px; }
+.tabular-scroll { max-width: 100%; min-width: 0; overflow: auto; overscroll-behavior-x: contain; }
+.tabular-scroll:focus-visible { outline: 2px solid #5b7888; outline-offset: 3px; }
+.tabular-preview .tabular-scroll { max-height: 230px; }
+.tabular-preview .tabular-scroll table { table-layout: fixed; min-width: 100%; }
+.tabular-preview th > span, .tabular-preview td > span { display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.tabular-preview thead th { position: sticky; top: 0; }
+.tabular-preview .tabular-scroll th, .tabular-preview .tabular-scroll td { min-width: 120px; }
+.tabular-scroll table { width: 100%; border-collapse: collapse; margin-top: 13px; color: #4c4c4c; font-size: 12px; line-height: 1.5; }
+.tabular-scroll caption { padding: 0 0 12px; color: #626262; text-align: left; font-size: 12px; }
+.tabular-scroll th, .tabular-scroll td { padding: 9px 11px; border-bottom: 1px solid #ececec; min-width: 70px; max-width: 250px; text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.tabular-scroll thead th { color: #5f5f5f; font-weight: 500; background: #fafafa; }
+.tabular-scroll tbody th { font-weight: 500; }
+.tabular-group-context { display: block; margin-top: 3px; color: #777; font-size: 11px; font-weight: 400; }
+.tabular-post-link { display: inline-flex; align-items: center; gap: 5px; margin-top: 6px; font-size: 12px; font-weight: 400; color: #3d6460; text-underline-offset: 3px; }
+.tabular-post-id { margin-top: 5px; font-size: 11px; font-weight: 400; color: #737373; }
+.tabular-post-id summary { cursor: pointer; }
+.tabular-post-id code { display: block; margin-top: 4px; overflow-wrap: anywhere; white-space: normal; }
+.tabular-evidence-post { width: 230px; max-width: 65vw; white-space: normal; overflow-wrap: anywhere; }
+.tabular-evidence-post small { display: block; margin-top: 4px; color: #737373; }
+.tabular-scroll tfoot th, .tabular-scroll tfoot td { border-top: 1px solid #d8d8d8; border-bottom: 0; }
+.tabular-result-table td, .tabular-result-table thead th:not(:first-child) { text-align: right; }
+.tabular-result-table td button { padding: 3px 5px; margin: -3px -5px; border: 0; border-radius: 3px; background: transparent; color: inherit; font: inherit; font-variant-numeric: tabular-nums; cursor: pointer; text-decoration: underline; text-decoration-color: #c9c9c9; text-underline-offset: 3px; }
+.tabular-result-table td button:hover { background: #f3f3f3; }
+.source-csv-table.tabular-result-table thead th { text-align: left; }
+.source-csv-table.tabular-result-table tbody th { color: var(--ink); font-weight: 400; }
+.source-csv-table.tabular-result-table .tabular-result-context { text-align: left; }
+.source-csv-table.tabular-result-table .tabular-result-index { position: sticky; left: 0; z-index: 1; min-width: 64px; color: var(--muted); background: #fff; font-variant-numeric: tabular-nums; text-align: left; }
+.source-csv-table.tabular-result-table thead .tabular-result-index { z-index: 2; background: #f7f7f7; }
+.tabular-result-post { display: flex; align-items: center; gap: 8px; }
+.tabular-result-post .tabular-post-link { flex-shrink: 0; margin: 0; }
+.tabular-result-table tfoot th, .tabular-result-table tfoot td { border-top: 1px solid var(--border); }
+.tabular-table-browser { min-width: 0; }
+.tabular-table-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 14px 0 8px; }
+.tabular-table-toolbar .search-field { flex: 1; min-width: 120px; max-width: 280px; }
+.tabular-table-toolbar .search-field input { width: 100%; min-width: 0; }
+.tabular-table-toolbar > span { margin-left: auto; color: #626262; font-size: 12px; }
+.tabular-table-viewport { max-height: 480px; }
+.tabular-table-viewport table { margin-top: 0; }
+.tabular-table-viewport caption { padding: 8px 11px; text-align: left; color: var(--muted); }
+.tabular-table-viewport thead th { position: sticky; top: 0; z-index: 1; white-space: nowrap; }
+.tabular-table-viewport tfoot th, .tabular-table-viewport tfoot td { background: #fafafa; }
+.tabular-table-browser > .tabular-pagination { padding-top: 12px; }
+.tabular-table-browser .tabular-pagination button { display: grid; place-items: center; min-width: 32px; height: 32px; }
+.tabular-table-dialog .tabular-table-viewport { max-height: min(60dvh, calc(100dvh - 300px)); }
+.calculated-source { min-width: 0; margin-top: 18px; }
+.calculated-source-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.calculated-source-header p { margin: 0; color: #626262; font-size: 12px; line-height: 1.7; overflow-wrap: anywhere; }
+.calculated-source-header .icon-button { flex-shrink: 0; }
+.tabular-empty-cell { color: #818181; font-style: italic; }
+.tabular-empty { padding: 40px 12px; color: #777; font-size: 14px; line-height: 1.7; text-align: center; }
+.tabular-evidence-rows { min-width: 0; }
+.tabular-evidence-rows h3 { margin: 0; font-size: 14px; font-weight: 550; }
+.tabular-evidence-rows .source-csv-toolbar { margin: 0 0 14px; gap: 10px; }
+.tabular-evidence-rows .search-field { flex: 1; min-width: 130px; max-width: 250px; margin-left: auto; }
+.evidence-row-filter { max-width: 100%; min-height: 36px; padding: 6px 9px; border: 1px solid #dedede; border-radius: 4px; background: #fff; color: #444; font: inherit; font-size: 12px; }
+.tabular-evidence-rows .source-csv-scroll { max-height: min(48dvh, 440px); }
+.tabular-evidence-rows .source-csv-scroll:focus-visible { outline: 2px solid #5b7888; outline-offset: 2px; }
+.evidence-source-table tbody th { position: sticky; left: 0; z-index: 1; background: #fff; }
+.evidence-source-table thead th:first-child { left: 0; z-index: 2; }
+.evidence-source-table th small { display: block; margin-top: 3px; color: #777; font-size: 11px; font-weight: 400; }
+.evidence-row-status { font-size: 12px; color: #555; }
+.evidence-row-status.is-missing, .evidence-row-status.is-excluded { color: #8b5b31; }
+.tabular-evidence-rows .source-csv-pagination > span:not(:first-child) { flex: none; }
+.tabular-pagination { display: flex; align-items: center; justify-content: flex-end; gap: 15px; font-size: 12px; color: #747474; }
+.tabular-pagination button { padding: 6px 9px; border: 1px solid #ddd; border-radius: 4px; background: #fff; color: #525252; font: inherit; cursor: pointer; }
+.tabular-pagination button:disabled { opacity: .45; cursor: default; }
+@media (max-width: 620px) {
+  .tabular-import-dialog, .tabular-chart-dialog { width: calc(100vw - 24px); max-height: calc(100dvh - 24px); }
+  .tabular-import-dialog > header, .tabular-chart-dialog > header { padding: 16px 18px; }
+  .tabular-import-body { padding: 20px 18px; }
+  .tabular-import-dialog footer { padding: 15px 18px; }
+  .tabular-mapping > label:not(.tabular-checkbox), .tabular-mapping-editor > label { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .tabular-mapping-review dl { gap: 10px; }
+  .tabular-import-actions { flex-direction: column; align-items: stretch; }
+  .tabular-visual { padding: 16px 12px; }
+  .tabular-analysis-header h2 { font-size: 18px; }
+  .tabular-chart { height: 360px; }
+  .tabular-chart-dialog-body { padding: 16px 10px 20px; }
+  .tabular-chart-actions { justify-content: flex-start; gap: 8px 16px; }
+  .tabular-chart-actions .text-button { min-height: 40px; }
+  .tabular-chart-controls { gap: 8px; }
+  .tabular-chart-controls label { min-width: min(140px, 100%); max-width: none; }
+  .tabular-evidence-rows .source-csv-toolbar h3 { flex-basis: 100%; }
+  .tabular-evidence-rows .search-field { margin-left: 0; max-width: none; }
+}
+@media (prefers-reduced-motion: reduce) { .tabular-analysis *, .tabular-import-dialog *, .tabular-chart-dialog * { scroll-behavior: auto; } }
+@media print {
+  .tabular-view-tabs, .tabular-chart-actions, .tabular-chart-controls, .tabular-chart-dialog, .tabular-table-toolbar, .tabular-pagination, .tabular-point-preview, .tabular-hover-tooltip { display: none !important; }
+  .tabular-visual .tabular-data-panel[hidden] { display: block; margin-top: 20px; }
+  .tabular-scroll, .tabular-table-viewport { overflow: visible; max-height: none; }
+  .source-csv-table.tabular-result-table { width: 100%; min-width: 0; }
+  .source-csv-table.tabular-result-table th, .source-csv-table.tabular-result-table td { white-space: normal; min-width: 0; max-width: none; }
+  .tabular-result-table .source-csv-cell { width: auto; max-width: none; }
+  .source-csv-table.tabular-result-table .tabular-result-index { position: static; }
+}

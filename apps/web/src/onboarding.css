@@ -1,0 +1,20 @@
+.org-app.workspace-access:has(.onboarding-content) { background:#fff; }
+.workspace-access-content:has(.onboarding-content) { max-width:440px; }
+.workspace-access-content:has(.onboarding-content) > h1:focus { outline:none; }
+.onboarding-content { color:#363636; }
+.onboarding-content p { color:#6d6d6d; line-height:1.65; margin:0 0 24px; text-align:center; }
+.onboarding-content form label { display:block; margin-bottom:8px; font-size:13px; font-weight:500; }
+.onboarding-content select { width:100%; min-height:44px; }
+.onboarding-content .onboarding-primary { display:flex; width:100%; min-height:44px; margin:24px 0 16px; text-decoration:none; }
+.onboarding-content .onboarding-primary.org-primary { color:#fff; }
+.onboarding-secondary { display:flex; justify-content:center; align-items:center; gap:8px; font-size:13px; text-decoration:none; min-height:36px; }
+.onboarding-secondary:hover, .onboarding-example a:hover { text-decoration:underline; }
+.onboarding-content .onboarding-workspace { display:flex; align-items:center; justify-content:center; gap:8px; margin:0 0 12px; font-size:13px; font-weight:500; color:#6d6d6d; overflow-wrap:anywhere; }
+.onboarding-workspace svg { flex-shrink:0; }
+.onboarding-example { display:flex; gap:12px; margin-top:32px; padding-top:24px; border-top:1px solid #eee; }
+.onboarding-example > svg { color:#6d6d6d; margin-top:2px; flex-shrink:0; }
+.onboarding-example a { display:inline-flex; align-items:center; gap:8px; font-size:14px; text-decoration:none; }
+.onboarding-example small { display:block; color:#6d6d6d; margin-top:6px; font-size:12px; line-height:1.6; }
+.onboarding-content .onboarding-account { margin-top:24px; font-size:12px; overflow-wrap:anywhere; }
+.onboarding-back { display:flex; align-items:center; gap:8px; background:none; border:0; padding:8px 0; margin-top:24px; color:#6d6d6d; font-size:13px; }
+.onboarding-content .onboarding-status { margin-bottom:0; }

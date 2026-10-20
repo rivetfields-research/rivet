@@ -1,0 +1,14 @@
+.run-progress{list-style:none;margin:18px 0 24px;padding:0;display:grid;gap:12px;color:#606060;font-size:14px;line-height:1.5}
+.run-progress>li{display:flex;align-items:center;gap:10px;min-height:22px;min-width:0}
+.run-progress>li>span:not(.run-progress-mark){overflow-wrap:anywhere}
+.run-progress>li[data-state=pending]{color:#969696}
+.run-progress small{font-size:12px;color:inherit;margin-left:auto}
+.run-progress-mark{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;flex:0 0 18px;color:#aaa}
+.run-progress-mark.active,.run-progress-mark.complete{border-radius:50%;background:#207044;color:#fff}
+.run-progress-mark.active svg,.run-progress-mark.complete svg{stroke-width:2}
+.run-progress-mark.failed,.run-progress-mark.interrupted{color:#a16b38}
+.run-progress-mark.stopped{border:1.5px solid #8b8b8b;border-radius:50%;color:#707070}
+.run-progress-mark.stopped svg{width:12px;height:12px}
+.run-progress-spinner{animation:run-progress-spin 1s linear infinite}
+@keyframes run-progress-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.run-progress-spinner{animation:none}}

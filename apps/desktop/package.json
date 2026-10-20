@@ -1,0 +1,19 @@
+{
+  "name": "rivet-alpha-desktop",
+  "productName": "Rivet Alpha",
+  "version": "0.1.1",
+  "private": true,
+  "description": "Local Rivet Alpha desktop shell",
+  "main": "main.cjs",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=24.13.0 <25"
+  },
+  "scripts": {
+    "test": "node ../../tools/check.mjs test"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "electron": "44.9.0"
+  }
+}

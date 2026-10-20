@@ -1,0 +1,12 @@
+.workspace-tabs-container { display: flex; align-items: center; gap: 5px; min-width: 0; flex: 1; }
+.workspace-tabs-menu-button { flex: none; width: 30px; height: 30px; }
+.workspace-tabs-menu { position: fixed; inset: auto; margin: 0; width: 216px; max-width: calc(100vw - 16px); padding: 5px; border: 1px solid var(--border); border-radius: 5px; background: var(--surface); color: var(--ink); box-shadow: 0 4px 18px #0001; }
+.workspace-tabs-menu:popover-open { display: grid; }
+.workspace-tabs-menu button { padding: 9px 10px; min-height: 36px; text-align: left; font-size: 12px; border-radius: 3px; }
+.workspace-tabs-menu button:hover:not(:disabled) { background: #f4f4f4; }
+.workspace-tabs-menu button:disabled { opacity: .4; cursor: default; }
+.workspace-tabs-menu button:focus-visible { outline-offset: -2px; }
+@media (max-width: 700px) {
+  .workspace-tabs-menu-button { width: 36px; height: 36px; }
+  .workspace-tabs-menu button { min-height: 44px; }
+}

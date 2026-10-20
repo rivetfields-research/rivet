@@ -1,0 +1,58 @@
+.workspace-diagnostics p { color: #666; overflow-wrap: anywhere; }
+.workspace-usage-content { flex: 1; min-width: 0; }
+.workspace-allowance-counters { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 18px; margin: 16px 0; }
+.workspace-allowance-counter { min-width: 0; }
+.workspace-allowance-counter > div { display: flex; flex-direction: column; gap: 4px; font-size: var(--type-meta); }
+.workspace-allowance-counter strong { font-size: 18px; line-height: 1.4; color: var(--ink); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.workspace-diagnostics .workspace-allowance-description { font-size: var(--type-meta); line-height: 1.6; margin: 8px 0; }
+.workspace-allowance-counter meter { display: block; width: 100%; height: 12px; margin: 6px 0; accent-color: #3f7461; }
+.workspace-allowance-counter small { display: block; color: #666; font-size: var(--type-meta); line-height: 1.6; }
+.workspace-diagnostics .workspace-allowance-explanation { max-width: 78ch; font-size: var(--type-meta); line-height: 1.6; margin: 12px 0; }
+.workspace-diagnostics .workspace-allowance-reset { color: var(--ink); }
+.workspace-diagnostics .workspace-allowance-notice { color: var(--ink); }
+.settings-page { max-width: var(--library-width); padding:32px; }
+.settings-page .connector-heading { flex-direction: row; align-items: flex-start; }
+.settings-page .connector-heading > div { min-width: 0; }
+.settings-page .connection-row { padding: 28px 0; gap:20px; }
+.settings-page .connection-row h2 { font-size:16px; font-weight:600; margin-bottom:10px; }
+.settings-page .connection-row p { color: #666; font-size:14px; line-height:1.65; }
+.settings-page .connection-row > div, .settings-page .page-heading p { overflow-wrap: anywhere; }
+.settings-page .icon-button { flex-shrink: 0; }
+.settings-detail { margin-top: 10px; color: #666; font-size: var(--type-meta); }
+.settings-detail summary { cursor: pointer; width: fit-content; }
+.settings-detail summary:focus-visible { outline: 2px solid #4775b9; outline-offset: 4px; border-radius: 2px; }
+.settings-detail[open] > summary { margin-bottom: 12px; }
+.settings-detail .drive-connection { border-top: 0; padding-top: 0; }
+.settings-page .page-heading h1 { font-size:26px; line-height:1.3; }
+.settings-page .page-heading p { font-size:14px; }
+.settings-tabs { display:flex; gap:24px; border-bottom:1px solid var(--border); margin:20px 0 30px; }
+.settings-tabs > button { font-size:13px; line-height:1.55; min-height:46px; padding:12px 0; color:var(--muted); border-bottom:2px solid transparent; margin-bottom:-1px; }
+.settings-tabs > button:hover { color:#34482b; }
+.settings-tabs > button[aria-selected="true"] { color:#435638; border-bottom-color:#526444; }
+.settings-panel { min-width:0; }
+.settings-panel[hidden] { display:none; }
+.settings-panel > h2 { font-size:16px; line-height:1.5; font-weight:600; margin:0 0 22px; }
+.settings-panel > p { font-size:14px; line-height:1.65; color:var(--muted); }
+.settings-panel > h2.settings-subheading { margin-top:40px; }
+.settings-account-fields { display:block; width:100%; margin:0; }
+.settings-account-fields > div { display:grid; grid-template-columns:minmax(130px,1fr) minmax(0,2fr); gap:24px; padding:20px 0; border-bottom:1px solid var(--border); font-size:14px; line-height:1.6; }
+.settings-account-fields dt { color:var(--muted); }
+.settings-account-fields dd { margin:0; text-align:left; overflow-wrap:anywhere; color:var(--ink); }
+.recipient-first-name { display:inline-flex; align-items:center; gap:12px; max-width:100%; }
+.recipient-first-name > span { min-width:0; overflow-wrap:anywhere; white-space:normal; }
+.settings-admin-link { display:inline-flex; align-items:center; gap:8px; margin-top:24px; }
+.settings-panel > section > .connection-row:first-child, .settings-panel > .workspace-diagnostics:first-child .connection-row { border-top:0; padding-top:0; }
+.settings-page .settings-detail { font-size:14px; }
+.settings-page .data-connection-head h3 { font-size:15px; }
+.settings-page .data-connection-facts { font-size:13px; gap:12px 24px; }
+.settings-page .data-connection-actions { gap:16px; }
+@media(max-width:700px) {
+  .settings-page { padding:28px 20px 48px; }
+  .settings-page .page-heading h1 { font-size:26px; }
+  .settings-tabs { gap:24px; margin:28px 0; }
+  .settings-account-fields > div { grid-template-columns:minmax(0,1fr); gap:6px; padding:16px 0; }
+  .settings-page .connection-row { gap:12px; }
+}
+.settings-model-status { display: flex; align-items: center; gap: 8px; }
+
+.settings-page > .page-heading { margin-bottom:0; min-height:0; }

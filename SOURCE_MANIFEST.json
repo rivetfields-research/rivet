@@ -1,0 +1,4125 @@
+{
+  "format": "rivet-desktop-source-candidate/v1",
+  "sourceCommit": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+  "method": "git ls-tree + cat-file; TypeScript import closure; exact ancillary/test list",
+  "trackedFileCount": 1066,
+  "exportedFileCount": 327,
+  "excludedTrackedFileCount": 739,
+  "exclusions": [
+    "Git history and metadata",
+    "operational and deployment records/configuration",
+    "external fixtures and evaluation datasets",
+    "customer/tester documents and identifiers",
+    "public brand/logo assets and invitation pages",
+    "generated builds/data and secrets",
+    "hosted launchers and unrelated tests/tooling"
+  ],
+  "files": [
+    {
+      "path": ".nvmrc",
+      "gitBlob": "12fd1fc27773ea621fef6bae7fbd614dfe9ac587",
+      "sha256": "72cb907889f7a6812412dded8a991e2d3e24e2c065c7314333312662be691623",
+      "bytes": 6
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.txt",
+      "gitBlob": "a36d06a4929c582dd8acc14ecf8d33906181065e",
+      "sha256": "29b4bf78da00668a5d92a9c06fae0b0777b49bb693e108e8d37e167b886b918d",
+      "bytes": 19787
+    },
+    {
+      "path": "apps/desktop/main.cjs",
+      "gitBlob": "408f808e62a7949b2bec4baaa2457dfe08531a6e",
+      "sha256": "671af39448bed51066e42c080683ebfb6db4d325acbdce1934bd2689b4745c5f",
+      "bytes": 9815
+    },
+    {
+      "path": "apps/desktop/package-lock.json",
+      "gitBlob": "30cb512b6f0239fd5e079a71f8d8d66adf7b3ef2",
+      "sha256": "e32c367e754c26f4f135e63c96749567626565c6d7b123613efdaf30a314a13d",
+      "bytes": 24372
+    },
+    {
+      "path": "apps/desktop/package.json",
+      "gitBlob": "22c8acd930f0eec3f41a148847d9f6965fd8b3ac",
+      "sha256": "de6e99757425ded0d76c2d5c85f48f1102bd207f207afd1657cdd8f2339f9e01",
+      "bytes": 524
+    },
+    {
+      "path": "apps/desktop/preload.cjs",
+      "gitBlob": "aca49a68b5343d1b6e3665ae58ca7caab41352d4",
+      "sha256": "84ad8087d37d4cd815e96f878364f8658f740f975401d48daedbf701c39d607a",
+      "bytes": 308
+    },
+    {
+      "path": "apps/desktop/runtime.cjs",
+      "gitBlob": "fda8c9aca6cc13a33babba3a6377e70c97689feb",
+      "sha256": "fba1662e5c06c8d166bc48c8260c7aae84f4d762f40092f06ecea1a6d51592c7",
+      "bytes": 6532
+    },
+    {
+      "path": "apps/desktop/setup.css",
+      "gitBlob": "4c94eb48225c1491947de3951ddb2aac72bc9d5e",
+      "sha256": "b21e1e3aee43ba9a9b4a5ac94aff03bd8ae4e4b4db1e395c3f633788d1411ec3",
+      "bytes": 1823
+    },
+    {
+      "path": "apps/desktop/setup.html",
+      "gitBlob": "950a25dbe8ede33bce080c996717ee73bf5a8721",
+      "sha256": "6fe32555902171d2b7e4543b406fc77bcea6c60c3715ba5c709295559ff65b27",
+      "bytes": 1609
+    },
+    {
+      "path": "apps/desktop/setup.js",
+      "gitBlob": "32d6a1bcfbdc7433c4723e1b20adde934dcdb2fb",
+      "sha256": "c27ec9c7f0cb910168d86a20e7b37c8960289b63521fa3c4bfea30aab668808a",
+      "bytes": 6711
+    },
+    {
+      "path": "apps/server/src/access-auth.ts",
+      "gitBlob": "01ff8091fb39213b6694d6433d00678055da532f",
+      "sha256": "09ab0a393dfb768edecf9ede9cb463809458b554d21047c4942d11256f674430",
+      "bytes": 8576
+    },
+    {
+      "path": "apps/server/src/apify-config.ts",
+      "gitBlob": "d647a998568299ae8f0c7c8a6673ab23c67bb14f",
+      "sha256": "e6a732f725e852a87dc2c2a62eb91f54eee308f86bc6b9bf03ea268728162a3f",
+      "bytes": 535
+    },
+    {
+      "path": "apps/server/src/care-http.ts",
+      "gitBlob": "9fb491697f1ccebc7f34d7370d230dfe3c29f23d",
+      "sha256": "c9f4fdaf591951fc3096572ca6047720f18277c541a8bc03da7705fcbbe76f02",
+      "bytes": 6166
+    },
+    {
+      "path": "apps/server/src/chart-download.ts",
+      "gitBlob": "17c28d703e5632e92627c031cb1a7f6dd92b7cff",
+      "sha256": "4560d59c22b394c90c74eb76f2fb4fa3f2c5430240402c95c7f5781580458375",
+      "bytes": 3428
+    },
+    {
+      "path": "apps/server/src/connection-sign-in-failure.ts",
+      "gitBlob": "d51671bc2ef7cc18074c623687a52cc6ffbf6d86",
+      "sha256": "d8c6727ffe7c46efcbba29984f8873950ed6280f0fe368d9d7e754989c543ce3",
+      "bytes": 973
+    },
+    {
+      "path": "apps/server/src/connection-sign-in.ts",
+      "gitBlob": "b1548f405a4f3af6ff33744c967f9eb7507276a1",
+      "sha256": "05e24bbba2d56023e08cabc8f738ff9a319fd960fcd023aeaeeef8677c31eead",
+      "bytes": 11887
+    },
+    {
+      "path": "apps/server/src/customer-model.ts",
+      "gitBlob": "172df619dafe8609b9a899c44705f02ddf34c043",
+      "sha256": "1730b6210af10a6ba5ef6ef038ebcee173e0ec6603e372b2d6c5e375c9852f94",
+      "bytes": 5911
+    },
+    {
+      "path": "apps/server/src/desktop-access.test.ts",
+      "gitBlob": "2c98bf40e61eee64c2594e0447480dc31af0934a",
+      "sha256": "071e1134e3d1f69611d6aa2c872d05b36e300f5d132277ea28a3c64d082f808e",
+      "bytes": 17999
+    },
+    {
+      "path": "apps/server/src/desktop-access.ts",
+      "gitBlob": "07699456961f42eb728f29945696be4eda50cbf6",
+      "sha256": "f311868e10db0418602aaca256ce832c977abc0533482ade63d7ef6177a6e613",
+      "bytes": 2235
+    },
+    {
+      "path": "apps/server/src/drive-http.ts",
+      "gitBlob": "ab9a11cd9f46417d49b23bc6325ec64e0675cd55",
+      "sha256": "a077c5c2d003abf77f3583df54f7dad1171a21e8eaa404270093274ff14e0d5c",
+      "bytes": 5088
+    },
+    {
+      "path": "apps/server/src/entra-invitations.ts",
+      "gitBlob": "b556f8f90abec59bed90168057a3df52ea6484ff",
+      "sha256": "2331fd7cc1f56310456a6ba15a93d02880aab3f3128224671e2e7348a777c50d",
+      "bytes": 8631
+    },
+    {
+      "path": "apps/server/src/http.ts",
+      "gitBlob": "fe64f6da603d79c5511170048cf28e6447a7bd89",
+      "sha256": "251f44d5d12dc4d9f6672bf6f76b205f25db9955123e11647074152ba2656cac",
+      "bytes": 87392
+    },
+    {
+      "path": "apps/server/src/index.ts",
+      "gitBlob": "4cb0bc80de685931dbf3a358884c5a53f0356665",
+      "sha256": "789a1baf8e858ac7339a00393b6c2dabea874b3f89fa439c0d2b0c7bdfe9d306",
+      "bytes": 8888
+    },
+    {
+      "path": "apps/server/src/meta-config.ts",
+      "gitBlob": "704d53e2f1320d916651da4c773780cfbfcd4e67",
+      "sha256": "c88f1ad549af0d26335ab0bd005a67787e298c62ec491758fd31cb966904c85a",
+      "bytes": 2269
+    },
+    {
+      "path": "apps/server/src/organizations-http.ts",
+      "gitBlob": "d5e115ab4a8d6f7eb2c383d16cd0388903784426",
+      "sha256": "5eeaaa32061156a21c77aa947ce319069b7b2988b83457a0154ab0a64ab9a964",
+      "bytes": 12374
+    },
+    {
+      "path": "apps/server/src/organizations.ts",
+      "gitBlob": "943754f98143ed1b5bc0ae008af653eb69954c76",
+      "sha256": "0ef60b31d5788460e98fef21f80c53216d99a5e6c6e237b3d2b9f54e94e89a1d",
+      "bytes": 58142
+    },
+    {
+      "path": "apps/server/src/recipient-settings-http.ts",
+      "gitBlob": "b7b5e3fa36078f70e1a44ca681d4941601fc9ea9",
+      "sha256": "f36464b4376cc76465b5cc52590ee39720bc61ed8da5fad31a635a6334b82296",
+      "bytes": 1947
+    },
+    {
+      "path": "apps/server/src/report-email-sender.ts",
+      "gitBlob": "9bbb407f6e862782a5e4507147586000f99f07d9",
+      "sha256": "4090c2398f282e21819d185522e07b5edb05fe9cf361a24952d9dd7b46642802",
+      "bytes": 10762
+    },
+    {
+      "path": "apps/server/src/run-stream.ts",
+      "gitBlob": "2716f0a37b65a04e35b36a0b28c37592987d7109",
+      "sha256": "8390c2324c2e9c87f22d2e4b76f19509b3ed177a0aedb4fda17b33e61608b91b",
+      "bytes": 2149
+    },
+    {
+      "path": "apps/server/src/source-provider-config.ts",
+      "gitBlob": "4703f02375082e73cdc00c86c35f1c3aa87bc043",
+      "sha256": "926c2679cb505cad8a9ec063d0239ad559e966ea4e5d12fe3df6816f989b939b",
+      "bytes": 3493
+    },
+    {
+      "path": "apps/server/src/source-table.ts",
+      "gitBlob": "8ee523e979882de0240febf0dee713dd7344e599",
+      "sha256": "213e235260292baef01bece793db94c14fa03bf4572591817cc9f6f1782fdf7c",
+      "bytes": 3001
+    },
+    {
+      "path": "apps/server/src/team-http.ts",
+      "gitBlob": "39c3c2733537b7357e881c8531d09d285e0315c5",
+      "sha256": "406faad5169530ca6556056dd02ac65db1b1edfbaf7e953c2b0e340f007d6f78",
+      "bytes": 3826
+    },
+    {
+      "path": "apps/server/src/usage-admin.ts",
+      "gitBlob": "604d470d013b2b26bdc3aea7b2f2b4764ab8d247",
+      "sha256": "06ef27ff0c7eb61d4a99d3c7154b6c1da4ad03f57db39340d31e95f974938d11",
+      "bytes": 5751
+    },
+    {
+      "path": "apps/server/src/workspace-access.ts",
+      "gitBlob": "1867bb54c760330963588649ae4fdde1ea6f9975",
+      "sha256": "1fd78013d2bb2a9be4cf6ff915a7dda744096cce3abfbc79930de312ec92d447",
+      "bytes": 3501
+    },
+    {
+      "path": "apps/web/index.html",
+      "gitBlob": "ad33287d16b3e0e7daf478021f1f97f9239784be",
+      "sha256": "840c170d230cac2426c3f126a9432ad1f2ad83785a36bab361b930f0a960a8a3",
+      "bytes": 529
+    },
+    {
+      "path": "apps/web/src/admin-control-dialog.tsx",
+      "gitBlob": "11b27bd23faa2b0b3272d0eb540806947c979c65",
+      "sha256": "986bfe687e23d9ecca01e859023e4c3b3f87fe767e91b84ffb51a0c7227469ee",
+      "bytes": 5329
+    },
+    {
+      "path": "apps/web/src/agent-session-evidence.test.tsx",
+      "gitBlob": "d92ad994cdf5324ca77f5371cb0a23ae06b3c313",
+      "sha256": "94671ec6069c393b8597684d44b9fea933d5495d0630178c5c48dbd9716f2782",
+      "bytes": 15021
+    },
+    {
+      "path": "apps/web/src/agent-session.css",
+      "gitBlob": "f57f913a26ce26d82948006ece69c911639a83e4",
+      "sha256": "229246b9972f153c45a244898a239b37012155fe056879c275dd9be710cbd6fa",
+      "bytes": 18070
+    },
+    {
+      "path": "apps/web/src/agent-session.tsx",
+      "gitBlob": "189f8c3d51b6c826932276d8bfd5bd334c3353a0",
+      "sha256": "78b20e0763b35c3be4d63c5b5d873da63a2b5627098522ebde5bdc4af7b55efb",
+      "bytes": 33892
+    },
+    {
+      "path": "apps/web/src/answer-export.ts",
+      "gitBlob": "cd136da4602ae433e4f46be8bd5bf83f2547e567",
+      "sha256": "6b96fe466febca8bdbf6d99b81523998af045aa8b856d846e57287fcbf4ff457",
+      "bytes": 66
+    },
+    {
+      "path": "apps/web/src/api.ts",
+      "gitBlob": "f3ed033ecc3f7422812137ecb0141da3facb2319",
+      "sha256": "815053959af5a383f411ef0f327e201a87cb67e3fc369e9d6645d08649ab1934",
+      "bytes": 7358
+    },
+    {
+      "path": "apps/web/src/billing.css",
+      "gitBlob": "dc8e957d93b8913b008e2ebeca2f40e625467e45",
+      "sha256": "e83ec1594e97d5a1b571b395548fc2ee2989fea36f2099f2879e250a71c3d7ad",
+      "bytes": 9936
+    },
+    {
+      "path": "apps/web/src/billing.tsx",
+      "gitBlob": "c06a907a8c8868555eb0ade9da813bbbbb427656",
+      "sha256": "c4f59f56a4da53b2941b01f2a78952845b1d251c3e34878f9e1953cde5b0d450",
+      "bytes": 31936
+    },
+    {
+      "path": "apps/web/src/broker-connection-panel.tsx",
+      "gitBlob": "75373f3ef4a7056d5cdb1488cc4e8c7843bc96e7",
+      "sha256": "c9ca403d40b93d05c17cc1280f7121e385670e23562a588ae1e61ee3d9137fa2",
+      "bytes": 3065
+    },
+    {
+      "path": "apps/web/src/broker-sign-in-window.ts",
+      "gitBlob": "a75de8d2e840e6d31b6faa83f16a0090e67e1b01",
+      "sha256": "7b5f764388b0014534eedec04fbffd1bc31119e90dbf613a93984c51494f90d3",
+      "bytes": 1250
+    },
+    {
+      "path": "apps/web/src/calculated-source.tsx",
+      "gitBlob": "4a441719c10dfcec5ee192ea32b156a6a1e502fa",
+      "sha256": "d8d2ec136e230ec0967dc2d887f849112bbbf4c02aabafd97ec7273b0b2d902d",
+      "bytes": 2713
+    },
+    {
+      "path": "apps/web/src/calculation-verification.ts",
+      "gitBlob": "c9c3b6e75bea6059afe0c18a241864117544d72e",
+      "sha256": "a3da0c7a6a1be7495a39bbd831313b2fadea41b97528124efe83ed0c1b4f129f",
+      "bytes": 2032
+    },
+    {
+      "path": "apps/web/src/care-client.ts",
+      "gitBlob": "9f17c9caa24cc0c067629fdf57770dd683d58baf",
+      "sha256": "ace81e249a4633367b205e45a1eed8e185326f3edc8bb6e4a84a53d06cf0746c",
+      "bytes": 2666
+    },
+    {
+      "path": "apps/web/src/care-presentation.ts",
+      "gitBlob": "4de56533013fe01cfb0e1e41e73569e23915f077",
+      "sha256": "85a11959ea634678c5d64fb87814aea4c1eca876c6bf9859c827c2a1d9263aa3",
+      "bytes": 3568
+    },
+    {
+      "path": "apps/web/src/care-workspace.tsx",
+      "gitBlob": "fefd13d91c0bba864bfaaea7b1d120287d95f2f9",
+      "sha256": "df653ee78091e1d736c9e23b410873194d571ca328862d415f521e8c2de1ff17",
+      "bytes": 48171
+    },
+    {
+      "path": "apps/web/src/care.css",
+      "gitBlob": "26df4825f61025fcc40e265db9d934dcb6a22a3c",
+      "sha256": "ebd93ed993538e662398a5d98ec9172a547bae2d318c9f5ba86269a28a8a2506",
+      "bytes": 25085
+    },
+    {
+      "path": "apps/web/src/composer-keyboard.ts",
+      "gitBlob": "78bbad830f6d82e9951e7ab2f42abb5010c4816e",
+      "sha256": "89a7fa922296f31a62d14f917c4902172865a8846b6f10cda4b93cc085523569",
+      "bytes": 430
+    },
+    {
+      "path": "apps/web/src/connection-controls.tsx",
+      "gitBlob": "55c7781e7038a6ce2557f1279cffa8ba08b66527",
+      "sha256": "747a596a9dc28473e8727bdedd1b885b263a41a95ec943f22691b8aba7d45a60",
+      "bytes": 7160
+    },
+    {
+      "path": "apps/web/src/connection-forms.tsx",
+      "gitBlob": "fba320fc980273a77639047981d6057d7772518e",
+      "sha256": "1d7d747c414b7acabf3819e2182d72633393212ba419fd6596d1a1d826250b09",
+      "bytes": 14501
+    },
+    {
+      "path": "apps/web/src/connection-freshness.tsx",
+      "gitBlob": "e751418126e8d9b3a9989f1079d4c0da5099082a",
+      "sha256": "b80316eee2c8db7a59bafa67bcefd187df58b52632807d9de7d794e4be5d8431",
+      "bytes": 6461
+    },
+    {
+      "path": "apps/web/src/connection-model.ts",
+      "gitBlob": "ab684338932512408df96d429b04d06cd2964c34",
+      "sha256": "8d037203039315456ca44a6323dec9a16fda0c4dfbe71c4599e40b46bb8e524c",
+      "bytes": 8720
+    },
+    {
+      "path": "apps/web/src/connection-row.tsx",
+      "gitBlob": "9ef7526c52bacb8508f4c3df1cb0d957990affa1",
+      "sha256": "f3bb97ac1ea265719c408931fb9333133cb15d6874b1785bbbf2d61fded8b170",
+      "bytes": 7213
+    },
+    {
+      "path": "apps/web/src/connection-schedule.ts",
+      "gitBlob": "5dd0015868e1742ebb918ca514ee45cdc6989c76",
+      "sha256": "3aa1dc63241eb76e05338d6e4390c06ffdd239eefaa0d7e2b8537c6024317f65",
+      "bytes": 1082
+    },
+    {
+      "path": "apps/web/src/connection-view.tsx",
+      "gitBlob": "54e80e9c37161c107e7b4d0f6751052fbe31552c",
+      "sha256": "94eda792a8133f7144f166eb88e2e5d1d8685a1968ca59e3ec2b339cacf8c07b",
+      "bytes": 7518
+    },
+    {
+      "path": "apps/web/src/connections.tsx",
+      "gitBlob": "8f6c3e2e66f76c1e47018dee6ad73ee4fe312d22",
+      "sha256": "1831283798a6d43c8b55ad628663aa4deda46565c478d659947d2287402c6c31",
+      "bytes": 1191
+    },
+    {
+      "path": "apps/web/src/connectors.css",
+      "gitBlob": "cbe60272496709828312c8e24bc267e5cb932cd8",
+      "sha256": "5d740c7dbee312fd99533bfa8f0491ca11aef6b992e3d625267a343b4f102971",
+      "bytes": 14127
+    },
+    {
+      "path": "apps/web/src/connectors.tsx",
+      "gitBlob": "2ee69b1a06a2046f6eccb3f3e72564f415d98ce6",
+      "sha256": "e20971ce140d36ac9d3a40d21a274cedbf9d238aba38b5bd6316c617926a4c29",
+      "bytes": 4368
+    },
+    {
+      "path": "apps/web/src/customer-workspaces.tsx",
+      "gitBlob": "f2c947e435ec161b7bd11367bc8b2f0733592465",
+      "sha256": "074f5bd2d22e9b483669b8aef9092800d3fd36c0f40fb11b34e651c103026403",
+      "bytes": 4548
+    },
+    {
+      "path": "apps/web/src/dashboards.tsx",
+      "gitBlob": "33eda44249255bf4a038656809fdfe26ef8fc80d",
+      "sha256": "11cd1c058277af4faa690b3a9240380f986041156a4d90cdbb234471d0d643aa",
+      "bytes": 9682
+    },
+    {
+      "path": "apps/web/src/draft-store.test.tsx",
+      "gitBlob": "5709f7cdd54f7c67e9fcd8c8a6c825650d6187c9",
+      "sha256": "d575d3b23ba4a7ff92976ab2a6bb81439b60e0a9e049d1989c01f4cf8cc8cd07",
+      "bytes": 16087
+    },
+    {
+      "path": "apps/web/src/draft-store.ts",
+      "gitBlob": "6bb98566833f4f97a2626d9c12b74a08a1b871b4",
+      "sha256": "69f09cfcd163cb29880d3ce26919b3b6026358ba3491f5e2ac56428d3357cfc2",
+      "bytes": 11733
+    },
+    {
+      "path": "apps/web/src/drive-connection.tsx",
+      "gitBlob": "df4063227eb6d38d8ccb276315151c4bc7d4550f",
+      "sha256": "70178545220a58d55c4479e81e94b9980bf575bc3857fa699f2e8ebef1f3eb64",
+      "bytes": 8523
+    },
+    {
+      "path": "apps/web/src/example-work.ts",
+      "gitBlob": "2fb615f7474716f9a843d37c56b144a8468ce48c",
+      "sha256": "9dba8871d3ce4e1feaa9da195ebe259213d75f646f834db610988447f25c46de",
+      "bytes": 5885
+    },
+    {
+      "path": "apps/web/src/file-drop.ts",
+      "gitBlob": "0ac2891aa3e14f970728bc5daf07baabd20b65f6",
+      "sha256": "513a553aebc716941081119968b721cd0cfcf2e02947b8931f0b2f654c300d78",
+      "bytes": 2085
+    },
+    {
+      "path": "apps/web/src/file-upload-feedback.tsx",
+      "gitBlob": "a46a089790c3d5e1652ec420010b5ca9aaa02ebc",
+      "sha256": "cda1d05e467d1879279f1f4ecc912f08471165f146b4d2acd3bc86f45ae42ac0",
+      "bytes": 1795
+    },
+    {
+      "path": "apps/web/src/file-upload.css",
+      "gitBlob": "1d51e56e15efa4c1b37bdc8028c8213e52cae933",
+      "sha256": "8256390eee7c65fc5016fce243c1bf7f4733a61bdc72e2a7c0784296d54b4804",
+      "bytes": 5117
+    },
+    {
+      "path": "apps/web/src/file-upload.tsx",
+      "gitBlob": "cd926903004821cac7a687eaa6d093cf6ebea75f",
+      "sha256": "1a2958b612d6d2bef84867ee47778dcffe4bd4a61b7482ecdafddc49f680c235",
+      "bytes": 13726
+    },
+    {
+      "path": "apps/web/src/financial-analysis.css",
+      "gitBlob": "4f3e4e09235dcdb2685ba78e26b4be5c867e5a86",
+      "sha256": "c16c03736bc1ac99f9bcf59be7eab273460798fe58e300e876d9dbddc5060726",
+      "bytes": 7065
+    },
+    {
+      "path": "apps/web/src/financial-analysis.tsx",
+      "gitBlob": "19176828819aeb3109a2693bddb31b356e7bf87a",
+      "sha256": "609462ad4b5378ed7205dfc0474f1b1b4c5aba989787fa94edd42e749b1264c0",
+      "bytes": 12338
+    },
+    {
+      "path": "apps/web/src/financial-import-confirmation.ts",
+      "gitBlob": "45ac4ecaf0401fc5731951e3de62db7054fa75c1",
+      "sha256": "5d03a3442c959f99fe69597912c73dc21db0a2d5f8c09422d4f7f7db685eb6af",
+      "bytes": 2790
+    },
+    {
+      "path": "apps/web/src/financial-import.tsx",
+      "gitBlob": "7c58a02b199eeea502bfb23ab284f0cca4317bab",
+      "sha256": "c843aad5a3003b3ce9801825e32cd43573947b8687dffb8efcc3e2b3db47cecc",
+      "bytes": 14747
+    },
+    {
+      "path": "apps/web/src/financial-presentation.ts",
+      "gitBlob": "2f3e7d707d4ef830095815681fc813741a671b8a",
+      "sha256": "0c75d7da8f0a6b36dd7fb895a42f1bb6ca35a0ff8d9dfd32a8ad7a63c0d26dad",
+      "bytes": 21639
+    },
+    {
+      "path": "apps/web/src/google-picker.ts",
+      "gitBlob": "3a15176f14104f2feed2602d4eec544cc7fd29bd",
+      "sha256": "3bdb7a84987b7f821b96f034a286ebc49e8bebd9c9c0480da3e46d23f31f0423",
+      "bytes": 4315
+    },
+    {
+      "path": "apps/web/src/home-welcome.tsx",
+      "gitBlob": "02873a32c0f714c257a0fc1031f21992f3fa3e1b",
+      "sha256": "bc443599bb0c4ac2ff51860af3a8091147ae3d96a0eee262e2dd5228ff31e82d",
+      "bytes": 2444
+    },
+    {
+      "path": "apps/web/src/home-work.tsx",
+      "gitBlob": "4239436014d1686a1be89f55b71f778f5af72972",
+      "sha256": "7be08ac52148b6af873e797a1d692381125a9f309c74f207bdbf5de361de4bcf",
+      "bytes": 2758
+    },
+    {
+      "path": "apps/web/src/home-workspace.css",
+      "gitBlob": "da9b51d749409c06569c5ec4ece922f0b9a0c33a",
+      "sha256": "d4e5edef72714de77e788f6f24f5669be5c9eb20b0f38d6a01fc2f995a9c9cc6",
+      "bytes": 9312
+    },
+    {
+      "path": "apps/web/src/invitation-token.ts",
+      "gitBlob": "d0875735835fb2a12142e359fd798a433afb6ab2",
+      "sha256": "5154c514145f2f2ddbf4c79b0313882a77512db59b31e057e0663d6d5da6cd9d",
+      "bytes": 671
+    },
+    {
+      "path": "apps/web/src/main.tsx",
+      "gitBlob": "da5dec2754e4ad7240d3e2b7235a3511b1a069df",
+      "sha256": "69661d7a379ef2eeef7004cac4fa21ba5574fa75e17fd02f3887d510857e6fcf",
+      "bytes": 1697
+    },
+    {
+      "path": "apps/web/src/markdown.tsx",
+      "gitBlob": "d9ad0cb841cde4d7092d199abdc1cbd9dc07e672",
+      "sha256": "2974334a00e52d3f5ccc33942c65cda09f86a7432415a579f9ff247088d80d4f",
+      "bytes": 1696
+    },
+    {
+      "path": "apps/web/src/model-stream-presentation.ts",
+      "gitBlob": "dd091977a877f60b9841f747093e977a3283afa0",
+      "sha256": "14be68000c9b8ff6af546528bf4a65bf2d262ac02909c95cb4a4c19fd9446a58",
+      "bytes": 10471
+    },
+    {
+      "path": "apps/web/src/module-source-selection.tsx",
+      "gitBlob": "42ef7d3cd24495a11eedd18c1f7e4287cf2edf7e",
+      "sha256": "43c8d9485c8836ea0bc1c895a2af1bb83d377b761ce1f1eeea2003beb1c0e920",
+      "bytes": 2118
+    },
+    {
+      "path": "apps/web/src/module-state.ts",
+      "gitBlob": "69423c1afd595bd9a040b43c90f495cd1440b3f9",
+      "sha256": "ec86d95bcf115f0add371f18340cad364ab0d4b86e5a82b9394aac8119995267",
+      "bytes": 859
+    },
+    {
+      "path": "apps/web/src/modules.css",
+      "gitBlob": "519ee99a1d239dbbeb7c8b3564a0a8826b6e09da",
+      "sha256": "b15639e2643bd030fb3bea850ae976137b2aa97d268918c5daf23d715ea9c845",
+      "bytes": 44978
+    },
+    {
+      "path": "apps/web/src/modules.tsx",
+      "gitBlob": "a5099ef55883dd60dafb244132f3221aa8b9182e",
+      "sha256": "1481ce25f6384319b1f6839d690f7e2c491e8cb152a6e58d3c226a0179e937de",
+      "bytes": 51816
+    },
+    {
+      "path": "apps/web/src/navigation.css",
+      "gitBlob": "2fbf1d4f49b13dceea9781e2f368d072d89cfd3c",
+      "sha256": "c9d1fca8a4f9b6e275e0bded73216cd91f8daed1ee611ac8393531500b3bf3e7",
+      "bytes": 14217
+    },
+    {
+      "path": "apps/web/src/navigation.tsx",
+      "gitBlob": "83b3a397437b5e88222d77a5ed8da2b18a2d0347",
+      "sha256": "cd0b708079835dca7a0f0fb12c402ae8a96abbcb94be785cf97fd161611f521d",
+      "bytes": 7939
+    },
+    {
+      "path": "apps/web/src/older-draft-recovery.tsx",
+      "gitBlob": "1a2fe6a65e5e18f518cbae51152d28f247c30e25",
+      "sha256": "0d77866e64df6e032c441e802100652f5d463d063f76aecf9ed7e4386596c139",
+      "bytes": 2958
+    },
+    {
+      "path": "apps/web/src/older-drafts.css",
+      "gitBlob": "e5e8edc176caf76f23702fbc49ef83ce00a01669",
+      "sha256": "088ae1b5240187b7d43ae496166ac015d2146f683714e033722c1175c2a1de11",
+      "bytes": 851
+    },
+    {
+      "path": "apps/web/src/older-drafts.ts",
+      "gitBlob": "f9c49258e3387275dd7c82888477c91280b4b9f2",
+      "sha256": "007bedd2e5ae84e98f9fef6e9ab3a1a1dc71479678b934618c77b3b9c0b22643",
+      "bytes": 2983
+    },
+    {
+      "path": "apps/web/src/onboarding.css",
+      "gitBlob": "f9da2b4b79fb188ed817c951c85bd70f60cd4f6c",
+      "sha256": "c1b39d1124898d0a6dbdceed260e21a66983ad412816f3af32b6999e3218e617",
+      "bytes": 1924
+    },
+    {
+      "path": "apps/web/src/onboarding.tsx",
+      "gitBlob": "d400ba13040554c9338497d7472ee58aa6a67cab",
+      "sha256": "d27f95d1a5da595c6defc085887fc233803ee1ec26df985a11eb5fa9403ca05c",
+      "bytes": 9135
+    },
+    {
+      "path": "apps/web/src/organization-admin.css",
+      "gitBlob": "ba72497996b754a8a06e0726ee90b437a02b125f",
+      "sha256": "739638bb877eccb04636fed1cfac1bbf4c1a36730127a0b535508fcc1bf9a220",
+      "bytes": 11536
+    },
+    {
+      "path": "apps/web/src/organization-admin.tsx",
+      "gitBlob": "8b1b4d7d9b58c8033b65218445548fe0b1aba581",
+      "sha256": "1734a9ccfd0febe61a7243f148c737d257f74f8fd0651559e5dcabd216d879ab",
+      "bytes": 29994
+    },
+    {
+      "path": "apps/web/src/organization-dialog.tsx",
+      "gitBlob": "321e0efce4f05bf9ba253b395b9c6c36764a303c",
+      "sha256": "8480ab375f2ed5218fd11a35f2db59f018959ae4677fd75d43f833e528d8439f",
+      "bytes": 939
+    },
+    {
+      "path": "apps/web/src/paced-reply.ts",
+      "gitBlob": "334dd2c09309957df9605d00f43887bbc35760c0",
+      "sha256": "2773b26d90459d8040c178452066caf4e8d0ed8f913227e5dc8bc350141e7485",
+      "bytes": 4913
+    },
+    {
+      "path": "apps/web/src/panel-resize.css",
+      "gitBlob": "2a109dde29d03701640ba3c381e84a85361a5b7f",
+      "sha256": "f1825bdad18b0f400290448decf859819511a7a6d193dc4e7d64bb90a9906c68",
+      "bytes": 849
+    },
+    {
+      "path": "apps/web/src/panel-resize.tsx",
+      "gitBlob": "59e8100fad87103c7d543f997aa2b2815f3f1170",
+      "sha256": "4633dafe93a8fcf0b9908e2a899fa8f9fa10afd1af4bb7187f69490b4ec3a9ba",
+      "bytes": 7850
+    },
+    {
+      "path": "apps/web/src/platform-icon.css",
+      "gitBlob": "2d6b35830a8ccfea0c1ce0319bdfdfb04ffd2160",
+      "sha256": "7bcd841573c709b3640f515d82be7bc752b9dd4f25481c533fae290940e34103",
+      "bytes": 65
+    },
+    {
+      "path": "apps/web/src/platform-icon.tsx",
+      "gitBlob": "213625dca1084b11148f9793bd6393002844b81c",
+      "sha256": "dd64f7f2b4a1cf3d737a0175496b6d2ff15cff3aacf9d757a3c360a88ba96da2",
+      "bytes": 1081
+    },
+    {
+      "path": "apps/web/src/post-presentation.tsx",
+      "gitBlob": "479d4eb90a877d53a234ab273d52390f06c73f74",
+      "sha256": "a293e0b3d12475767ebdc94fe1e2145ca72fdd17c8cdae936d60dc20e6f7077a",
+      "bytes": 3293
+    },
+    {
+      "path": "apps/web/src/presentation-export.ts",
+      "gitBlob": "731948a854c8295e2dad208fd4f1527ea41e8e77",
+      "sha256": "16cc138b42531a653203990248b6917e592ade40ae20f2ed4db67dbdbd277157",
+      "bytes": 13229
+    },
+    {
+      "path": "apps/web/src/project-work-tabs.tsx",
+      "gitBlob": "613409ef6722728d6e38f1bf5956853c61c22ec0",
+      "sha256": "a1b5f737abbdad1d806e40a1865ea447d32b4512136ae2cf56dcfd33d0cd0e10",
+      "bytes": 1823
+    },
+    {
+      "path": "apps/web/src/projects.css",
+      "gitBlob": "1900f3a0983d706e8002c4d513c8f9bf11e843c0",
+      "sha256": "bc425e3a1aaa47b22e6fec4fbc952b8a5c5fa60a60b4b41c27d6f98df722d5dc",
+      "bytes": 5412
+    },
+    {
+      "path": "apps/web/src/projects.tsx",
+      "gitBlob": "72f126d77883c1c02193d9113ea84540b0d0613b",
+      "sha256": "90b7635e3f6eff286c3214a48df85537102a49931ba05dc8f1a0c396115b6774",
+      "bytes": 15038
+    },
+    {
+      "path": "apps/web/src/recipient-settings.tsx",
+      "gitBlob": "8a4fb527a99390c423f598337a7f3aee02f9ba8c",
+      "sha256": "cf01604d8f8045098469139e0be1990fd65168e424bd77c12c8d7e3a65baa50c",
+      "bytes": 3870
+    },
+    {
+      "path": "apps/web/src/report-body.css",
+      "gitBlob": "4e13db4e012ebdb06c23a6eca65d15568728b93e",
+      "sha256": "b6ba831c3daea8bbbd62d726eb255fe027111fc2fc30526d70e8592a76bf1bb5",
+      "bytes": 2049
+    },
+    {
+      "path": "apps/web/src/report-body.tsx",
+      "gitBlob": "636050a156b489a64e41d4d64c65ef2b671d4f17",
+      "sha256": "543f81f5473632d8a1929ff437ce2c9ac266cf2287baacc94928b04ce6d967f4",
+      "bytes": 2167
+    },
+    {
+      "path": "apps/web/src/report-sections.ts",
+      "gitBlob": "2d6d9764414e5812207f80a6b47f1d6d5016783c",
+      "sha256": "cdf02ad8aa8726ba6dcc0960fbbbbae09b5454f3def7a78f7f30e442365f5aef",
+      "bytes": 1062
+    },
+    {
+      "path": "apps/web/src/report-takeaways.test.tsx",
+      "gitBlob": "569c6360930193b0d438aaac75b70bd7d230dd28",
+      "sha256": "0ab28a99fa55717a697515762e19e64cd586c74d023c8fad5beb60cb18070786",
+      "bytes": 3614
+    },
+    {
+      "path": "apps/web/src/report-takeaways.tsx",
+      "gitBlob": "4473e9938abd0563cfa74e0f3da473bf96c05a29",
+      "sha256": "720feb85c12ef52bd35d07d33d9c201a2a66c2295470fddfb85b00ce2132ab3d",
+      "bytes": 7123
+    },
+    {
+      "path": "apps/web/src/restore-source.tsx",
+      "gitBlob": "eca9b67f633699b3b1cdd680aa0a1b7f911bb2c8",
+      "sha256": "82a664f1cf7a80084022ca5d1e64f8b4ca709a7869a11b3ae832055a64cb1ac9",
+      "bytes": 1258
+    },
+    {
+      "path": "apps/web/src/rivet-mark.tsx",
+      "gitBlob": "e9ee937668b506007914662e4752b46531f92d0a",
+      "sha256": "319e949c42f1b0f2625ba40622235021651195e7ab0c332425dd7051e973a673",
+      "bytes": 473
+    },
+    {
+      "path": "apps/web/src/run-allowance.tsx",
+      "gitBlob": "c41204a0a83f777efd8ba6ae82115501c8b46e3c",
+      "sha256": "41920f5011d6388fef63eb0528d808c7f819bd27214695d610dece9a407ba62a",
+      "bytes": 3547
+    },
+    {
+      "path": "apps/web/src/run-library.ts",
+      "gitBlob": "e488004ee5688c6fc4f184ed0bbd4a68c7bb4543",
+      "sha256": "2c28774b41cd851314e59d9bd6892eef25357777c1e824c537464b03af89ada2",
+      "bytes": 980
+    },
+    {
+      "path": "apps/web/src/run-presentation.ts",
+      "gitBlob": "17f48654dfd8e7d5acddb3c1e750769c7f8bbd11",
+      "sha256": "3dee3b7bc3c0689caaea061d20086dd1a7c292f36cf1a432563daf8c48a26853",
+      "bytes": 1089
+    },
+    {
+      "path": "apps/web/src/run-progress-state.ts",
+      "gitBlob": "478c9321c7a95073c36ea54a6d387fcf81be2041",
+      "sha256": "7359fba634a2fff0c9c403b0c55e4f3e204041079f2f39b09e0964ef75c23f81",
+      "bytes": 2816
+    },
+    {
+      "path": "apps/web/src/run-progress.css",
+      "gitBlob": "2b34ad0a9b764720e48add0828517f69940de396",
+      "sha256": "d6acbda6555b1a30cd3ecfb8d2577d1cd7da227af0112dcc2144be5ed23d7734",
+      "bytes": 1134
+    },
+    {
+      "path": "apps/web/src/run-progress.tsx",
+      "gitBlob": "c08e07baa662d7dd4da6b080308aaa1d6591de1a",
+      "sha256": "1ae2b835917d415bca3d500f193a2ed85e45039781a740463a109416aa0943d2",
+      "bytes": 1708
+    },
+    {
+      "path": "apps/web/src/run-updates.ts",
+      "gitBlob": "b1bf7191daa5a879f4209a34128c0587da693b70",
+      "sha256": "872a25b3d82ec3beb3297089442f92afed69ce2530d2e7de6b5178d6f95d653a",
+      "bytes": 1430
+    },
+    {
+      "path": "apps/web/src/saved-tables.ts",
+      "gitBlob": "acf365ab32ad24075a6d14e506f4167d078e5bda",
+      "sha256": "09b453a46ea79b4e0625aad0a6b318d904a04b9730a56732d3810e61a2ec1ed9",
+      "bytes": 2838
+    },
+    {
+      "path": "apps/web/src/schedule-report-email.tsx",
+      "gitBlob": "e1368754f786b8cda3fbbce3324317f0286a9f07",
+      "sha256": "bc987724c974af4939b593501783c5e118fd619cc51beb1596590ee467b6a2fd",
+      "bytes": 10840
+    },
+    {
+      "path": "apps/web/src/session-access.tsx",
+      "gitBlob": "1e90af4ce24ab6a4bee38b6af69a3801a1304652",
+      "sha256": "f67fb7e70880644ea81049c22aae0c9b1c1cf7566593cf103ef541f2474f480b",
+      "bytes": 2253
+    },
+    {
+      "path": "apps/web/src/session-inputs.css",
+      "gitBlob": "8c567e8c8dbc49ffae17df34ebe8713b2a5d4184",
+      "sha256": "609f510c29d03bf1945552cf13423a1af07e774348e65236858e8d019985f017",
+      "bytes": 2342
+    },
+    {
+      "path": "apps/web/src/session-inputs.tsx",
+      "gitBlob": "2919278916adafbdb6788e588f073eb8d81eab0b",
+      "sha256": "53d7d75c4ea86e0d2a2927740387042335587135c0b551c58e16df4c181226a2",
+      "bytes": 11377
+    },
+    {
+      "path": "apps/web/src/settings-tabs.tsx",
+      "gitBlob": "6656d0e8f61b41efb2599a396cd52eb68a3ad319",
+      "sha256": "6f142af30e4b46bb6563621d6cc56c2cb12eb6cb27a12632a355a99b5cc0a51f",
+      "bytes": 2018
+    },
+    {
+      "path": "apps/web/src/shell.css",
+      "gitBlob": "6a2453a02f6f140b34eb2a8bdb51a19911ba39af",
+      "sha256": "e68088c60de7e924b6aa9c756645fc3fdae29bc099048ed57f037a7e0d5e72c1",
+      "bytes": 15550
+    },
+    {
+      "path": "apps/web/src/sidebar-pins.ts",
+      "gitBlob": "ce63947699e95d8e62ecdbd0216c1b3b7f34063b",
+      "sha256": "7ac95ac41ae14905e7c21552b67ca00c1adeca9d903e2ea6c9b69ebdd331739c",
+      "bytes": 1314
+    },
+    {
+      "path": "apps/web/src/signup-tour.tsx",
+      "gitBlob": "d393af81b57177aa20bd0d52bbe3a0399015fa69",
+      "sha256": "ae3b42202eb94b55cf7379e845d433cd921f554ae092454c4d4391ae618b3652",
+      "bytes": 4431
+    },
+    {
+      "path": "apps/web/src/social-analysis.css",
+      "gitBlob": "42474c12825212e53166cc477127ef555df7f34f",
+      "sha256": "db6882cd8a5e9eedf6a242a12d5dc68f1f7549dcea779cec2d861e2fdc1a44bb",
+      "bytes": 1484
+    },
+    {
+      "path": "apps/web/src/social-analysis.tsx",
+      "gitBlob": "455fe88d6c308cf453237187419e0ef5c3a7cfb2",
+      "sha256": "9fafdff664092c60057a23b53079c345db4f5ddbf6d6c75bf4c73552811fe9b8",
+      "bytes": 4263
+    },
+    {
+      "path": "apps/web/src/source-analysis-view.tsx",
+      "gitBlob": "0ceb33df393f824d343386bb2a7e5429e4199a36",
+      "sha256": "8cdfa1b33e58d9adc17bcc86fc35c6addc3f3c355bfc42376583de457d2f5d38",
+      "bytes": 9802
+    },
+    {
+      "path": "apps/web/src/source-connect-options.ts",
+      "gitBlob": "a641ddfe17a3244ea95a8acdbae31c49e99d6859",
+      "sha256": "a0ea9b2c48acdd4f892091b150748ccbd8c0e6c4ffa786f6c7cdfa7c390d4164",
+      "bytes": 3665
+    },
+    {
+      "path": "apps/web/src/source-connect-page.css",
+      "gitBlob": "c828341c041711d19d14834dbe514db46a728fa2",
+      "sha256": "5e8fbfd5b10539107068a4254156c21daa6a2b171349ed95b1810c06b2610a2c",
+      "bytes": 5749
+    },
+    {
+      "path": "apps/web/src/source-connect-page.tsx",
+      "gitBlob": "53ca93d990653a40a474a15ffe2f4c5e493851fb",
+      "sha256": "809f587795128a10a1b95f37db70b6d52d25012f409c45b52ef3431e7f909ef1",
+      "bytes": 9220
+    },
+    {
+      "path": "apps/web/src/source-connection-detail.tsx",
+      "gitBlob": "34ababbea199fdf517411a7a1def42f097fc04a9",
+      "sha256": "d70ff80b944a7364a2e4a818b393cb14066352b6bf4365baae630d2002e0cbee",
+      "bytes": 14937
+    },
+    {
+      "path": "apps/web/src/source-connections.ts",
+      "gitBlob": "9edeb02f14b7bed94aab90f90e0b643071f5ae17",
+      "sha256": "7776e435f3605cd219336009c055f9c131804d35606c78ba32157eeca4a30b2f",
+      "bytes": 3104
+    },
+    {
+      "path": "apps/web/src/source-dataset-view.tsx",
+      "gitBlob": "a873902983d704382c9d57c129fc2462be38e703",
+      "sha256": "f9e4c3722200dff4b3816118ce66191c2c2ca5862d17c5bdaf666c267199158d",
+      "bytes": 1848
+    },
+    {
+      "path": "apps/web/src/source-fields.tsx",
+      "gitBlob": "d1bf990a7b392685469a03f6521b9e8f3d3e2db6",
+      "sha256": "c27a1fbc65c09fe77e4f4658cb313285d2b0262e768f54325804574a2ad3e347",
+      "bytes": 1362
+    },
+    {
+      "path": "apps/web/src/source-overview.tsx",
+      "gitBlob": "84968b7ebad143cd555ba43f2dcaf33215e51683",
+      "sha256": "e6af1d404fe636be22fdb4fc15f60182fb3937f80bfcf531cff64a641593aa0a",
+      "bytes": 1539
+    },
+    {
+      "path": "apps/web/src/source-table.css",
+      "gitBlob": "a0128bbedbe78cfbce104b86ba8d6840effa6a27",
+      "sha256": "8b02bdd0c3169932b3bd2be5afe7402abd70437594924001b78eaec4e0e4f399",
+      "bytes": 4171
+    },
+    {
+      "path": "apps/web/src/source-table.tsx",
+      "gitBlob": "8a1b75cec3a175c6e5d1b828368889fe13c3b42c",
+      "sha256": "05feaa8d45be922f812fb3c42eae09305ecefe2a9909eb3a0e2cd3b0d1c55e54",
+      "bytes": 7549
+    },
+    {
+      "path": "apps/web/src/staff-admin.tsx",
+      "gitBlob": "751528a44947c60e63dfcc90a11c913455cd4129",
+      "sha256": "fea4ad069f20e0ede62fe393b722b215d074873a24adfcace309392243c9f892",
+      "bytes": 4266
+    },
+    {
+      "path": "apps/web/src/styles.css",
+      "gitBlob": "eb0e8e9227959d7a6b9460cf27e595267c2edb50",
+      "sha256": "47a404a3fec19e7ddb5e44f744b38dceefbed8c515331a101c7248b1f6d540a9",
+      "bytes": 25077
+    },
+    {
+      "path": "apps/web/src/table-source-navigation.ts",
+      "gitBlob": "5c5736c098909175a955442cf560638765838237",
+      "sha256": "9f408206f5dc96015b726787aef66e249ecd05b192882af16f9695ce17598704",
+      "bytes": 621
+    },
+    {
+      "path": "apps/web/src/tables-library-items.ts",
+      "gitBlob": "d23b3d90033bcc764fdb650d4c2208e803bae2d0",
+      "sha256": "2fecf3bd2ff7bcb292a641d6ee084ceae603e7bb96afd603547059a69d68d7e6",
+      "bytes": 1960
+    },
+    {
+      "path": "apps/web/src/tables-library.css",
+      "gitBlob": "665015a54af40561498b8ea98cda174098de592b",
+      "sha256": "a19187ce9f4276e98e2d60dcfc68ba11e94a6f2cd4b4eb01a5827373b0272025",
+      "bytes": 9055
+    },
+    {
+      "path": "apps/web/src/tables-library.tsx",
+      "gitBlob": "2afe0e0b5bc89d08cc13e19b48dc786b9f711697",
+      "sha256": "b0119681a992dceec2c700af26a93517c76fa7dd300545490a4e1056feca3dfd",
+      "bytes": 18461
+    },
+    {
+      "path": "apps/web/src/tabular-analysis.css",
+      "gitBlob": "b77292d65a812a3c166c86a6fe6aac1d7ef2f6bb",
+      "sha256": "cba21bc09565b81c410394102cd3187eaa20af7d96ddef6fb678e440ef0a62ca",
+      "bytes": 18294
+    },
+    {
+      "path": "apps/web/src/tabular-analysis.tsx",
+      "gitBlob": "d1863d2b704c149ed3abde381f26e119c1a90389",
+      "sha256": "db609c1dd225e7bb4a553bacb59da18e71029407437eaef3dce6a941060fdfd8",
+      "bytes": 30835
+    },
+    {
+      "path": "apps/web/src/tabular-echarts.ts",
+      "gitBlob": "0a050f668d89792022851dcbfab1b79c184e052e",
+      "sha256": "f8b73b64f5c5967e18d6ff718af566e8f339be6de64900b14d2691afd1337307",
+      "bytes": 68
+    },
+    {
+      "path": "apps/web/src/tabular-evidence-rows.tsx",
+      "gitBlob": "9b331e7ec08bd59ed7a3c52bbc985d4d6d735e1c",
+      "sha256": "bb1c05e1173d1eb5458b017da1019429fbcce0f8c3f7d60557f83596383a857f",
+      "bytes": 6884
+    },
+    {
+      "path": "apps/web/src/tabular-import.tsx",
+      "gitBlob": "5e437fef80a34971642be7394e57dcc6f1a6ca0e",
+      "sha256": "237448ce4f2bdecfcd1ee370a74ca8e39178c576f7d43143e7c0c08041cdb33d",
+      "bytes": 26971
+    },
+    {
+      "path": "apps/web/src/tabular-interpretation.test.tsx",
+      "gitBlob": "6dbcbeb3d0800d6f5e4946b9c68c14290ce8541a",
+      "sha256": "a5b684927dbcd5360eb4c1d19b561e51521bc7e76a9b4549894366ecdff8f162",
+      "bytes": 6423
+    },
+    {
+      "path": "apps/web/src/tabular-mapping.ts",
+      "gitBlob": "d94bf5cd9e9760fb3b0a82076cb4c815c77c68ac",
+      "sha256": "2a10bb6810acd202497cd92d516aab348a065e43abf951c01870b90905a55c0e",
+      "bytes": 3264
+    },
+    {
+      "path": "apps/web/src/tabular-presentation.css",
+      "gitBlob": "e3fe9932f81e465e0192a2c06f90cad089941108",
+      "sha256": "84a0daba33dbc1fd11d838867cfb097ae4d183a25a55b581ac497736ee21dbab",
+      "bytes": 1289
+    },
+    {
+      "path": "apps/web/src/team-admin.tsx",
+      "gitBlob": "aa430a95488c8d2e16c29ebe40baeadc23b4799c",
+      "sha256": "7491ef9ffc7c3b7ffa2df4246d011fba54bae0489adcd1dc0c920cf3dcc9409f",
+      "bytes": 11588
+    },
+    {
+      "path": "apps/web/src/team-sharing.tsx",
+      "gitBlob": "6c3312681b99e5152f9ef30c0f6989cb329c7a3f",
+      "sha256": "604fa73a69f5376a627d60b2c3e1120665f158f3d8f634709a1b28984f9668ec",
+      "bytes": 9370
+    },
+    {
+      "path": "apps/web/src/team-sources.tsx",
+      "gitBlob": "ad78b5299fe6bff08abe9502a1859194af0281a3",
+      "sha256": "5509e1f16a90c7859df80df0e25b82a569e25932718e94ef149ab97c1c307994",
+      "bytes": 3602
+    },
+    {
+      "path": "apps/web/src/usage-admin.tsx",
+      "gitBlob": "bd4b2bd060f1affc0d39d45dfd355ae9dfb417f0",
+      "sha256": "e423956722989fffbdc31660fb03b2d9cb17ff6069eefbe02ffc54fc5473f2fe",
+      "bytes": 13976
+    },
+    {
+      "path": "apps/web/src/usage-import.css",
+      "gitBlob": "b6443658420031bc54be71ae1e26db49d4401d61",
+      "sha256": "fe0da1c3407b8419c1e244e6d68a82df7bbc8c80515b39ba022ce609533eeb71",
+      "bytes": 5452
+    },
+    {
+      "path": "apps/web/src/usage-import.tsx",
+      "gitBlob": "5712a8419d30243f81a146ed8d3f8053b14f82b4",
+      "sha256": "ad0463c550129c75205d2123bd3dded62d54d15c24845f856e2592b123e61547",
+      "bytes": 15276
+    },
+    {
+      "path": "apps/web/src/use-broker-connection.ts",
+      "gitBlob": "5bfa10c959eebee3c2fde56203d167e816e56948",
+      "sha256": "c36eb4ec9391bb215e6b153285868da3cdb7770ebbc493790c83e76ef325522c",
+      "bytes": 4865
+    },
+    {
+      "path": "apps/web/src/use-connections.ts",
+      "gitBlob": "6c56994874035c9ac4e176d2a0c7348a1301167b",
+      "sha256": "bf8e478da451e81307850dfaa1dbc5898ce76e3c81afb6b3eb7a833bd94423fb",
+      "bytes": 14157
+    },
+    {
+      "path": "apps/web/src/use-sidebar-pins.ts",
+      "gitBlob": "7e42a91e47480fbc33c2669e21306b80f06d4730",
+      "sha256": "a4b37343c51c0639123d629c9895a6fc3d174f5bb82bdfdd452915a845b26003",
+      "bytes": 2348
+    },
+    {
+      "path": "apps/web/src/verification-calculation-detail.tsx",
+      "gitBlob": "3c5960107ed6a5b33ca3debb31ad2ca6737ab5ae",
+      "sha256": "fc602af3f534a39ff84ec35027fdebe15d675ceef4456c48d81b572061cdc46f",
+      "bytes": 10820
+    },
+    {
+      "path": "apps/web/src/verification-calculations.ts",
+      "gitBlob": "c589906321815f30e1700dbe444c8907eb3d9061",
+      "sha256": "5bc973ec3723ddb7427edbc7b02cb9befccd161efcf2ead2cba8b870676ebfb8",
+      "bytes": 10218
+    },
+    {
+      "path": "apps/web/src/verification-panel.css",
+      "gitBlob": "752715002930b9ba3b807c07a9775184bbfb6da7",
+      "sha256": "35e55e31a496f9cfb1f8abcbcd288111966c7b4c850b106ac8a0aec14befc99d",
+      "bytes": 6003
+    },
+    {
+      "path": "apps/web/src/verification-panel.tsx",
+      "gitBlob": "d0fa79c5126f500dd863ebaaa118b8ebe069c6e4",
+      "sha256": "144c4b5af10d4b2b07cf16de73ed1dcb4fd3f000da95e65119d869b067b96904",
+      "bytes": 7844
+    },
+    {
+      "path": "apps/web/src/verification-summary.ts",
+      "gitBlob": "c5c70d7c2af28623a80d85bb8af8ad0b85d9e8ca",
+      "sha256": "bf82a2c475bfb2e6e8ae8d280e04ad85783e766f39fdeae75012923266c967e7",
+      "bytes": 12273
+    },
+    {
+      "path": "apps/web/src/visual-analysis.css",
+      "gitBlob": "b953493b5c301463847aac95eae1cbe5aafc572a",
+      "sha256": "b81a71aab08f346503eda143947ec1c1b2890f8904488acaf312e41bed53b32b",
+      "bytes": 7487
+    },
+    {
+      "path": "apps/web/src/visual-analysis.tsx",
+      "gitBlob": "5ea3fa96acad5db6230144da25bbc0378795504d",
+      "sha256": "9aeb2d78c28a5f4c5a5538e790811743ff9f7829733dbff4c7ba6728195257c5",
+      "bytes": 11250
+    },
+    {
+      "path": "apps/web/src/weekly-review-accounts.tsx",
+      "gitBlob": "d174deb9cf23cc7a507271c07eaecc9db3fedc1e",
+      "sha256": "d07a06618cbdd2a3e09c99eeb5cb364f8c501c0050fd5eb8c9a4b03cce6a3cab",
+      "bytes": 2294
+    },
+    {
+      "path": "apps/web/src/weekly-review-context.tsx",
+      "gitBlob": "386b0997df02524dd451e0adef6fb66d558168e3",
+      "sha256": "6391d06f48e11990e71eb9341f80331b937aaf77c7e00beadb91ee0c8ab5744f",
+      "bytes": 1021
+    },
+    {
+      "path": "apps/web/src/weekly-review-email.tsx",
+      "gitBlob": "22267c7ea1a967a4b939c916965aa27ceb7c1835",
+      "sha256": "996c22d207e54f90705f73ce7182f412c37ed160b93c29c9cffda061c4d487c8",
+      "bytes": 2870
+    },
+    {
+      "path": "apps/web/src/weekly-review-presentation.ts",
+      "gitBlob": "18bb39caa4070201b9279d8df1b68fba99f2731d",
+      "sha256": "d62abf041be273ad8a5a5d3a04d8593ce8f6f6b8cb9d5a3158653400c3131210",
+      "bytes": 3042
+    },
+    {
+      "path": "apps/web/src/workflow-schedules-workspace.tsx",
+      "gitBlob": "9cee93c9f79cdf2b257e5bc9d5821b3e150e9748",
+      "sha256": "2107f529e71f280aac8a47c9ba2895c5153372fd55f6ae8e36980d00a5fcb96d",
+      "bytes": 36520
+    },
+    {
+      "path": "apps/web/src/workflow-state.ts",
+      "gitBlob": "add4eccfa4a1e3ec13d1c89ba5273674c00888db",
+      "sha256": "89e2c06eb14f713fe9f6771638c2ff3e77b34f5623c950f1815afad4361ef940",
+      "bytes": 9978
+    },
+    {
+      "path": "apps/web/src/workflow-storage.ts",
+      "gitBlob": "ab1d89a08eb71b51be25d373af18dd5a16ae4401",
+      "sha256": "2391970b8750ee1f6278281733312ce14e126a5677adeb5efb11e1fc48c4cb6e",
+      "bytes": 1070
+    },
+    {
+      "path": "apps/web/src/workflow-workspace.tsx",
+      "gitBlob": "0834d3614f4d01f6490751bbd1fce3718833d27a",
+      "sha256": "a2d53d1ee2e06eb967cf955f89ad2102d2363d3a1efcd817f4dec9c672f3984f",
+      "bytes": 42369
+    },
+    {
+      "path": "apps/web/src/workspace-access-layout.css",
+      "gitBlob": "581fc7be4813fc8abd62287b6229498dc695d6c8",
+      "sha256": "dc0066cd75194f3ec8fd5d57d282eeab535b69bb0160b32805134568be775c2d",
+      "bytes": 8495
+    },
+    {
+      "path": "apps/web/src/workspace-access-layout.tsx",
+      "gitBlob": "6427b995c75b805b786c1284f361f5046aa9c386",
+      "sha256": "f76bed5d511e0fa800a73b520f74913c55034466d4c4bc4f3d7e166f2d19f186",
+      "bytes": 563
+    },
+    {
+      "path": "apps/web/src/workspace-brand.tsx",
+      "gitBlob": "4abdb5afc69e2cf70f23ce5933a5ebee828fa96e",
+      "sha256": "5747d9ad1f2896513ed20a563bf0c1d898b28a124687665a15fda643ba019eab",
+      "bytes": 243
+    },
+    {
+      "path": "apps/web/src/workspace-details.tsx",
+      "gitBlob": "1171497586bd1320308d65a2e57be9f375d022a4",
+      "sha256": "85e882eab8722d7092bfe1a4a4d02bbf531a282c2d3c2d1d2665203f7556d6bb",
+      "bytes": 8537
+    },
+    {
+      "path": "apps/web/src/workspace-diagnostics-presentation.ts",
+      "gitBlob": "6ce1320bd2e7638222f1b133925d6badca36aad7",
+      "sha256": "3ca4c96303a306e29c84d7a0cc4f1c998b964de35b1dc935e8d5c125b8754ec3",
+      "bytes": 1662
+    },
+    {
+      "path": "apps/web/src/workspace-diagnostics.css",
+      "gitBlob": "248571121759b2b6431b4e33d4dab53dc4d99a7c",
+      "sha256": "5a5e35de0312f6535ce87a40d4105a479a6aa4e6ab751d0a608b64fd8e4ea42b",
+      "bytes": 4605
+    },
+    {
+      "path": "apps/web/src/workspace-diagnostics.tsx",
+      "gitBlob": "e01ed1ba48cff60b119815425d9d7e9109937a5c",
+      "sha256": "92b8a269a2395cd2ddf3eff5134b27ce5c505ee677a8ce9a876a71fff5765c77",
+      "bytes": 8236
+    },
+    {
+      "path": "apps/web/src/workspace-extras.tsx",
+      "gitBlob": "c5b14159f0513ab5b9810321a85a1da137da3b0d",
+      "sha256": "420ce184d3db073cf8942ef8adba6f4438c2952e4eb9161c797f682fe9894a0f",
+      "bytes": 17303
+    },
+    {
+      "path": "apps/web/src/workspace-navigation.tsx",
+      "gitBlob": "96ee87b51d37afc3dae799f427cf4ca66124be53",
+      "sha256": "80eae74a6fd426c01c11c71f98985b77b7b5a9f05ddff0364f5315bd7a45a979",
+      "bytes": 14331
+    },
+    {
+      "path": "apps/web/src/workspace-scope.ts",
+      "gitBlob": "6413d06a1b92c5bcd7112a4e0c1a7c2e91a4ff38",
+      "sha256": "484ddfa00f47ca71ff1bdeb436bf703d8cb1bef917e032fb3138909a4633fa2f",
+      "bytes": 2791
+    },
+    {
+      "path": "apps/web/src/workspace-tabs.tsx",
+      "gitBlob": "b6c4c7b80891364550e086cd1809abdff96c325e",
+      "sha256": "feafb02055173d5a278475abdeedc5e9cc6aa699a1aef2e2bfc07003b00aead3",
+      "bytes": 7580
+    },
+    {
+      "path": "apps/web/src/workspace.css",
+      "gitBlob": "e4d2b0af67b526d5cf374caf2554fbb2eeaa15af",
+      "sha256": "480a2c17a4f1718158232b51ee84af3b794191534063578c848c0004b8b3ebb8",
+      "bytes": 958
+    },
+    {
+      "path": "apps/web/src/workspace.tsx",
+      "gitBlob": "762e9c4e90c195b469aa7a907991427b4545bbe6",
+      "sha256": "bdce2743941a0d99b1c7cf957e0770975a391f21fb69477e32b1a13c08976413",
+      "bytes": 69818
+    },
+    {
+      "path": "apps/web/vite.config.ts",
+      "gitBlob": "5ef804c58d4abdf8ca800279b997d85b9315d57e",
+      "sha256": "405436dc05ec115a0715d0e81a6aa6a171b049c4223a855cae4c35e77794cd9d",
+      "bytes": 531
+    },
+    {
+      "path": "package-lock.json",
+      "gitBlob": "32b1290ba3d907e632b9a33b9c3f56d0d4575ecc",
+      "sha256": "44837d731cadcf0ba0378bfbb50ba2d91b9186bb01360dd3a1220b56a6e0ca50",
+      "bytes": 117995
+    },
+    {
+      "path": "package.json",
+      "gitBlob": "df73b431e2c4d45f4a3b5f910d9c1c7e6f979fb6",
+      "sha256": "f8d6036c9c38311a03d9b9ff567412b7d7c97eec8344dbc6bb514edd243f8ea0",
+      "bytes": 3501
+    },
+    {
+      "path": "packages/core/src/admin-control-types.ts",
+      "gitBlob": "69c504f2219badf36dfa75074a80f306bcf6c67b",
+      "sha256": "fcc67cd36411e56ac9849664db153a6f5abc5f3a9d896f67e1a651e2da75eeb9",
+      "bytes": 478
+    },
+    {
+      "path": "packages/core/src/analyst-prompt.ts",
+      "gitBlob": "a302668db8039ac874bb54792b2e936ad84e91ae",
+      "sha256": "cd1a3ab17ec6319cf86d03a1a5ac011cdd1b0570fc0be09ea09b22958d6bebe6",
+      "bytes": 17464
+    },
+    {
+      "path": "packages/core/src/analytics-connector.ts",
+      "gitBlob": "826b87bcccfe48f44bf65f046b7ea3e5110665d5",
+      "sha256": "9361ef8d00f9f03a9463a0b306dde9cf47c5dc3d7994fb56e00b4ec5c3445a50",
+      "bytes": 5768
+    },
+    {
+      "path": "packages/core/src/answer-checks.ts",
+      "gitBlob": "a12d7b8ba5854af04521ce857ce6ad22887b4dad",
+      "sha256": "2cc2f9853eff291f63d33a98777d412a4e3b208a82ebc27338574edbe8885dab",
+      "bytes": 4158
+    },
+    {
+      "path": "packages/core/src/answer-suggestions.ts",
+      "gitBlob": "5b302bb8a0835a96bc656248111203cb336f8962",
+      "sha256": "a4912351797c1bdb212dad20aa848ffb1c5d2e05d85d2346e59172691b838521",
+      "bytes": 1494
+    },
+    {
+      "path": "packages/core/src/answers.ts",
+      "gitBlob": "ea06147ab0a6bda99944580210a03aa811088ece",
+      "sha256": "8392b7859303f60113fee0c0461532b8f15492839088529342f61f4480e154a7",
+      "bytes": 7920
+    },
+    {
+      "path": "packages/core/src/apify-connector.ts",
+      "gitBlob": "35c0fec016214bbb7ec8c3a351d171fe39191457",
+      "sha256": "36e14eae707825c3b3e415b490a4ec04d5be82b428f8395178163fe3e426fd90",
+      "bytes": 13014
+    },
+    {
+      "path": "packages/core/src/apify-sync.ts",
+      "gitBlob": "24a9b318df348364810620818c291b74d4d800aa",
+      "sha256": "363f9c1d393280ef97c1e9b4af1138fa5bff701003c8dd69119f7ffef9535627",
+      "bytes": 10650
+    },
+    {
+      "path": "packages/core/src/billing-types.ts",
+      "gitBlob": "522c8c9ab621618d817ddc4c479c6d027fb80f0a",
+      "sha256": "32dd12576481439e90b0ab298d2d41a4cfabfc76736f507290a1d7e6b0b5ae96",
+      "bytes": 2312
+    },
+    {
+      "path": "packages/core/src/broker-connections.ts",
+      "gitBlob": "9b5648758d95d0125d80e26fe7e7146e2e10b242",
+      "sha256": "72ec05d108e2155c9d9ec30241985e353d3493332ebd9d28e12883c6d32dafaa",
+      "bytes": 6286
+    },
+    {
+      "path": "packages/core/src/calculation-recovery.test.ts",
+      "gitBlob": "ac730e3b8c543de205b3cb6dc7d685a65bae6954",
+      "sha256": "99eb03928e5d805687607525adb5a1779a8da48c68a86bfe477f1e65c1d1a4e6",
+      "bytes": 11638
+    },
+    {
+      "path": "packages/core/src/care-fixtures.ts",
+      "gitBlob": "6699a719baff78324f446e699a80e2fe702c16c4",
+      "sha256": "848326c15ca0e5a34b938619038c44577b22ca4d41b6e20f7404a9baebe01c5e",
+      "bytes": 14897
+    },
+    {
+      "path": "packages/core/src/care-types.ts",
+      "gitBlob": "5a1a5f61af71cdb38d818c81bcadfd762b21f516",
+      "sha256": "33a1547f9c9ccfa441451c9d7aaecea9be229646d3a3d1f3ba4e074ede02dc97",
+      "bytes": 5115
+    },
+    {
+      "path": "packages/core/src/care.ts",
+      "gitBlob": "f1e44bd63512a2b8a8e252cbcf5ffbd6d41cebda",
+      "sha256": "296097b5ea85781be62a1688f00995083114fd5bcabb514ff88493542743cb6c",
+      "bytes": 45424
+    },
+    {
+      "path": "packages/core/src/connections.ts",
+      "gitBlob": "39d60fe8b6e856ac1e74bef688b3e53f3ad86f08",
+      "sha256": "7be6f225df2f8f03dc84ec2e8774516b406189b01ed6db5d46f705afe4eb26b5",
+      "bytes": 24611
+    },
+    {
+      "path": "packages/core/src/context-budget.test.ts",
+      "gitBlob": "8a3346da69b2f05cae2b321b07bd3be5f863b793",
+      "sha256": "796cdfb143d6e64f98483d1fd656d978214ce6649038888f987bc2e19012a1d7",
+      "bytes": 6666
+    },
+    {
+      "path": "packages/core/src/context-budget.ts",
+      "gitBlob": "a5ddfccd16bdcb80c3f35cade52d202e4dc2cca9",
+      "sha256": "3c3c386ed5b4fb94492517a9c5a418cf185bf2f442ac398e2b3ec653a5120f33",
+      "bytes": 4735
+    },
+    {
+      "path": "packages/core/src/credential-vault.test.ts",
+      "gitBlob": "3de987602db559604a6cf619e532e6e317a66136",
+      "sha256": "ebcf4fd796229408c9b4f248466d800929b2b13395da1a35274d83ec0ab85c87",
+      "bytes": 23878
+    },
+    {
+      "path": "packages/core/src/credential-vault.ts",
+      "gitBlob": "5ecbf2845ac5e3c9bae575f29431af8624f2356e",
+      "sha256": "1097e92556d50f058e40adf43c7d9670e4526832dcf116b3d756745a58d45704",
+      "bytes": 21855
+    },
+    {
+      "path": "packages/core/src/errors.ts",
+      "gitBlob": "da3176cd7e1ab48ca90ab6daf08e60073da17175",
+      "sha256": "c76a392e77850b2df2f576acfc2cd6f3fe63408d03653336488f90633f61ac07",
+      "bytes": 187
+    },
+    {
+      "path": "packages/core/src/file-import.test.ts",
+      "gitBlob": "0ed5b955acc335493d6e252c9b0da59603ce8913",
+      "sha256": "6073d80b77deaebf1fd7fd8fdd38f19e5ee01d2e2d0c5fc87ff8bc098091f74a",
+      "bytes": 10896
+    },
+    {
+      "path": "packages/core/src/file-import.ts",
+      "gitBlob": "5a6135b9f7c8e3fbaebe546e65535e8320f491c1",
+      "sha256": "969bb4b26329dc7b908d53d557f8cfb9837cd056ba016add9760e94ea42156ca",
+      "bytes": 9335
+    },
+    {
+      "path": "packages/core/src/financial-reporting.ts",
+      "gitBlob": "2d05e504368a3dddbebed6f732ab0b4235b4be34",
+      "sha256": "fcbe30c99c559185c018adee047653baba5dee3a89261dac861284170fe7a996",
+      "bytes": 28371
+    },
+    {
+      "path": "packages/core/src/google-drive.ts",
+      "gitBlob": "98edc6525d28d5ac95e7247a230e971f0ec5de1a",
+      "sha256": "c541ec6ed05dcfb300575d076402889d1206a0999436f3390077a5a26c53d685",
+      "bytes": 22840
+    },
+    {
+      "path": "packages/core/src/google-oauth.ts",
+      "gitBlob": "41dacb660e54148cc2cacf801b9448dedb11235f",
+      "sha256": "1a740337166a72b086e4939d7d604f4e6b1579d277319253dde509b44c5873f8",
+      "bytes": 534
+    },
+    {
+      "path": "packages/core/src/grant-registry.ts",
+      "gitBlob": "cc0b393860387179d2ad1734a0db839c80b1731c",
+      "sha256": "ae78e646bbc4e7818a1a7c2d7b67e39ea4126f641dc7d5afeaba5162e5c9ffb5",
+      "bytes": 2235
+    },
+    {
+      "path": "packages/core/src/index.ts",
+      "gitBlob": "43e1e2bc24d1d237dd84c178f4575b4ce8c07f26",
+      "sha256": "3e2ada76b5ccb109ee1ec82e2b4ac8de911f9481ab70fd4ded61fbc2ddea838c",
+      "bytes": 267188
+    },
+    {
+      "path": "packages/core/src/linkedin-connector.ts",
+      "gitBlob": "0a15c1b6c99f6c5fa6940164085b789ea8442831",
+      "sha256": "bed3052e0dc82d70bfcd2dc5c900fa2e034f374f9f5b425880591db8a0403c65",
+      "bytes": 7937
+    },
+    {
+      "path": "packages/core/src/mailchimp-connector.ts",
+      "gitBlob": "be50be2d970a95461a629573be46c01d17bc6eab",
+      "sha256": "a5202a4e4f092d50c619d439dcca86a8fa805d07b18b0360293f454bb11e871e",
+      "bytes": 5648
+    },
+    {
+      "path": "packages/core/src/meta-connector.ts",
+      "gitBlob": "bec4556ca629f05f34c352ec3df56467712dc845",
+      "sha256": "f4b9075ab52d3330576ce401dc565f600ddf3fb7a370fe6a381748d2b9411b31",
+      "bytes": 30021
+    },
+    {
+      "path": "packages/core/src/oauth.ts",
+      "gitBlob": "04a9e8e6c8eab173b5ff1cd9d60b2caa0c078807",
+      "sha256": "67d0241243de262236685ddde26ede55b584587bb33c64c9511113f2513b0d07",
+      "bytes": 35565
+    },
+    {
+      "path": "packages/core/src/organization-types.ts",
+      "gitBlob": "c504466a2f942494ebac9b8f9e4c7bfe8f447807",
+      "sha256": "9dac2648c82aa173494091123371998646cf00f92789d008a1778dc33dce4cb3",
+      "bytes": 2834
+    },
+    {
+      "path": "packages/core/src/projects.ts",
+      "gitBlob": "ca82b6f29d4bc6f104e39b10f8c59c8dddcd7aa1",
+      "sha256": "246a442a2ccf695bb155629bcaad33d3cc099fb894aeb3dc1f58865a397c4225",
+      "bytes": 3890
+    },
+    {
+      "path": "packages/core/src/provider-reader.ts",
+      "gitBlob": "5e84959dcf8cdabbaed72c982432f9488f9f7503",
+      "sha256": "25ac37c161a6684021abaac22f3d2891c247170675011559748841d28eee8f94",
+      "bytes": 4391
+    },
+    {
+      "path": "packages/core/src/provider.test.ts",
+      "gitBlob": "14966b2f8543c3552b34d59a51df1144b67d0ce7",
+      "sha256": "d36c6fb1c692dc5cbc90704ecef4b6267502a57ad7eb94ea82f37bca5b1b6d51",
+      "bytes": 25922
+    },
+    {
+      "path": "packages/core/src/provider.ts",
+      "gitBlob": "33f8fa44e005a927b7e8e65bd4db1b1c4e013821",
+      "sha256": "98d47e28763fe9ce46d20b587d71c43e48ec5d170a0608026f193a8fa909b0ba",
+      "bytes": 20084
+    },
+    {
+      "path": "packages/core/src/report-email.ts",
+      "gitBlob": "48bce9ce846692e56a4d52d4245cbcf6cd3bb942",
+      "sha256": "9ab89468948dfddaae5729620ad72aa6580be72310e44093bc6a411bd558d8ad",
+      "bytes": 42202
+    },
+    {
+      "path": "packages/core/src/reporting-analysis.ts",
+      "gitBlob": "b4ce04734a5c3aca4f471ec7e163cca5e49a841e",
+      "sha256": "5e5687f6a278c9bd6632817d3900c4503f82445f3dc29167e540c5b1f188eff3",
+      "bytes": 9914
+    },
+    {
+      "path": "packages/core/src/reporting.ts",
+      "gitBlob": "21b2147cafd00cda77158e5633378a1f2d1cd763",
+      "sha256": "89a74dfa1b739dcb19b27a87dd6fae0219b9d248506be47e7f73033a1f3b8c0b",
+      "bytes": 13185
+    },
+    {
+      "path": "packages/core/src/response-mode.ts",
+      "gitBlob": "d5b938e9ba0fd2810531f051b9198a3318be38b6",
+      "sha256": "cb7b2723716cdc451c0fb48fd3ef7a947025a15a1966762f072daf57cd2bd5da",
+      "bytes": 1512
+    },
+    {
+      "path": "packages/core/src/saved-report.ts",
+      "gitBlob": "06c6dabdb4bdf81c52c74865432934374c3a9182",
+      "sha256": "85d553861bbb05c85bd882ba8b04e95dc7cfa5d8a39bb00b36bc51d9b04b236d",
+      "bytes": 352
+    },
+    {
+      "path": "packages/core/src/schedule-dispatch.ts",
+      "gitBlob": "de7aa90153eb64b024cfb8b2cee504aa773f3aa4",
+      "sha256": "a5513978e239c9f5f7f467b7b672a20c8975a265819c1987f0b77d8c833bd782",
+      "bytes": 1720
+    },
+    {
+      "path": "packages/core/src/shared-tabular.ts",
+      "gitBlob": "73cf5d29a69350331f71b1b05691f38a17921d03",
+      "sha256": "06f4289d6fd34297f0628b75eb5f28af937aa94497febd1d43b458c3b5f0f9ca",
+      "bytes": 7344
+    },
+    {
+      "path": "packages/core/src/sharing-types.ts",
+      "gitBlob": "e8223f055c779d09e2d3a01570f34fa546f67089",
+      "sha256": "b858ca139344fa7c6655724571ec948f267533204f36b381092650c71be4f6a6",
+      "bytes": 640
+    },
+    {
+      "path": "packages/core/src/social-analysis.ts",
+      "gitBlob": "0f4a025050e4c23c64dd1ba8cd4f715d464a7e5b",
+      "sha256": "e1fece8fae7123ef1226b30bed8b452e2a2a5287b2c4f446e7ff9888d641c62b",
+      "bytes": 1722
+    },
+    {
+      "path": "packages/core/src/social-datasets.ts",
+      "gitBlob": "69cb347f15b28c73e7617251f52c59f5c2068e8a",
+      "sha256": "7083fe57bc36a41271153a00e08572f38d56c5b7946c3eb46ecf8f3a0a5ed65d",
+      "bytes": 21362
+    },
+    {
+      "path": "packages/core/src/source-analysis.ts",
+      "gitBlob": "4d16ddf01b577a6bd73b0e6af8d845c06785dae6",
+      "sha256": "2490afa4ac2d4a76ac32bd1bbc444277dffa1ac600224ab2d3ed820dda85c586",
+      "bytes": 7816
+    },
+    {
+      "path": "packages/core/src/source-scope.test.ts",
+      "gitBlob": "e431fd044a70320eee2a6883126e042da07db139",
+      "sha256": "473a215c3bde8b0797f5206b620a981d22b1bfbcd30a39416655e862937246d4",
+      "bytes": 26015
+    },
+    {
+      "path": "packages/core/src/source-scope.ts",
+      "gitBlob": "696b2b7bdf785a19a5e598a1e62ad42ed5164059",
+      "sha256": "cbfd11844811819dbab7813ee47f1edf640e914a991624fc35ced0c271cb5289",
+      "bytes": 4605
+    },
+    {
+      "path": "packages/core/src/source-table.ts",
+      "gitBlob": "507d25352b7b62ec1b65b395094c38ee05f0f738",
+      "sha256": "a3ea4bf30d1eb5f5734d6081e98eae2a940856236c83f96afec13ca52bf675e4",
+      "bytes": 1516
+    },
+    {
+      "path": "packages/core/src/sources.ts",
+      "gitBlob": "9e81637b50f63f9e959a6e14b5fa823cb49ea3fb",
+      "sha256": "40f2b4c7b5b7b33e937e2bdbad8c8cdea4082d4dfed35b00ba57259b78501a3b",
+      "bytes": 4661
+    },
+    {
+      "path": "packages/core/src/sync-dispatch.ts",
+      "gitBlob": "2c9fdf50ab60cb3a5e046407b5980523efa02530",
+      "sha256": "16bf867404a52327b8b035660bc81830b74f12adb8366bedb649ca03081c18c0",
+      "bytes": 44118
+    },
+    {
+      "path": "packages/core/src/sync-jobs.ts",
+      "gitBlob": "6eb754fc0a9532fc7cd5adea3b94ee3829c984c8",
+      "sha256": "4e463d2b37c7fd7eda2d1155be0af6ce338899031c7bd4a0baed553a21cf06da",
+      "bytes": 23791
+    },
+    {
+      "path": "packages/core/src/tabular-combined-source.ts",
+      "gitBlob": "f9d2834c614a773f475b57b362b10289a9561ac2",
+      "sha256": "ad018b17286b578f5df1b53f1b76d2f4dc1903cf753ca5ce4a6d34c3129d2df9",
+      "bytes": 1465
+    },
+    {
+      "path": "packages/core/src/tabular-datasets.ts",
+      "gitBlob": "48461c78777d137545ea3d43f75c32f814262e2b",
+      "sha256": "191379c1f04a9b2501c1d40024f4e21852467447411ff7cae7e0e2a87732cdf7",
+      "bytes": 29776
+    },
+    {
+      "path": "packages/core/src/tabular-followup.ts",
+      "gitBlob": "980b1ad22c4354c73c4f5e9ed20fd0e2a7db8bda",
+      "sha256": "f3544ae0dbd1b1795cd9f37e3fe68e1431bd54dd12506f6b806173bba343e435",
+      "bytes": 13391
+    },
+    {
+      "path": "packages/core/src/tabular-narrative.ts",
+      "gitBlob": "c3112826bbe2190bd15f5fdc4a9aa26640b1ba22",
+      "sha256": "cbb04bc0db36d8ca81204e5a47d41ea7afab5e47e0a095f30b0f63b2a4619762",
+      "bytes": 12547
+    },
+    {
+      "path": "packages/core/src/tabular-ranked-scope.ts",
+      "gitBlob": "b077addb4142d0ae9878dc021ae73bed8f080229",
+      "sha256": "ac6ef280adf85c028b4cfdd7587ac134edf4d3e9dcf3dc98b9816c42716ec8ca",
+      "bytes": 5459
+    },
+    {
+      "path": "packages/core/src/tabular-supplied-rate.ts",
+      "gitBlob": "d1fcc1d5ea0fc932da6d161d937ec725ff5b7dc0",
+      "sha256": "fc87fdd45539b4876c1159c3f75a6635f94b19005432eba355d18a327a45d40b",
+      "bytes": 5687
+    },
+    {
+      "path": "packages/core/src/tabular-validation.ts",
+      "gitBlob": "83acc8ae1f41fd6090d1bec861f0385550e81a91",
+      "sha256": "949960ff58840e234e733bc1d31fd636d83632894e49e056fe6254d67379ebc3",
+      "bytes": 1356
+    },
+    {
+      "path": "packages/core/src/types.ts",
+      "gitBlob": "39cc8f9fcdbc00c3f04382166ee6c4681b8cd040",
+      "sha256": "57b95d6f6647c907f994f867958e9e07aa999b1e6ae366bdc7ae8651d1f9dde4",
+      "bytes": 7490
+    },
+    {
+      "path": "packages/core/src/usage-admin-types.ts",
+      "gitBlob": "4591e8a2fdf123d259105b7c1372e1155bd279b7",
+      "sha256": "08ddb067ff8a292fb7b31c42e382c68d03c7f7e69bdf3c48a54b88b19f2dbc49",
+      "bytes": 1294
+    },
+    {
+      "path": "packages/core/src/weekly-review-email-runtime.ts",
+      "gitBlob": "8f01d71dc596da97977d8e92ac3cc3685f5ef5fa",
+      "sha256": "6d7b99a7ff5d80154215e07fbec331c17a1a0d154f59f700c9eb77e00b101216",
+      "bytes": 8880
+    },
+    {
+      "path": "packages/core/src/weekly-review.ts",
+      "gitBlob": "fd15f451779de19edac66612166c8390dfb5a78d",
+      "sha256": "bc5ec559c0e7ad1c5335d1bf9bf12c833a1a3c52c9c6720ae625903eb6ee1d08",
+      "bytes": 8241
+    },
+    {
+      "path": "packages/core/src/windsor-connector.ts",
+      "gitBlob": "3ecb09482d038306554f786890cfa932ba66468c",
+      "sha256": "9b710425f19f6b73cf6e6b2feb27f129e9caa70bc942c4804ffcc727a15f94e5",
+      "bytes": 6538
+    },
+    {
+      "path": "packages/core/src/windsor-rows.ts",
+      "gitBlob": "309045a13e142ff255b205e5d2b0a7b45ca7d658",
+      "sha256": "35c5cdd207e58f3f2b0c11de779f74d0d6c6904010ef1863239bbd0c1c3d2310",
+      "bytes": 2599
+    },
+    {
+      "path": "packages/core/src/windsor-sources.ts",
+      "gitBlob": "622391190f80f0f5715638cea5babb1b89ec7407",
+      "sha256": "4e83f484577d7b60114bb1ba869eb49a68f975c33b37be51f4a1fbc0599fbb9d",
+      "bytes": 3814
+    },
+    {
+      "path": "packages/core/src/workflow-schedules.ts",
+      "gitBlob": "a5ad0ba563509ab2698acd050891184ddcc81b88",
+      "sha256": "42347d2fd22d2c078d75459b3c880191354ff5bcb8883f6a84d0377f19434f9f",
+      "bytes": 23159
+    },
+    {
+      "path": "packages/core/src/workflows.ts",
+      "gitBlob": "62487c47e54bcef5220b0772285b795fc9915428",
+      "sha256": "c0c78863276645d4c382fd92619c5877192ca552fd0cce634eb70b87a011ab82",
+      "bytes": 3214
+    },
+    {
+      "path": "packages/core/src/workspace-diagnostics.ts",
+      "gitBlob": "e69ee2daeb697fe0398c29e53dc28cedc33f85fa",
+      "sha256": "6e772978ecbda5825b6b7c8bf3af5009c071704b35a797d427f81866481448aa",
+      "bytes": 716
+    },
+    {
+      "path": "packages/core/src/youtube-connector.ts",
+      "gitBlob": "21d2fbc07b4060a63b10e932aed95dc3ce4ec226",
+      "sha256": "9b71f9e34b64b7c6e4f544a464a7be1f29799fe14c22f94a55c08560bf32f3a6",
+      "bytes": 12278
+    },
+    {
+      "path": "packages/core/src/youtube-revalidation-jobs.ts",
+      "gitBlob": "01e0892380ba162c6e1fc21b7d4099b2d1433263",
+      "sha256": "26d7248fe7baf8c419eb1287b44909c8829a3c2422d3233a7fc2751184877fcb",
+      "bytes": 8853
+    },
+    {
+      "path": "packages/data-layer/src/adapters/apify-dataset.ts",
+      "gitBlob": "b9fe342b53fddceb13fae89f291c0b1993890d30",
+      "sha256": "43cecd4bddbf08574a634074086462fbee5bd20b78f1059b177927db2a6f5165",
+      "bytes": 8207
+    },
+    {
+      "path": "packages/data-layer/src/adapters/csv-source.ts",
+      "gitBlob": "47b1d0c6e5f79017ac3cb7d965bf5620a839312f",
+      "sha256": "2bab8207201a4eb3e3544bd6e4b8688fbc09dc6e05b7d5861ffb69581b1c99d2",
+      "bytes": 2562
+    },
+    {
+      "path": "packages/data-layer/src/adapters/meta-graph.ts",
+      "gitBlob": "18f7728d3cf3bcf7b66bde789676583fe4fbf51c",
+      "sha256": "15ff2b84bdd4605de1d4bd47d8ba8611ace166c851e1d7973c55cb8311857c2a",
+      "bytes": 12019
+    },
+    {
+      "path": "packages/data-layer/src/adapters/provider-table.ts",
+      "gitBlob": "a022078dfe1c110b5245e93b754e81966e2e168a",
+      "sha256": "6a426eaa9eb63225e600dcfc5fb3f3b8396e219e965af7a31ab8494c694d0337",
+      "bytes": 3836
+    },
+    {
+      "path": "packages/data-layer/src/adapters/youtube.ts",
+      "gitBlob": "96c711ca7e4bb35b52ab613b2522d7c8e4466cfc",
+      "sha256": "8a684798ae9a08c7cff476765ef5b3277667846d197d2c734b71dc3823e447c3",
+      "bytes": 3213
+    },
+    {
+      "path": "packages/data-layer/src/batch.ts",
+      "gitBlob": "9de7efb8ad08b80feddf35e9a16dc1b30828c257",
+      "sha256": "bba06c8e05afd0cd91fc9c025206a9626c114765774f050a5b38a42bd4782328",
+      "bytes": 2712
+    },
+    {
+      "path": "packages/data-layer/src/csv.test.ts",
+      "gitBlob": "095ca2e22ed135df67cc6ba1c3efff5d9bed32e2",
+      "sha256": "cb72437696a08c95fd0ac748a5fcff53bf178b8328f3d90ceca35f08f3aeecd9",
+      "bytes": 2406
+    },
+    {
+      "path": "packages/data-layer/src/csv.ts",
+      "gitBlob": "69f1e29f5f7cf599728ce2d11b34d2c9f0e07672",
+      "sha256": "252dbd2fb3a8d829956e8e974fc9cd8ebec623eb37d6fecc77e3b57167651fae",
+      "bytes": 4184
+    },
+    {
+      "path": "packages/data-layer/src/errors.ts",
+      "gitBlob": "272664d63d00c665355a2027a87d7e3f13247590",
+      "sha256": "b3e41fe9f29bc640151966ea9d1e231960608704669085edb70caad90c97df27",
+      "bytes": 946
+    },
+    {
+      "path": "packages/data-layer/src/hash.ts",
+      "gitBlob": "dfcba63ce3488e7739943205099f75b8c220d535",
+      "sha256": "4a53c6d0dd13a68e9aea6f1eb8e1ca7f900c2dc2c943327780cf0e9144dc3ae9",
+      "bytes": 990
+    },
+    {
+      "path": "packages/data-layer/src/index.ts",
+      "gitBlob": "f3e1e9bfebe78b920f0126ea1aed7eb28b0d9a2f",
+      "sha256": "95711ebd9ef2376d1af8f4c2741f9f804a23867ad76130d4a89103e085b9a0e4",
+      "bytes": 2849
+    },
+    {
+      "path": "packages/data-layer/src/integrations/core-financial.ts",
+      "gitBlob": "6c46cd82c2062162406ba88afa21c779ebb8b883",
+      "sha256": "474ebc2d795e1eef2163d4e15a22da32580f5ccb94a785843f1f39d8075cefd8",
+      "bytes": 693
+    },
+    {
+      "path": "packages/data-layer/src/labels.ts",
+      "gitBlob": "aef4236f8011ce0540af0750a4049eaafc78d268",
+      "sha256": "347845c0bf63ed21d7ac6da4f473f08aeade3dd1b5d3ab6741f8aff04514661d",
+      "bytes": 1368
+    },
+    {
+      "path": "packages/data-layer/src/normalize/financial.ts",
+      "gitBlob": "baa14304e714152663e59a9fbcab35df7b04e197",
+      "sha256": "ab6290f033cca468bcfdf97e9bb51f1b6f4bca61b509fe506348577a9bdef5b5",
+      "bytes": 3372
+    },
+    {
+      "path": "packages/data-layer/src/normalize/social.ts",
+      "gitBlob": "4a34883799c28cc6dca86ea446efde4141cc7412",
+      "sha256": "4272b56862b0d685961eabe121c7cecc6e4e34220e0b1be72fc661ed7e0ac081",
+      "bytes": 9169
+    },
+    {
+      "path": "packages/data-layer/src/ports.ts",
+      "gitBlob": "b883dc569be06fb080483f2a8fcf53b39e797141",
+      "sha256": "4afb83b022c765158618012df4a2ab071d1ac4e8d17ec140567aa825637508f5",
+      "bytes": 969
+    },
+    {
+      "path": "packages/data-layer/src/query/financial.ts",
+      "gitBlob": "d5f185f758b21eb0632b2f6e5effde3c284fb2f4",
+      "sha256": "58efb116410c128feb463e57c2847032de06295ead62e99b9e83fb0d5db1e98b",
+      "bytes": 5323
+    },
+    {
+      "path": "packages/data-layer/src/query/social.ts",
+      "gitBlob": "55b3f702d201d32cbef4444eb79c5cd94f4a665a",
+      "sha256": "56795684bc8b013e072decf1f418b6db7db8621e2ce7ba709afe61c90583a855",
+      "bytes": 11939
+    },
+    {
+      "path": "packages/data-layer/src/receipts.ts",
+      "gitBlob": "59df681a834a1df867154078d228670691ad41af",
+      "sha256": "0567361451b59c752b6cfe086bcbd6f8dd88208ce2a57955e2a24a549d044f1e",
+      "bytes": 3305
+    },
+    {
+      "path": "packages/data-layer/src/source-review.ts",
+      "gitBlob": "406c7a63c28fa8dcd7826658ab8692ed66cbf7d6",
+      "sha256": "267ab7cb16f9eb1ccc0bccdbd104d1a36636be66546a3f2f51012d2335b3aac0",
+      "bytes": 6815
+    },
+    {
+      "path": "packages/data-layer/src/source-semantics.test.ts",
+      "gitBlob": "a555461b78681b6e805a807033e9930bd82b98a4",
+      "sha256": "a4ca70c9427c223e8d64cd230cdbd7a707081d0650de10e4c7c9e3e448d45d57",
+      "bytes": 20926
+    },
+    {
+      "path": "packages/data-layer/src/source-semantics.ts",
+      "gitBlob": "32071f95b12ac6e2fe83e405cdc57997d3e775b8",
+      "sha256": "c665103db16d86f70ab6fd4f09e7effe9ac606d5c7950e9cbfca0152d30cbfab",
+      "bytes": 23739
+    },
+    {
+      "path": "packages/data-layer/src/store.ts",
+      "gitBlob": "93cd12367d2003ed72a3f2f7e7e831696d26a372",
+      "sha256": "c08a6829e742b25e2cae5583a6441ccc69fa24ff2d8d8cd4b48f889ac766d7e5",
+      "bytes": 17199
+    },
+    {
+      "path": "packages/data-layer/src/sync.ts",
+      "gitBlob": "82e34237f47e919bba233628a8f89a05d2064b9d",
+      "sha256": "68684c0f9b8e68b7d6d52ad6c977f289ac7ffe7c4c4ab3276c111f3932cd6436",
+      "bytes": 4938
+    },
+    {
+      "path": "packages/data-layer/src/tabular-filters.test.ts",
+      "gitBlob": "7e2632c7de125fe99cc359b04665384644075bd5",
+      "sha256": "5ef204663cc5894abbd3f14df64487ad4514a4d5a00691e0278af73a82f7ed4b",
+      "bytes": 9783
+    },
+    {
+      "path": "packages/data-layer/src/tabular-labels.test.ts",
+      "gitBlob": "3e5189daf1c91e160baa97e8390cd27c65dcd861",
+      "sha256": "7e401feed3612abf2b20ac475442e77d56d7e6fde827d4791847724a8d6979c4",
+      "bytes": 1968
+    },
+    {
+      "path": "packages/data-layer/src/tabular-ranking.test.ts",
+      "gitBlob": "9c2baf16674c71fcec98b1a5eec623055ffdf785",
+      "sha256": "e798e6cf299825f87b153095c1ea1f8f18176c32b9783a47543c4b64a3fe1137",
+      "bytes": 8791
+    },
+    {
+      "path": "packages/data-layer/src/tabular/analyze.ts",
+      "gitBlob": "d5a6e1fc07df723458d77803c21b44177630b180",
+      "sha256": "7a93a8edbc12debcb8f0699e5ca8cc5d842c88fdfd5243d6b222329877c5be4c",
+      "bytes": 18672
+    },
+    {
+      "path": "packages/data-layer/src/tabular/evidence.ts",
+      "gitBlob": "5053216b2ce4957692f6f8bfc36726f812dabef2",
+      "sha256": "adef68d96acb306582fac7890a52ac76f2ee6781f9adeb6c20f99a76523ada5c",
+      "bytes": 1646
+    },
+    {
+      "path": "packages/data-layer/src/tabular/export.ts",
+      "gitBlob": "620f904354881bd36d9cbd33078497966f0e1035",
+      "sha256": "ef8cafe9a56ae9c80609b06f503376ec683576eaac6c310d6d993a266bc8c3b4",
+      "bytes": 973
+    },
+    {
+      "path": "packages/data-layer/src/tabular/index.ts",
+      "gitBlob": "db50e7bc90adfd4b1fc35eeaad473e58eb0aa7a8",
+      "sha256": "f18c6bca8f537871aca66ec5956a7d7f3115345066c4c28ca441769d32b4b6ff",
+      "bytes": 285
+    },
+    {
+      "path": "packages/data-layer/src/tabular/input.ts",
+      "gitBlob": "c4409ae469df006f3af87637cf8de21f400d8ac3",
+      "sha256": "08e6f9313d20970eddd4abbff2366d134100a27dfc21d2e1796cd129867e701e",
+      "bytes": 6620
+    },
+    {
+      "path": "packages/data-layer/src/tabular/labels.ts",
+      "gitBlob": "f6d94caaf8703265f7c1c32efe3f214f8157c20f",
+      "sha256": "cb47c7b4036021fde93eff9a064130152ceb9e634d89f51af640eddd2e99ca1c",
+      "bytes": 723
+    },
+    {
+      "path": "packages/data-layer/src/tabular/normalize.ts",
+      "gitBlob": "e7f6dd26cf7f7ec347236067b50c2600f5acb512",
+      "sha256": "93b2aa8f35883a31a566eb333fd44bac229e2fe24c2b41227c1e1867bd7340d4",
+      "bytes": 8221
+    },
+    {
+      "path": "packages/data-layer/src/tabular/post-presentation.ts",
+      "gitBlob": "2856115dae61a348f888a76f7b6e53d7d666911a",
+      "sha256": "f7090a84ef96909942a1e51b53b120eb0433bb4839fdcbfee11728de0428291d",
+      "bytes": 5705
+    },
+    {
+      "path": "packages/data-layer/src/tabular/provider-metrics.ts",
+      "gitBlob": "c31109b1c6c5f6973ff2a3aff8492219502b0ec5",
+      "sha256": "b746eb9e3e62e5c2c03a6bf57ff9fe2a0b5407321cacca17506aa59f47b9e7d4",
+      "bytes": 2454
+    },
+    {
+      "path": "packages/data-layer/src/tabular/types.ts",
+      "gitBlob": "8683f210d0dfa139f8b0e497b50455510dd427eb",
+      "sha256": "5fa5c3cb12b1503a8ddcb6c315026e25f08ede4f9b8755ebb4342f2fc3162b23",
+      "bytes": 7493
+    },
+    {
+      "path": "packages/data-layer/src/types.ts",
+      "gitBlob": "e99acc810dd27b5d5a72751eee9a825d64c8cafe",
+      "sha256": "7741b0468d2397c9edc61d687b2b2baaa3308aaa24b41ca3c77a58dccb02de35",
+      "bytes": 5858
+    },
+    {
+      "path": "packages/presentation/src/answer-export.ts",
+      "gitBlob": "ca3acf608e94c9ee59853c9d0aaad8af648738de",
+      "sha256": "f601feb339c368f37e50c207071a8d89463bbb119ca4b4bb625a532da6e24146",
+      "bytes": 3466
+    },
+    {
+      "path": "packages/presentation/src/financial-analysis.ts",
+      "gitBlob": "1516d9944ec1df1ae6fe8ea42a1c21a0163af91b",
+      "sha256": "bd94470a73c17ef9eff4cea4f2e07b065cfa05edeaf398de592c7e300c60f557",
+      "bytes": 8673
+    },
+    {
+      "path": "packages/presentation/src/post-markdown.ts",
+      "gitBlob": "fe93fed0c66f79ed4ec530e583aa7b2c67ea1fac",
+      "sha256": "54d650a0f8542d48cc6ebd502ffca13e67e018dd8126f54e7fbfc5d7407720a3",
+      "bytes": 1584
+    },
+    {
+      "path": "packages/presentation/src/source-chart.ts",
+      "gitBlob": "763bf049096d259c443543938b845752f401945a",
+      "sha256": "ec09f2d8a961d46f638a3c21b1183b2f95aa00c2bf2a9613b8136bc3d02ceb14",
+      "bytes": 6737
+    },
+    {
+      "path": "packages/presentation/src/tabular-chart.ts",
+      "gitBlob": "19dcdd397f1907e2b2a2e296b6c8a83eb406ab2a",
+      "sha256": "a77c9be29f9c9f2c8e8292778f932f0c23f83c52a01e43214a0183995c23024c",
+      "bytes": 18450
+    },
+    {
+      "path": "packages/presentation/src/tabular-echarts.ts",
+      "gitBlob": "87a2b4af88dd7daa3f3bfa200229194277bb69e4",
+      "sha256": "f639f5571b3cf1c455d9fd186d12bb7d843b6bae3adfb284248d38620bb6a50b",
+      "bytes": 1582
+    },
+    {
+      "path": "packages/presentation/src/tabular-interpretation.ts",
+      "gitBlob": "66c805fb1ee9956cdaf8bf965d1c31ff2bdb56ec",
+      "sha256": "184792aefe0afe0b1a0f8f87269e3e8969bf1f231e8a6c8df7aeb98966af738e",
+      "bytes": 3919
+    },
+    {
+      "path": "packages/presentation/src/tabular-report.ts",
+      "gitBlob": "219e833e811fb4e3b2d2d794e360aba45b59780c",
+      "sha256": "1d73bf22f02478091f221999431189875bb7209f87faa92f4603d2b7a5fe0f38",
+      "bytes": 2157
+    },
+    {
+      "path": "packages/presentation/src/visual-analysis.ts",
+      "gitBlob": "07617aa8d5fa873cab6d5a5000f067cd44be85dd",
+      "sha256": "8dfcc0be6bd41a22830378d1dba8b2fc657868b54b4695a0e771a07497d8f79a",
+      "bytes": 2438
+    },
+    {
+      "path": "packages/presentation/src/weekly-review-email.test.ts",
+      "gitBlob": "f8345aa73c72077075849122d2d957854894b716",
+      "sha256": "1fa87e3585bcd1485a8b47f670df6ada95959ba78caeb566346363ee576c1f6f",
+      "bytes": 52411
+    },
+    {
+      "path": "packages/presentation/src/weekly-review-email.ts",
+      "gitBlob": "e25b4feba5634ea4799473c8e882629bf1ff8667",
+      "sha256": "88a4d7f4976f2086a1bcbfd0c53661527514efc6a9a016659aa035573eb6b44a",
+      "bytes": 26071
+    },
+    {
+      "path": "scripts/desktop-main.test.mjs",
+      "gitBlob": "f1d65ba91814f1a912e83c79f8020cc48b01b910",
+      "sha256": "fe7eaaed4935b0bfd6d30731c58d9ee5192352c300ecf44e7a3dbfaca7389a74",
+      "bytes": 9391
+    },
+    {
+      "path": "scripts/desktop-runtime.test.mjs",
+      "gitBlob": "d07d428265510fdfac1c930829a74c095ba25d75",
+      "sha256": "f4a14888551ec6b06dc07542f9ded25aa82870ec4addc64c6bad56cca5271405",
+      "bytes": 10570
+    },
+    {
+      "path": "scripts/desktop-setup.test.mjs",
+      "gitBlob": "cf75ac842cd824cac31b761ad283cb54433fc00b",
+      "sha256": "cc83c3e5b0ba9afdf518468064152e2201ea31d17bde1ae4ab7b1b0780715118",
+      "bytes": 11334
+    },
+    {
+      "path": "scripts/package-desktop.mjs",
+      "gitBlob": "3e88f83d5197fc8b654fb3e08221e508839433c6",
+      "sha256": "4720144ca3325326307318c183710bf51ae8e69bbaeb676313ebae950d466de7",
+      "bytes": 23703
+    },
+    {
+      "path": "scripts/package-desktop.test.mjs",
+      "gitBlob": "dc706fda404790783ce061d39e18318e87a866f0",
+      "sha256": "bf46c5bdc569fe5689afc26365fe45b752c393dc7b432cef513bffaaaa8f1cec",
+      "bytes": 18251
+    },
+    {
+      "path": "tsconfig.json",
+      "gitBlob": "c5a5362aec408841bd129daa50ae3e822794e91d",
+      "sha256": "ef958d993be5c46ff6d4beecf4af9941bf1e3fd2351e50faa92408e0f0b816e4",
+      "bytes": 455
+    }
+  ],
+  "importGraph": {
+    "apps/server/src/index.ts": [
+      "packages/core/src/google-drive.ts",
+      "packages/core/src/index.ts",
+      "apps/server/src/http.ts",
+      "apps/server/src/desktop-access.ts",
+      "packages/core/src/care.ts",
+      "packages/core/src/care-fixtures.ts",
+      "apps/server/src/organizations-http.ts",
+      "apps/server/src/meta-config.ts",
+      "apps/server/src/apify-config.ts",
+      "apps/server/src/source-provider-config.ts",
+      "apps/server/src/report-email-sender.ts",
+      "packages/core/src/report-email.ts",
+      "packages/presentation/src/weekly-review-email.ts"
+    ],
+    "packages/core/src/google-drive.ts": [
+      "packages/core/src/errors.ts",
+      "packages/core/src/oauth.ts",
+      "packages/core/src/types.ts"
+    ],
+    "packages/core/src/errors.ts": [],
+    "packages/core/src/oauth.ts": [
+      "packages/core/src/errors.ts"
+    ],
+    "packages/core/src/types.ts": [
+      "packages/core/src/social-analysis.ts",
+      "packages/core/src/tabular-datasets.ts",
+      "packages/core/src/reporting-analysis.ts",
+      "packages/core/src/financial-reporting.ts",
+      "packages/core/src/source-analysis.ts",
+      "packages/core/src/answers.ts",
+      "packages/core/src/workflow-schedules.ts",
+      "packages/core/src/reporting-analysis.ts",
+      "packages/core/src/financial-reporting.ts"
+    ],
+    "packages/core/src/social-analysis.ts": [
+      "packages/data-layer/src/normalize/social.ts",
+      "packages/data-layer/src/query/social.ts"
+    ],
+    "packages/data-layer/src/normalize/social.ts": [
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/types.ts"
+    ],
+    "packages/data-layer/src/errors.ts": [],
+    "packages/data-layer/src/types.ts": [],
+    "packages/data-layer/src/query/social.ts": [
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/labels.ts",
+      "packages/data-layer/src/receipts.ts",
+      "packages/data-layer/src/normalize/social.ts",
+      "packages/data-layer/src/types.ts"
+    ],
+    "packages/data-layer/src/labels.ts": [],
+    "packages/data-layer/src/receipts.ts": [
+      "packages/data-layer/src/hash.ts",
+      "packages/data-layer/src/labels.ts",
+      "packages/data-layer/src/types.ts"
+    ],
+    "packages/data-layer/src/hash.ts": [],
+    "packages/core/src/tabular-datasets.ts": [
+      "packages/data-layer/src/batch.ts",
+      "packages/data-layer/src/store.ts",
+      "packages/data-layer/src/sync.ts",
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/tabular/index.ts",
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/data-layer/src/tabular/provider-metrics.ts",
+      "packages/data-layer/src/types.ts",
+      "packages/data-layer/src/tabular/post-presentation.ts",
+      "packages/data-layer/src/source-semantics.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/tabular-validation.ts",
+      "packages/core/src/tabular-ranked-scope.ts",
+      "packages/core/src/tabular-supplied-rate.ts",
+      "packages/core/src/types.ts",
+      "packages/core/src/youtube-revalidation-jobs.ts"
+    ],
+    "packages/data-layer/src/batch.ts": [
+      "packages/data-layer/src/hash.ts",
+      "packages/data-layer/src/types.ts"
+    ],
+    "packages/data-layer/src/store.ts": [
+      "packages/data-layer/src/hash.ts",
+      "packages/data-layer/src/batch.ts",
+      "packages/data-layer/src/types.ts"
+    ],
+    "packages/data-layer/src/sync.ts": [
+      "packages/data-layer/src/batch.ts",
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/store.ts",
+      "packages/data-layer/src/types.ts"
+    ],
+    "packages/data-layer/src/tabular/index.ts": [
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/data-layer/src/tabular/input.ts",
+      "packages/data-layer/src/tabular/normalize.ts",
+      "packages/data-layer/src/tabular/analyze.ts",
+      "packages/data-layer/src/tabular/export.ts"
+    ],
+    "packages/data-layer/src/tabular/types.ts": [],
+    "packages/data-layer/src/tabular/input.ts": [
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/hash.ts"
+    ],
+    "packages/data-layer/src/tabular/normalize.ts": [
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/hash.ts",
+      "packages/data-layer/src/tabular/input.ts",
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/data-layer/src/tabular/provider-metrics.ts"
+    ],
+    "packages/data-layer/src/tabular/provider-metrics.ts": [
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/tabular/input.ts",
+      "packages/data-layer/src/tabular/types.ts"
+    ],
+    "packages/data-layer/src/tabular/analyze.ts": [
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/tabular/input.ts",
+      "packages/data-layer/src/tabular/normalize.ts",
+      "packages/data-layer/src/tabular/evidence.ts",
+      "packages/data-layer/src/tabular/labels.ts",
+      "packages/data-layer/src/tabular/provider-metrics.ts",
+      "packages/data-layer/src/tabular/types.ts"
+    ],
+    "packages/data-layer/src/tabular/evidence.ts": [
+      "packages/data-layer/src/tabular/types.ts"
+    ],
+    "packages/data-layer/src/tabular/labels.ts": [
+      "packages/data-layer/src/tabular/types.ts"
+    ],
+    "packages/data-layer/src/tabular/export.ts": [
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/data-layer/src/tabular/labels.ts",
+      "packages/data-layer/src/tabular/post-presentation.ts"
+    ],
+    "packages/data-layer/src/tabular/post-presentation.ts": [
+      "packages/data-layer/src/tabular/types.ts"
+    ],
+    "packages/data-layer/src/source-semantics.ts": [
+      "packages/data-layer/src/tabular/input.ts",
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/types.ts",
+      "packages/data-layer/src/adapters/meta-graph.ts",
+      "packages/data-layer/src/adapters/youtube.ts",
+      "packages/data-layer/src/adapters/provider-table.ts",
+      "packages/data-layer/src/csv.ts",
+      "packages/data-layer/src/source-review.ts"
+    ],
+    "packages/data-layer/src/adapters/meta-graph.ts": [
+      "packages/data-layer/src/hash.ts",
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/types.ts",
+      "packages/data-layer/src/tabular/types.ts"
+    ],
+    "packages/data-layer/src/adapters/youtube.ts": [
+      "packages/data-layer/src/hash.ts",
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/types.ts",
+      "packages/data-layer/src/tabular/types.ts"
+    ],
+    "packages/data-layer/src/adapters/provider-table.ts": [
+      "packages/data-layer/src/hash.ts",
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/types.ts",
+      "packages/data-layer/src/tabular/types.ts"
+    ],
+    "packages/data-layer/src/csv.ts": [
+      "packages/data-layer/src/errors.ts"
+    ],
+    "packages/data-layer/src/source-review.ts": [
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/tabular/input.ts",
+      "packages/data-layer/src/source-semantics.ts"
+    ],
+    "packages/core/src/tabular-validation.ts": [
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/tabular/normalize.ts",
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/core/src/errors.ts"
+    ],
+    "packages/core/src/tabular-ranked-scope.ts": [
+      "packages/data-layer/src/tabular/types.ts"
+    ],
+    "packages/core/src/tabular-supplied-rate.ts": [
+      "packages/data-layer/src/tabular/index.ts",
+      "packages/data-layer/src/tabular/types.ts"
+    ],
+    "packages/core/src/youtube-revalidation-jobs.ts": [
+      "packages/core/src/connections.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/oauth.ts",
+      "packages/core/src/sync-dispatch.ts",
+      "packages/core/src/youtube-connector.ts"
+    ],
+    "packages/core/src/connections.ts": [
+      "packages/core/src/errors.ts"
+    ],
+    "packages/core/src/sync-dispatch.ts": [
+      "packages/core/src/connections.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/sync-jobs.ts",
+      "packages/core/src/tabular-datasets.ts",
+      "packages/core/src/oauth.ts",
+      "packages/data-layer/src/types.ts",
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/core/src/broker-connections.ts"
+    ],
+    "packages/core/src/sync-jobs.ts": [
+      "packages/core/src/connections.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/workflow-schedules.ts"
+    ],
+    "packages/core/src/workflow-schedules.ts": [
+      "packages/core/src/source-scope.ts",
+      "packages/core/src/connections.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/types.ts"
+    ],
+    "packages/core/src/source-scope.ts": [
+      "packages/core/src/errors.ts",
+      "packages/core/src/types.ts",
+      "packages/core/src/social-datasets.ts"
+    ],
+    "packages/core/src/social-datasets.ts": [
+      "packages/data-layer/src/index.ts",
+      "packages/core/src/social-analysis.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/types.ts"
+    ],
+    "packages/data-layer/src/index.ts": [
+      "packages/data-layer/src/types.ts",
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/hash.ts",
+      "packages/data-layer/src/csv.ts",
+      "packages/data-layer/src/adapters/csv-source.ts",
+      "packages/data-layer/src/adapters/apify-dataset.ts",
+      "packages/data-layer/src/adapters/meta-graph.ts",
+      "packages/data-layer/src/batch.ts",
+      "packages/data-layer/src/store.ts",
+      "packages/data-layer/src/sync.ts",
+      "packages/data-layer/src/labels.ts",
+      "packages/data-layer/src/receipts.ts",
+      "packages/data-layer/src/ports.ts",
+      "packages/data-layer/src/integrations/core-financial.ts",
+      "packages/data-layer/src/normalize/financial.ts",
+      "packages/data-layer/src/normalize/social.ts",
+      "packages/data-layer/src/query/social.ts",
+      "packages/data-layer/src/query/financial.ts"
+    ],
+    "packages/data-layer/src/adapters/csv-source.ts": [
+      "packages/data-layer/src/csv.ts",
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/types.ts"
+    ],
+    "packages/data-layer/src/adapters/apify-dataset.ts": [
+      "packages/data-layer/src/hash.ts",
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/types.ts"
+    ],
+    "packages/data-layer/src/ports.ts": [
+      "packages/core/src/financial-reporting.ts"
+    ],
+    "packages/core/src/financial-reporting.ts": [],
+    "packages/data-layer/src/integrations/core-financial.ts": [
+      "packages/core/src/financial-reporting.ts",
+      "packages/data-layer/src/ports.ts"
+    ],
+    "packages/data-layer/src/normalize/financial.ts": [
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/ports.ts",
+      "packages/data-layer/src/types.ts",
+      "packages/core/src/financial-reporting.ts"
+    ],
+    "packages/data-layer/src/query/financial.ts": [
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/labels.ts",
+      "packages/data-layer/src/receipts.ts",
+      "packages/data-layer/src/normalize/financial.ts",
+      "packages/data-layer/src/ports.ts",
+      "packages/data-layer/src/types.ts",
+      "packages/core/src/financial-reporting.ts"
+    ],
+    "packages/core/src/broker-connections.ts": [
+      "packages/core/src/errors.ts",
+      "packages/core/src/types.ts"
+    ],
+    "packages/core/src/youtube-connector.ts": [
+      "packages/data-layer/src/adapters/youtube.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/oauth.ts",
+      "packages/core/src/sync-dispatch.ts",
+      "packages/core/src/provider-reader.ts",
+      "packages/core/src/google-oauth.ts"
+    ],
+    "packages/core/src/provider-reader.ts": [
+      "packages/core/src/errors.ts",
+      "packages/core/src/oauth.ts",
+      "packages/core/src/sync-dispatch.ts",
+      "packages/core/src/google-oauth.ts"
+    ],
+    "packages/core/src/google-oauth.ts": [
+      "packages/core/src/oauth.ts"
+    ],
+    "packages/core/src/reporting-analysis.ts": [
+      "packages/core/src/reporting.ts"
+    ],
+    "packages/core/src/reporting.ts": [],
+    "packages/core/src/source-analysis.ts": [
+      "packages/core/src/errors.ts",
+      "packages/data-layer/src/source-semantics.ts",
+      "packages/core/src/types.ts"
+    ],
+    "packages/core/src/answers.ts": [
+      "packages/core/src/types.ts",
+      "packages/core/src/errors.ts"
+    ],
+    "packages/core/src/index.ts": [
+      "packages/core/src/shared-tabular.ts",
+      "packages/core/src/workflow-schedules.ts",
+      "packages/core/src/connections.ts",
+      "packages/core/src/schedule-dispatch.ts",
+      "packages/core/src/weekly-review-email-runtime.ts",
+      "packages/core/src/youtube-revalidation-jobs.ts",
+      "packages/core/src/sync-jobs.ts",
+      "packages/core/src/sync-dispatch.ts",
+      "packages/core/src/meta-connector.ts",
+      "packages/core/src/apify-sync.ts",
+      "packages/core/src/grant-registry.ts",
+      "packages/core/src/broker-connections.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/provider.ts",
+      "packages/core/src/context-budget.ts",
+      "packages/core/src/sources.ts",
+      "packages/core/src/file-import.ts",
+      "packages/core/src/workflows.ts",
+      "packages/core/src/weekly-review.ts",
+      "packages/core/src/social-analysis.ts",
+      "packages/core/src/response-mode.ts",
+      "packages/core/src/answers.ts",
+      "packages/core/src/answer-checks.ts",
+      "packages/core/src/answer-suggestions.ts",
+      "packages/data-layer/src/tabular/index.ts",
+      "packages/core/src/source-scope.ts",
+      "packages/core/src/projects.ts",
+      "packages/core/src/social-datasets.ts",
+      "packages/core/src/tabular-datasets.ts",
+      "packages/core/src/source-table.ts",
+      "packages/core/src/tabular-followup.ts",
+      "packages/core/src/analyst-prompt.ts",
+      "packages/core/src/tabular-narrative.ts",
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/data-layer/src/source-semantics.ts",
+      "packages/core/src/tabular-validation.ts",
+      "packages/core/src/tabular-combined-source.ts",
+      "packages/core/src/source-analysis.ts",
+      "packages/core/src/apify-connector.ts",
+      "packages/core/src/credential-vault.ts",
+      "packages/core/src/oauth.ts",
+      "packages/core/src/reporting.ts",
+      "packages/core/src/reporting-analysis.ts",
+      "packages/core/src/financial-reporting.ts",
+      "packages/core/src/types.ts",
+      "packages/core/src/types.ts",
+      "packages/core/src/weekly-review.ts",
+      "packages/core/src/tabular-datasets.ts",
+      "packages/core/src/tabular-datasets.ts",
+      "packages/core/src/connections.ts",
+      "packages/core/src/connections.ts",
+      "packages/core/src/sync-jobs.ts",
+      "packages/core/src/sync-dispatch.ts",
+      "packages/core/src/meta-connector.ts",
+      "packages/core/src/apify-sync.ts",
+      "packages/core/src/apify-sync.ts",
+      "packages/core/src/meta-connector.ts",
+      "packages/core/src/grant-registry.ts",
+      "packages/core/src/grant-registry.ts",
+      "packages/core/src/sync-dispatch.ts",
+      "packages/core/src/workflow-schedules.ts",
+      "packages/core/src/social-datasets.ts",
+      "packages/core/src/apify-connector.ts",
+      "packages/core/src/apify-connector.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/credential-vault.ts",
+      "packages/core/src/credential-vault.ts",
+      "packages/core/src/provider.ts",
+      "packages/core/src/tabular-datasets.ts"
+    ],
+    "packages/core/src/shared-tabular.ts": [
+      "packages/core/src/tabular-datasets.ts",
+      "packages/core/src/errors.ts",
+      "packages/data-layer/src/source-semantics.ts",
+      "packages/core/src/tabular-datasets.ts",
+      "packages/core/src/source-analysis.ts"
+    ],
+    "packages/core/src/schedule-dispatch.ts": [
+      "packages/core/src/workflow-schedules.ts"
+    ],
+    "packages/core/src/weekly-review-email-runtime.ts": [
+      "packages/core/src/errors.ts",
+      "packages/core/src/report-email.ts",
+      "packages/core/src/types.ts",
+      "packages/core/src/workflow-schedules.ts"
+    ],
+    "packages/core/src/report-email.ts": [
+      "packages/core/src/errors.ts",
+      "packages/core/src/types.ts"
+    ],
+    "packages/core/src/meta-connector.ts": [
+      "packages/data-layer/src/hash.ts",
+      "packages/data-layer/src/adapters/meta-graph.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/oauth.ts",
+      "packages/core/src/sync-dispatch.ts"
+    ],
+    "packages/core/src/apify-sync.ts": [
+      "packages/core/src/apify-connector.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/sync-dispatch.ts"
+    ],
+    "packages/core/src/apify-connector.ts": [
+      "packages/core/src/errors.ts"
+    ],
+    "packages/core/src/grant-registry.ts": [],
+    "packages/core/src/provider.ts": [
+      "packages/core/src/types.ts",
+      "packages/core/src/errors.ts"
+    ],
+    "packages/core/src/context-budget.ts": [
+      "packages/core/src/provider.ts",
+      "packages/core/src/errors.ts"
+    ],
+    "packages/core/src/sources.ts": [
+      "packages/core/src/types.ts",
+      "packages/core/src/errors.ts"
+    ],
+    "packages/core/src/file-import.ts": [
+      "packages/core/src/errors.ts",
+      "packages/core/src/types.ts"
+    ],
+    "packages/core/src/workflows.ts": [
+      "packages/core/src/source-scope.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/connections.ts",
+      "packages/core/src/types.ts"
+    ],
+    "packages/core/src/weekly-review.ts": [
+      "packages/core/src/errors.ts",
+      "packages/core/src/types.ts"
+    ],
+    "packages/core/src/response-mode.ts": [],
+    "packages/core/src/answer-checks.ts": [
+      "packages/core/src/types.ts",
+      "packages/core/src/answers.ts"
+    ],
+    "packages/core/src/answer-suggestions.ts": [
+      "packages/core/src/types.ts"
+    ],
+    "packages/core/src/projects.ts": [
+      "packages/core/src/errors.ts",
+      "packages/core/src/types.ts"
+    ],
+    "packages/core/src/source-table.ts": [
+      "packages/core/src/types.ts",
+      "packages/core/src/tabular-datasets.ts"
+    ],
+    "packages/core/src/tabular-followup.ts": [
+      "packages/data-layer/src/tabular/analyze.ts",
+      "packages/data-layer/src/tabular/input.ts",
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/tabular-datasets.ts",
+      "packages/core/src/types.ts"
+    ],
+    "packages/core/src/analyst-prompt.ts": [
+      "packages/core/src/tabular-narrative.ts"
+    ],
+    "packages/core/src/tabular-narrative.ts": [
+      "packages/core/src/errors.ts",
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/core/src/tabular-ranked-scope.ts"
+    ],
+    "packages/core/src/tabular-combined-source.ts": [],
+    "packages/core/src/credential-vault.ts": [
+      "packages/core/src/errors.ts",
+      "packages/core/src/connections.ts",
+      "packages/core/src/oauth.ts"
+    ],
+    "apps/server/src/http.ts": [
+      "packages/core/src/tabular-validation.ts",
+      "apps/server/src/run-stream.ts",
+      "apps/server/src/customer-model.ts",
+      "packages/core/src/social-analysis.ts",
+      "packages/data-layer/src/tabular/index.ts",
+      "packages/presentation/src/answer-export.ts",
+      "packages/core/src/saved-report.ts",
+      "apps/server/src/chart-download.ts",
+      "packages/data-layer/src/tabular/post-presentation.ts",
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/data-layer/src/source-semantics.ts",
+      "packages/core/src/tabular-datasets.ts",
+      "packages/core/src/types.ts",
+      "packages/core/src/source-scope.ts",
+      "packages/core/src/types.ts",
+      "packages/core/src/workflow-schedules.ts",
+      "packages/core/src/report-email.ts",
+      "apps/server/src/drive-http.ts",
+      "apps/server/src/desktop-access.ts",
+      "apps/server/src/care-http.ts",
+      "apps/server/src/workspace-access.ts",
+      "packages/core/src/file-import.ts",
+      "packages/core/src/index.ts",
+      "packages/core/src/connections.ts",
+      "packages/core/src/sync-jobs.ts",
+      "packages/core/src/workflow-schedules.ts",
+      "packages/core/src/index.ts",
+      "packages/core/src/reporting-analysis.ts",
+      "packages/core/src/financial-reporting.ts",
+      "packages/core/src/types.ts",
+      "packages/core/src/workspace-diagnostics.ts",
+      "packages/core/src/source-table.ts",
+      "apps/server/src/source-table.ts",
+      "apps/server/src/organizations-http.ts",
+      "packages/core/src/oauth.ts",
+      "apps/server/src/recipient-settings-http.ts",
+      "apps/server/src/connection-sign-in.ts"
+    ],
+    "apps/server/src/run-stream.ts": [
+      "packages/core/src/types.ts"
+    ],
+    "apps/server/src/customer-model.ts": [
+      "packages/core/src/types.ts"
+    ],
+    "packages/presentation/src/answer-export.ts": [
+      "packages/core/src/types.ts",
+      "packages/core/src/answers.ts",
+      "packages/presentation/src/visual-analysis.ts",
+      "packages/presentation/src/financial-analysis.ts",
+      "packages/presentation/src/tabular-report.ts",
+      "packages/data-layer/src/tabular/post-presentation.ts",
+      "packages/presentation/src/post-markdown.ts"
+    ],
+    "packages/presentation/src/visual-analysis.ts": [
+      "packages/core/src/reporting-analysis.ts"
+    ],
+    "packages/presentation/src/financial-analysis.ts": [
+      "packages/core/src/financial-reporting.ts"
+    ],
+    "packages/presentation/src/tabular-report.ts": [
+      "packages/core/src/tabular-datasets.ts",
+      "packages/data-layer/src/tabular/post-presentation.ts",
+      "packages/data-layer/src/tabular/labels.ts"
+    ],
+    "packages/presentation/src/post-markdown.ts": [
+      "packages/data-layer/src/tabular/post-presentation.ts"
+    ],
+    "packages/core/src/saved-report.ts": [
+      "packages/core/src/types.ts"
+    ],
+    "apps/server/src/chart-download.ts": [
+      "packages/core/src/types.ts",
+      "packages/core/src/errors.ts",
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/presentation/src/tabular-chart.ts",
+      "packages/presentation/src/source-chart.ts",
+      "packages/presentation/src/tabular-echarts.ts"
+    ],
+    "packages/presentation/src/tabular-chart.ts": [
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/data-layer/src/tabular/post-presentation.ts",
+      "packages/data-layer/src/tabular/labels.ts",
+      "packages/data-layer/src/tabular/labels.ts"
+    ],
+    "packages/presentation/src/source-chart.ts": [
+      "packages/core/src/source-analysis.ts",
+      "packages/presentation/src/tabular-chart.ts"
+    ],
+    "packages/presentation/src/tabular-echarts.ts": [
+      "packages/presentation/src/tabular-chart.ts"
+    ],
+    "apps/server/src/drive-http.ts": [
+      "packages/core/src/errors.ts",
+      "packages/core/src/google-drive.ts"
+    ],
+    "apps/server/src/desktop-access.ts": [],
+    "apps/server/src/care-http.ts": [
+      "packages/core/src/care.ts",
+      "packages/core/src/care-types.ts"
+    ],
+    "packages/core/src/care.ts": [
+      "packages/core/src/errors.ts",
+      "packages/core/src/provider.ts",
+      "packages/core/src/care-types.ts",
+      "packages/core/src/care-types.ts"
+    ],
+    "packages/core/src/care-types.ts": [],
+    "apps/server/src/workspace-access.ts": [
+      "apps/server/src/access-auth.ts"
+    ],
+    "apps/server/src/access-auth.ts": [],
+    "packages/core/src/workspace-diagnostics.ts": [],
+    "apps/server/src/source-table.ts": [
+      "packages/data-layer/src/csv.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/source-table.ts",
+      "packages/core/src/types.ts",
+      "packages/core/src/tabular-datasets.ts",
+      "packages/core/src/index.ts"
+    ],
+    "apps/server/src/organizations-http.ts": [
+      "apps/server/src/access-auth.ts",
+      "apps/server/src/organizations.ts",
+      "packages/core/src/organization-types.ts",
+      "packages/core/src/workspace-diagnostics.ts",
+      "apps/server/src/entra-invitations.ts",
+      "apps/server/src/usage-admin.ts",
+      "apps/server/src/team-http.ts"
+    ],
+    "apps/server/src/organizations.ts": [
+      "packages/core/src/sharing-types.ts",
+      "packages/core/src/usage-admin-types.ts",
+      "packages/core/src/admin-control-types.ts",
+      "packages/core/src/organization-types.ts",
+      "packages/core/src/organization-types.ts",
+      "packages/core/src/organization-types.ts"
+    ],
+    "packages/core/src/sharing-types.ts": [
+      "packages/core/src/tabular-datasets.ts",
+      "packages/data-layer/src/tabular/types.ts"
+    ],
+    "packages/core/src/usage-admin-types.ts": [
+      "packages/core/src/workspace-diagnostics.ts",
+      "packages/core/src/admin-control-types.ts"
+    ],
+    "packages/core/src/admin-control-types.ts": [],
+    "packages/core/src/organization-types.ts": [],
+    "apps/server/src/entra-invitations.ts": [
+      "apps/server/src/organizations.ts",
+      "packages/core/src/organization-types.ts"
+    ],
+    "apps/server/src/usage-admin.ts": [
+      "packages/core/src/usage-admin-types.ts",
+      "packages/core/src/workspace-diagnostics.ts",
+      "packages/core/src/organization-types.ts",
+      "apps/server/src/organizations.ts"
+    ],
+    "apps/server/src/team-http.ts": [
+      "packages/core/src/organization-types.ts",
+      "apps/server/src/organizations-http.ts",
+      "apps/server/src/organizations.ts",
+      "apps/server/src/entra-invitations.ts"
+    ],
+    "apps/server/src/recipient-settings-http.ts": [
+      "packages/core/src/organization-types.ts",
+      "apps/server/src/organizations.ts"
+    ],
+    "apps/server/src/connection-sign-in.ts": [
+      "packages/core/src/oauth.ts",
+      "packages/core/src/connections.ts",
+      "packages/core/src/types.ts",
+      "packages/core/src/errors.ts",
+      "apps/server/src/connection-sign-in-failure.ts"
+    ],
+    "apps/server/src/connection-sign-in-failure.ts": [
+      "packages/core/src/errors.ts"
+    ],
+    "packages/core/src/care-fixtures.ts": [
+      "packages/core/src/care-types.ts"
+    ],
+    "apps/server/src/meta-config.ts": [
+      "packages/core/src/index.ts"
+    ],
+    "apps/server/src/apify-config.ts": [],
+    "apps/server/src/source-provider-config.ts": [
+      "packages/core/src/youtube-connector.ts",
+      "packages/core/src/linkedin-connector.ts",
+      "packages/core/src/mailchimp-connector.ts",
+      "packages/core/src/analytics-connector.ts",
+      "packages/core/src/sync-dispatch.ts",
+      "packages/core/src/windsor-connector.ts",
+      "packages/core/src/windsor-sources.ts"
+    ],
+    "packages/core/src/linkedin-connector.ts": [
+      "packages/data-layer/src/adapters/provider-table.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/provider-reader.ts",
+      "packages/core/src/sync-dispatch.ts"
+    ],
+    "packages/core/src/mailchimp-connector.ts": [
+      "packages/data-layer/src/adapters/provider-table.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/provider-reader.ts",
+      "packages/core/src/sync-dispatch.ts"
+    ],
+    "packages/core/src/analytics-connector.ts": [
+      "packages/data-layer/src/adapters/provider-table.ts",
+      "packages/core/src/provider-reader.ts",
+      "packages/core/src/sync-dispatch.ts"
+    ],
+    "packages/core/src/windsor-connector.ts": [
+      "packages/data-layer/src/adapters/provider-table.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/oauth.ts",
+      "packages/core/src/provider-reader.ts",
+      "packages/core/src/sync-dispatch.ts",
+      "packages/core/src/windsor-sources.ts",
+      "packages/core/src/windsor-rows.ts"
+    ],
+    "packages/core/src/windsor-sources.ts": [
+      "packages/data-layer/src/tabular/types.ts"
+    ],
+    "packages/core/src/windsor-rows.ts": [
+      "packages/core/src/errors.ts",
+      "packages/core/src/provider-reader.ts",
+      "packages/core/src/windsor-sources.ts"
+    ],
+    "apps/server/src/report-email-sender.ts": [
+      "packages/core/src/report-email.ts"
+    ],
+    "packages/presentation/src/weekly-review-email.ts": [
+      "packages/core/src/report-email.ts",
+      "packages/core/src/types.ts",
+      "packages/core/src/saved-report.ts"
+    ],
+    "apps/web/src/main.tsx": [
+      "apps/web/src/workspace.tsx",
+      "apps/web/src/organization-admin.tsx",
+      "apps/web/src/customer-workspaces.tsx",
+      "apps/web/src/file-upload-feedback.tsx",
+      "apps/web/src/signup-tour.tsx",
+      "apps/web/src/team-admin.tsx",
+      "apps/web/src/billing.tsx",
+      "apps/web/src/onboarding.tsx",
+      "apps/web/src/billing.css",
+      "apps/web/src/onboarding.css",
+      "apps/web/src/styles.css",
+      "apps/web/src/workspace-diagnostics.css",
+      "apps/web/src/source-table.css",
+      "apps/web/src/organization-admin.css",
+      "apps/web/src/workspace-access-layout.css"
+    ],
+    "apps/web/src/workspace.tsx": [
+      "apps/web/src/composer-keyboard.ts",
+      "apps/web/src/workspace-scope.ts",
+      "apps/web/src/markdown.tsx",
+      "packages/core/src/source-table.ts",
+      "apps/web/src/calculated-source.tsx",
+      "apps/web/src/source-table.tsx",
+      "packages/core/src/types.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/session-access.tsx",
+      "apps/web/src/home-welcome.tsx",
+      "apps/web/src/home-work.tsx",
+      "apps/web/src/table-source-navigation.ts",
+      "apps/web/src/team-sources.tsx",
+      "apps/web/src/usage-import.tsx",
+      "apps/web/src/financial-import.tsx",
+      "apps/web/src/answer-export.ts",
+      "packages/data-layer/src/tabular/post-presentation.ts",
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/core/src/index.ts",
+      "apps/web/src/file-upload.tsx",
+      "apps/web/src/session-inputs.tsx",
+      "apps/web/src/panel-resize.tsx",
+      "apps/web/src/modules.tsx",
+      "apps/web/src/workflow-workspace.tsx",
+      "apps/web/src/workflow-state.ts",
+      "apps/web/src/draft-store.ts",
+      "apps/web/src/projects.tsx",
+      "apps/web/src/workspace-details.tsx",
+      "apps/web/src/run-allowance.tsx",
+      "apps/web/src/verification-panel.tsx",
+      "apps/web/src/calculation-verification.ts",
+      "apps/web/src/navigation.tsx",
+      "apps/web/src/run-updates.ts",
+      "apps/web/src/run-library.ts",
+      "apps/web/src/run-presentation.ts",
+      "apps/web/src/workspace-navigation.tsx",
+      "apps/web/src/sidebar-pins.ts",
+      "apps/web/src/workspace-tabs.tsx",
+      "apps/web/src/care-workspace.tsx",
+      "apps/web/src/agent-session.tsx",
+      "apps/web/src/example-work.ts",
+      "apps/web/src/workspace-extras.tsx",
+      "apps/web/src/modules.css",
+      "apps/web/src/connectors.css",
+      "apps/web/src/shell.css",
+      "apps/web/src/navigation.css",
+      "apps/web/src/workspace.css",
+      "apps/web/src/home-workspace.css",
+      "apps/web/src/panel-resize.css",
+      "apps/web/src/visual-analysis.css",
+      "apps/web/src/financial-analysis.css",
+      "apps/web/src/tabular-analysis.css",
+      "apps/web/src/report-body.css",
+      "apps/web/src/tabular-presentation.css",
+      "apps/web/src/older-drafts.css"
+    ],
+    "apps/web/src/composer-keyboard.ts": [],
+    "apps/web/src/workspace-scope.ts": [],
+    "apps/web/src/markdown.tsx": [
+      "apps/web/src/post-presentation.tsx"
+    ],
+    "apps/web/src/post-presentation.tsx": [
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/data-layer/src/tabular/post-presentation.ts",
+      "apps/web/src/api.ts"
+    ],
+    "apps/web/src/api.ts": [
+      "packages/data-layer/src/errors.ts",
+      "apps/web/src/run-allowance.tsx",
+      "apps/web/src/workspace-scope.ts"
+    ],
+    "apps/web/src/run-allowance.tsx": [
+      "packages/core/src/types.ts"
+    ],
+    "apps/web/src/calculated-source.tsx": [
+      "apps/web/src/workspace-scope.ts",
+      "packages/core/src/types.ts",
+      "packages/core/src/source-table.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/tabular-analysis.tsx",
+      "apps/web/src/calculation-verification.ts"
+    ],
+    "apps/web/src/tabular-analysis.tsx": [
+      "apps/web/src/workspace-scope.ts",
+      "packages/data-layer/src/tabular/types.ts",
+      "apps/web/src/calculation-verification.ts",
+      "apps/web/src/post-presentation.tsx",
+      "packages/data-layer/src/tabular/labels.ts",
+      "apps/web/src/tabular-echarts.ts",
+      "packages/presentation/src/tabular-interpretation.ts",
+      "apps/web/src/report-body.tsx",
+      "apps/web/src/report-takeaways.tsx",
+      "packages/core/src/tabular-datasets.ts",
+      "packages/core/src/tabular-datasets.ts",
+      "packages/presentation/src/tabular-chart.ts",
+      "packages/presentation/src/tabular-chart.ts",
+      "apps/web/src/verification-calculation-detail.tsx"
+    ],
+    "apps/web/src/calculation-verification.ts": [
+      "packages/core/src/types.ts",
+      "packages/core/src/tabular-datasets.ts",
+      "packages/core/src/source-analysis.ts",
+      "packages/presentation/src/tabular-chart.ts",
+      "packages/presentation/src/source-chart.ts",
+      "packages/core/src/saved-report.ts"
+    ],
+    "apps/web/src/tabular-echarts.ts": [
+      "packages/presentation/src/tabular-echarts.ts"
+    ],
+    "packages/presentation/src/tabular-interpretation.ts": [
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/presentation/src/tabular-chart.ts"
+    ],
+    "apps/web/src/report-body.tsx": [
+      "apps/web/src/markdown.tsx",
+      "apps/web/src/report-sections.ts"
+    ],
+    "apps/web/src/report-sections.ts": [],
+    "apps/web/src/report-takeaways.tsx": [
+      "packages/presentation/src/tabular-chart.ts",
+      "packages/presentation/src/source-chart.ts"
+    ],
+    "apps/web/src/verification-calculation-detail.tsx": [
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/data-layer/src/tabular/evidence.ts",
+      "packages/presentation/src/tabular-chart.ts",
+      "packages/presentation/src/source-chart.ts",
+      "apps/web/src/calculation-verification.ts",
+      "apps/web/src/tabular-evidence-rows.tsx",
+      "apps/web/src/api.ts"
+    ],
+    "apps/web/src/tabular-evidence-rows.tsx": [
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/data-layer/src/tabular/post-presentation.ts"
+    ],
+    "apps/web/src/source-table.tsx": [
+      "packages/core/src/types.ts",
+      "packages/core/src/source-table.ts",
+      "packages/core/src/source-table.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/markdown.tsx",
+      "apps/web/src/source-fields.tsx",
+      "apps/web/src/source-overview.tsx"
+    ],
+    "apps/web/src/source-fields.tsx": [
+      "packages/core/src/source-table.ts"
+    ],
+    "apps/web/src/source-overview.tsx": [
+      "packages/core/src/types.ts",
+      "packages/core/src/source-table.ts"
+    ],
+    "apps/web/src/session-access.tsx": [],
+    "apps/web/src/home-welcome.tsx": [
+      "apps/web/src/rivet-mark.tsx",
+      "apps/web/src/workspace-brand.tsx",
+      "apps/web/src/session-access.tsx",
+      "packages/core/src/types.ts",
+      "packages/core/src/answer-suggestions.ts"
+    ],
+    "apps/web/src/rivet-mark.tsx": [],
+    "apps/web/src/workspace-brand.tsx": [
+      "apps/web/src/rivet-mark.tsx"
+    ],
+    "apps/web/src/home-work.tsx": [
+      "packages/core/src/types.ts",
+      "apps/web/src/navigation.tsx",
+      "apps/web/src/run-presentation.ts"
+    ],
+    "apps/web/src/navigation.tsx": [
+      "apps/web/src/modules.tsx"
+    ],
+    "apps/web/src/modules.tsx": [
+      "apps/web/src/module-source-selection.tsx",
+      "apps/web/src/workspace-extras.tsx",
+      "apps/web/src/workflow-schedules-workspace.tsx",
+      "apps/web/src/dashboards.tsx",
+      "apps/web/src/draft-store.ts",
+      "packages/core/src/types.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/workflow-workspace.tsx",
+      "apps/web/src/module-state.ts",
+      "apps/web/src/draft-store.ts"
+    ],
+    "apps/web/src/module-source-selection.tsx": [
+      "packages/core/src/types.ts"
+    ],
+    "apps/web/src/workspace-extras.tsx": [
+      "apps/web/src/run-presentation.ts",
+      "packages/core/src/types.ts",
+      "apps/web/src/navigation.tsx",
+      "apps/web/src/saved-tables.ts",
+      "apps/web/src/saved-tables.ts"
+    ],
+    "apps/web/src/run-presentation.ts": [
+      "packages/core/src/types.ts"
+    ],
+    "apps/web/src/saved-tables.ts": [
+      "apps/web/src/api.ts"
+    ],
+    "apps/web/src/workflow-schedules-workspace.tsx": [
+      "packages/core/src/types.ts",
+      "packages/core/src/workflow-schedules.ts",
+      "packages/core/src/sync-jobs.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/connections.tsx",
+      "apps/web/src/workflow-storage.ts",
+      "apps/web/src/schedule-report-email.tsx"
+    ],
+    "apps/web/src/connections.tsx": [
+      "apps/web/src/session-access.tsx",
+      "apps/web/src/session-access.tsx",
+      "apps/web/src/use-connections.ts",
+      "apps/web/src/connection-view.tsx",
+      "apps/web/src/connection-model.ts",
+      "apps/web/src/connection-row.tsx",
+      "apps/web/src/connection-forms.tsx",
+      "apps/web/src/connection-controls.tsx",
+      "apps/web/src/connection-view.tsx"
+    ],
+    "apps/web/src/use-connections.ts": [
+      "packages/core/src/workflow-schedules.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/use-broker-connection.ts",
+      "apps/web/src/session-access.tsx",
+      "apps/web/src/workspace-scope.ts",
+      "apps/web/src/connection-model.ts"
+    ],
+    "apps/web/src/use-broker-connection.ts": [
+      "apps/web/src/api.ts",
+      "packages/core/src/broker-connections.ts",
+      "apps/web/src/broker-sign-in-window.ts"
+    ],
+    "apps/web/src/broker-sign-in-window.ts": [],
+    "apps/web/src/connection-model.ts": [
+      "packages/core/src/sync-jobs.ts",
+      "packages/core/src/workflow-schedules.ts",
+      "apps/web/src/session-access.tsx"
+    ],
+    "apps/web/src/connection-view.tsx": [
+      "packages/core/src/sync-jobs.ts",
+      "packages/core/src/workflow-schedules.ts",
+      "apps/web/src/session-access.tsx",
+      "apps/web/src/api.ts",
+      "apps/web/src/table-source-navigation.ts",
+      "apps/web/src/connection-model.ts",
+      "apps/web/src/connection-row.tsx",
+      "apps/web/src/connection-forms.tsx",
+      "apps/web/src/connection-controls.tsx"
+    ],
+    "apps/web/src/table-source-navigation.ts": [],
+    "apps/web/src/connection-row.tsx": [
+      "packages/core/src/sync-jobs.ts",
+      "apps/web/src/connection-model.ts"
+    ],
+    "apps/web/src/connection-forms.tsx": [
+      "apps/web/src/session-access.tsx",
+      "apps/web/src/connection-model.ts"
+    ],
+    "apps/web/src/connection-controls.tsx": [
+      "packages/core/src/sync-jobs.ts",
+      "packages/core/src/workflow-schedules.ts",
+      "apps/web/src/connection-model.ts",
+      "apps/web/src/connection-schedule.ts"
+    ],
+    "apps/web/src/connection-schedule.ts": [
+      "packages/core/src/sync-jobs.ts"
+    ],
+    "apps/web/src/workflow-storage.ts": [
+      "apps/web/src/workspace-scope.ts",
+      "apps/web/src/draft-store.ts"
+    ],
+    "apps/web/src/draft-store.ts": [
+      "apps/web/src/workspace-scope.ts"
+    ],
+    "apps/web/src/schedule-report-email.tsx": [
+      "apps/web/src/api.ts",
+      "apps/web/src/workspace-scope.ts"
+    ],
+    "apps/web/src/dashboards.tsx": [
+      "apps/web/src/team-sharing.tsx",
+      "apps/web/src/workspace-scope.ts",
+      "packages/core/src/types.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/saved-tables.ts",
+      "apps/web/src/tabular-analysis.tsx",
+      "apps/web/src/run-presentation.ts",
+      "apps/web/src/connection-freshness.tsx",
+      "apps/web/src/report-body.tsx",
+      "packages/core/src/saved-report.ts",
+      "apps/web/src/source-analysis-view.tsx"
+    ],
+    "apps/web/src/team-sharing.tsx": [
+      "packages/core/src/sharing-types.ts",
+      "packages/core/src/tabular-datasets.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/workspace-scope.ts",
+      "apps/web/src/tabular-analysis.tsx"
+    ],
+    "apps/web/src/connection-freshness.tsx": [
+      "packages/core/src/workflow-schedules.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/connections.tsx"
+    ],
+    "apps/web/src/source-analysis-view.tsx": [
+      "apps/web/src/workspace-scope.ts",
+      "packages/core/src/source-analysis.ts",
+      "apps/web/src/tabular-echarts.ts",
+      "apps/web/src/tabular-analysis.tsx",
+      "apps/web/src/report-body.tsx",
+      "apps/web/src/report-takeaways.tsx",
+      "apps/web/src/calculation-verification.ts",
+      "packages/presentation/src/source-chart.ts",
+      "packages/presentation/src/source-chart.ts"
+    ],
+    "apps/web/src/workflow-workspace.tsx": [
+      "apps/web/src/module-source-selection.tsx",
+      "packages/core/src/types.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/draft-store.ts",
+      "apps/web/src/workflow-state.ts",
+      "apps/web/src/session-access.tsx",
+      "apps/web/src/connection-model.ts",
+      "packages/core/src/sync-jobs.ts",
+      "apps/web/src/weekly-review-accounts.tsx",
+      "apps/web/src/workflow-storage.ts",
+      "apps/web/src/workflow-schedules-workspace.tsx",
+      "apps/web/src/workflow-storage.ts"
+    ],
+    "apps/web/src/workflow-state.ts": [
+      "packages/core/src/types.ts",
+      "apps/web/src/workspace-scope.ts",
+      "apps/web/src/draft-store.ts"
+    ],
+    "apps/web/src/weekly-review-accounts.tsx": [
+      "packages/core/src/sync-jobs.ts",
+      "apps/web/src/connection-model.ts",
+      "apps/web/src/source-connect-options.ts"
+    ],
+    "apps/web/src/source-connect-options.ts": [
+      "apps/web/src/connection-model.ts"
+    ],
+    "apps/web/src/module-state.ts": [
+      "apps/web/src/draft-store.ts"
+    ],
+    "apps/web/src/team-sources.tsx": [
+      "apps/web/src/tables-library.tsx",
+      "apps/web/src/api.ts",
+      "apps/web/src/workspace-scope.ts",
+      "packages/core/src/types.ts",
+      "apps/web/src/team-sharing.tsx"
+    ],
+    "apps/web/src/tables-library.tsx": [
+      "apps/web/src/team-sharing.tsx",
+      "apps/web/src/workspace-scope.ts",
+      "packages/core/src/types.ts",
+      "packages/core/src/source-table.ts",
+      "apps/web/src/calculated-source.tsx",
+      "apps/web/src/api.ts",
+      "apps/web/src/connection-freshness.tsx",
+      "apps/web/src/connection-model.ts",
+      "apps/web/src/use-connections.ts",
+      "apps/web/src/source-connect-page.tsx",
+      "apps/web/src/source-connect-options.ts",
+      "apps/web/src/source-connection-detail.tsx",
+      "apps/web/src/source-connections.ts",
+      "apps/web/src/file-upload.tsx",
+      "apps/web/src/markdown.tsx",
+      "apps/web/src/source-dataset-view.tsx",
+      "apps/web/src/session-access.tsx",
+      "apps/web/src/table-source-navigation.ts",
+      "apps/web/src/tables-library-items.ts",
+      "apps/web/src/restore-source.tsx",
+      "apps/web/src/platform-icon.tsx",
+      "apps/web/src/tables-library.css"
+    ],
+    "apps/web/src/source-connect-page.tsx": [
+      "apps/web/src/connection-forms.tsx",
+      "apps/web/src/connection-model.ts",
+      "apps/web/src/session-access.tsx",
+      "apps/web/src/use-connections.ts",
+      "apps/web/src/source-connect-options.ts",
+      "apps/web/src/source-connect-page.css",
+      "apps/web/src/broker-connection-panel.tsx",
+      "apps/web/src/platform-icon.tsx",
+      "apps/web/src/workspace-scope.ts"
+    ],
+    "apps/web/src/source-connect-page.css": [],
+    "apps/web/src/broker-connection-panel.tsx": [
+      "apps/web/src/use-broker-connection.ts",
+      "apps/web/src/platform-icon.tsx"
+    ],
+    "apps/web/src/platform-icon.tsx": [
+      "apps/web/src/workspace-scope.ts",
+      "apps/web/src/platform-icon.css"
+    ],
+    "apps/web/src/platform-icon.css": [],
+    "apps/web/src/source-connection-detail.tsx": [
+      "apps/web/src/team-sharing.tsx",
+      "apps/web/src/workspace-scope.ts",
+      "packages/core/src/sync-jobs.ts",
+      "packages/core/src/types.ts",
+      "packages/core/src/workflow-schedules.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/connection-model.ts",
+      "apps/web/src/connection-controls.tsx",
+      "apps/web/src/source-dataset-view.tsx",
+      "packages/core/src/source-table.ts",
+      "apps/web/src/markdown.tsx",
+      "apps/web/src/source-connections.ts",
+      "apps/web/src/use-connections.ts",
+      "apps/web/src/platform-icon.tsx",
+      "packages/data-layer/src/source-semantics.ts"
+    ],
+    "apps/web/src/source-dataset-view.tsx": [
+      "packages/core/src/types.ts",
+      "apps/web/src/source-table.tsx"
+    ],
+    "apps/web/src/source-connections.ts": [
+      "packages/core/src/sync-jobs.ts",
+      "apps/web/src/connection-model.ts",
+      "apps/web/src/tables-library-items.ts"
+    ],
+    "apps/web/src/tables-library-items.ts": [
+      "packages/core/src/types.ts",
+      "packages/core/src/source-table.ts"
+    ],
+    "apps/web/src/file-upload.tsx": [
+      "packages/core/src/types.ts",
+      "packages/core/src/file-import.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/tabular-import.tsx",
+      "apps/web/src/file-drop.ts",
+      "apps/web/src/file-upload-feedback.tsx",
+      "apps/web/src/workspace-scope.ts",
+      "apps/web/src/file-upload.css"
+    ],
+    "apps/web/src/tabular-import.tsx": [
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/core/src/tabular-datasets.ts",
+      "apps/web/src/api.ts",
+      "packages/data-layer/src/errors.ts",
+      "packages/core/src/tabular-validation.ts",
+      "apps/web/src/tabular-mapping.ts",
+      "apps/web/src/file-upload-feedback.tsx"
+    ],
+    "apps/web/src/tabular-mapping.ts": [
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/data-layer/src/errors.ts"
+    ],
+    "apps/web/src/file-upload-feedback.tsx": [],
+    "apps/web/src/file-drop.ts": [],
+    "apps/web/src/file-upload.css": [],
+    "apps/web/src/restore-source.tsx": [
+      "packages/core/src/types.ts",
+      "apps/web/src/api.ts"
+    ],
+    "apps/web/src/tables-library.css": [],
+    "apps/web/src/usage-import.tsx": [
+      "packages/core/src/index.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/usage-import.css"
+    ],
+    "apps/web/src/usage-import.css": [],
+    "apps/web/src/financial-import.tsx": [
+      "packages/core/src/index.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/financial-import-confirmation.ts",
+      "apps/web/src/usage-import.css"
+    ],
+    "apps/web/src/financial-import-confirmation.ts": [
+      "packages/core/src/index.ts"
+    ],
+    "apps/web/src/answer-export.ts": [
+      "packages/presentation/src/answer-export.ts"
+    ],
+    "apps/web/src/session-inputs.tsx": [
+      "packages/core/src/types.ts",
+      "apps/web/src/file-upload.tsx",
+      "apps/web/src/file-drop.ts",
+      "apps/web/src/workspace-scope.ts",
+      "apps/web/src/session-inputs.css",
+      "apps/web/src/connection-model.ts",
+      "apps/web/src/source-connect-options.ts"
+    ],
+    "apps/web/src/session-inputs.css": [],
+    "apps/web/src/panel-resize.tsx": [
+      "apps/web/src/workspace-scope.ts"
+    ],
+    "apps/web/src/projects.tsx": [
+      "packages/core/src/types.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/file-upload.tsx",
+      "apps/web/src/project-work-tabs.tsx",
+      "apps/web/src/composer-keyboard.ts",
+      "apps/web/src/restore-source.tsx",
+      "apps/web/src/workspace-scope.ts",
+      "apps/web/src/projects.css"
+    ],
+    "apps/web/src/project-work-tabs.tsx": [
+      "packages/core/src/types.ts",
+      "apps/web/src/run-presentation.ts"
+    ],
+    "apps/web/src/projects.css": [],
+    "apps/web/src/workspace-details.tsx": [
+      "packages/core/src/types.ts",
+      "apps/web/src/session-access.tsx",
+      "apps/web/src/workspace-diagnostics.tsx",
+      "apps/web/src/connectors.tsx",
+      "apps/web/src/older-draft-recovery.tsx",
+      "apps/web/src/team-admin.tsx",
+      "apps/web/src/recipient-settings.tsx",
+      "apps/web/src/settings-tabs.tsx",
+      "apps/web/src/connection-model.ts",
+      "apps/web/src/source-connections.ts",
+      "apps/web/src/billing.tsx"
+    ],
+    "apps/web/src/workspace-diagnostics.tsx": [
+      "packages/core/src/types.ts",
+      "packages/core/src/workspace-diagnostics.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/workspace-diagnostics-presentation.ts"
+    ],
+    "apps/web/src/workspace-diagnostics-presentation.ts": [
+      "packages/core/src/workspace-diagnostics.ts"
+    ],
+    "apps/web/src/connectors.tsx": [
+      "packages/core/src/types.ts",
+      "apps/web/src/drive-connection.tsx",
+      "apps/web/src/session-access.tsx"
+    ],
+    "apps/web/src/drive-connection.tsx": [
+      "packages/core/src/google-drive.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/google-picker.ts"
+    ],
+    "apps/web/src/google-picker.ts": [],
+    "apps/web/src/older-draft-recovery.tsx": [
+      "apps/web/src/api.ts",
+      "apps/web/src/older-drafts.ts",
+      "apps/web/src/workflow-workspace.tsx"
+    ],
+    "apps/web/src/older-drafts.ts": [
+      "packages/core/src/file-import.ts",
+      "packages/core/src/types.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/draft-store.ts",
+      "apps/web/src/module-state.ts"
+    ],
+    "apps/web/src/team-admin.tsx": [
+      "packages/core/src/organization-types.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/recipient-settings.tsx"
+    ],
+    "apps/web/src/recipient-settings.tsx": [
+      "packages/core/src/organization-types.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/organization-dialog.tsx"
+    ],
+    "apps/web/src/organization-dialog.tsx": [],
+    "apps/web/src/settings-tabs.tsx": [
+      "apps/web/src/connections.tsx"
+    ],
+    "apps/web/src/billing.tsx": [
+      "packages/core/src/billing-types.ts",
+      "apps/web/src/rivet-mark.tsx"
+    ],
+    "packages/core/src/billing-types.ts": [],
+    "apps/web/src/verification-panel.tsx": [
+      "packages/core/src/types.ts",
+      "apps/web/src/verification-summary.ts",
+      "apps/web/src/verification-panel.css",
+      "apps/web/src/calculation-verification.ts",
+      "apps/web/src/verification-calculation-detail.tsx"
+    ],
+    "apps/web/src/verification-summary.ts": [
+      "packages/core/src/types.ts",
+      "apps/web/src/verification-calculations.ts"
+    ],
+    "apps/web/src/verification-calculations.ts": [
+      "packages/core/src/types.ts",
+      "packages/core/src/answers.ts",
+      "apps/web/src/verification-summary.ts"
+    ],
+    "apps/web/src/verification-panel.css": [],
+    "apps/web/src/run-updates.ts": [
+      "packages/core/src/types.ts"
+    ],
+    "apps/web/src/run-library.ts": [
+      "packages/core/src/types.ts"
+    ],
+    "apps/web/src/workspace-navigation.tsx": [
+      "apps/web/src/run-presentation.ts",
+      "packages/core/src/types.ts",
+      "apps/web/src/navigation.tsx",
+      "apps/web/src/rivet-mark.tsx",
+      "apps/web/src/workspace-brand.tsx",
+      "apps/web/src/workspace-scope.ts",
+      "apps/web/src/session-access.tsx",
+      "apps/web/src/sidebar-pins.ts",
+      "apps/web/src/use-sidebar-pins.ts"
+    ],
+    "apps/web/src/sidebar-pins.ts": [
+      "packages/core/src/types.ts"
+    ],
+    "apps/web/src/use-sidebar-pins.ts": [
+      "packages/core/src/types.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/workspace-scope.ts",
+      "apps/web/src/sidebar-pins.ts"
+    ],
+    "apps/web/src/workspace-tabs.tsx": [
+      "apps/web/src/navigation.tsx"
+    ],
+    "apps/web/src/care-workspace.tsx": [
+      "packages/core/src/care-types.ts",
+      "packages/core/src/types.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/care-client.ts",
+      "apps/web/src/care-presentation.ts",
+      "apps/web/src/navigation.tsx",
+      "apps/web/src/care.css"
+    ],
+    "apps/web/src/care-client.ts": [
+      "packages/core/src/care-types.ts"
+    ],
+    "apps/web/src/care-presentation.ts": [
+      "packages/core/src/care-types.ts"
+    ],
+    "apps/web/src/care.css": [],
+    "apps/web/src/agent-session.tsx": [
+      "apps/web/src/tabular-analysis.tsx",
+      "apps/web/src/source-analysis-view.tsx",
+      "apps/web/src/post-presentation.tsx",
+      "apps/web/src/social-analysis.tsx",
+      "apps/web/src/composer-keyboard.ts",
+      "packages/core/src/types.ts",
+      "apps/web/src/markdown.tsx",
+      "apps/web/src/home-welcome.tsx",
+      "apps/web/src/api.ts",
+      "apps/web/src/rivet-mark.tsx",
+      "apps/web/src/paced-reply.ts",
+      "apps/web/src/session-inputs.tsx",
+      "apps/web/src/model-stream-presentation.ts",
+      "apps/web/src/run-progress.tsx",
+      "apps/web/src/run-progress-state.ts",
+      "apps/web/src/panel-resize.tsx",
+      "apps/web/src/visual-analysis.tsx",
+      "apps/web/src/financial-analysis.tsx",
+      "apps/web/src/run-presentation.ts",
+      "apps/web/src/report-body.tsx",
+      "apps/web/src/connection-freshness.tsx",
+      "apps/web/src/weekly-review-context.tsx",
+      "apps/web/src/weekly-review-email.tsx",
+      "packages/presentation/src/source-chart.ts",
+      "apps/web/src/agent-session.css",
+      "apps/web/src/financial-presentation.ts",
+      "apps/web/src/presentation-export.ts"
+    ],
+    "apps/web/src/social-analysis.tsx": [
+      "apps/web/src/workspace-scope.ts",
+      "packages/core/src/social-analysis.ts",
+      "apps/web/src/visual-analysis.tsx",
+      "apps/web/src/social-analysis.css"
+    ],
+    "apps/web/src/visual-analysis.tsx": [
+      "packages/core/src/reporting-analysis.ts",
+      "packages/presentation/src/visual-analysis.ts",
+      "packages/presentation/src/visual-analysis.ts"
+    ],
+    "apps/web/src/social-analysis.css": [],
+    "apps/web/src/paced-reply.ts": [],
+    "apps/web/src/model-stream-presentation.ts": [
+      "packages/core/src/types.ts"
+    ],
+    "apps/web/src/run-progress.tsx": [
+      "packages/core/src/types.ts",
+      "apps/web/src/run-progress-state.ts",
+      "apps/web/src/run-progress.css"
+    ],
+    "apps/web/src/run-progress-state.ts": [
+      "packages/core/src/types.ts",
+      "apps/web/src/model-stream-presentation.ts"
+    ],
+    "apps/web/src/run-progress.css": [],
+    "apps/web/src/financial-analysis.tsx": [
+      "packages/core/src/financial-reporting.ts",
+      "packages/presentation/src/financial-analysis.ts",
+      "packages/presentation/src/financial-analysis.ts"
+    ],
+    "apps/web/src/weekly-review-context.tsx": [
+      "packages/core/src/types.ts",
+      "apps/web/src/weekly-review-presentation.ts"
+    ],
+    "apps/web/src/weekly-review-presentation.ts": [
+      "packages/core/src/types.ts",
+      "apps/web/src/answer-export.ts"
+    ],
+    "apps/web/src/weekly-review-email.tsx": [
+      "packages/core/src/types.ts",
+      "apps/web/src/weekly-review-presentation.ts"
+    ],
+    "apps/web/src/agent-session.css": [],
+    "apps/web/src/financial-presentation.ts": [
+      "packages/core/src/types.ts",
+      "apps/web/src/presentation-export.ts"
+    ],
+    "apps/web/src/presentation-export.ts": [
+      "packages/core/src/types.ts"
+    ],
+    "apps/web/src/example-work.ts": [
+      "packages/core/src/types.ts"
+    ],
+    "apps/web/src/modules.css": [],
+    "apps/web/src/connectors.css": [],
+    "apps/web/src/shell.css": [],
+    "apps/web/src/navigation.css": [],
+    "apps/web/src/workspace.css": [],
+    "apps/web/src/home-workspace.css": [],
+    "apps/web/src/panel-resize.css": [],
+    "apps/web/src/visual-analysis.css": [],
+    "apps/web/src/financial-analysis.css": [],
+    "apps/web/src/tabular-analysis.css": [],
+    "apps/web/src/report-body.css": [],
+    "apps/web/src/tabular-presentation.css": [],
+    "apps/web/src/older-drafts.css": [],
+    "apps/web/src/organization-admin.tsx": [
+      "packages/core/src/organization-types.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/rivet-mark.tsx",
+      "apps/web/src/invitation-token.ts",
+      "apps/web/src/organization-dialog.tsx",
+      "apps/web/src/usage-admin.tsx",
+      "apps/web/src/staff-admin.tsx",
+      "apps/web/src/workspace-access-layout.tsx"
+    ],
+    "apps/web/src/invitation-token.ts": [],
+    "apps/web/src/usage-admin.tsx": [
+      "packages/core/src/usage-admin-types.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/organization-dialog.tsx",
+      "apps/web/src/admin-control-dialog.tsx"
+    ],
+    "apps/web/src/admin-control-dialog.tsx": [
+      "packages/core/src/admin-control-types.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/organization-dialog.tsx"
+    ],
+    "apps/web/src/staff-admin.tsx": [
+      "packages/core/src/admin-control-types.ts",
+      "apps/web/src/api.ts",
+      "apps/web/src/admin-control-dialog.tsx"
+    ],
+    "apps/web/src/workspace-access-layout.tsx": [
+      "apps/web/src/rivet-mark.tsx"
+    ],
+    "apps/web/src/customer-workspaces.tsx": [
+      "apps/web/src/api.ts",
+      "apps/web/src/workspace-scope.ts",
+      "apps/web/src/session-access.tsx",
+      "packages/core/src/organization-types.ts",
+      "apps/web/src/rivet-mark.tsx",
+      "apps/web/src/workspace-access-layout.tsx"
+    ],
+    "apps/web/src/signup-tour.tsx": [
+      "apps/web/src/api.ts",
+      "apps/web/src/workspace-scope.ts"
+    ],
+    "apps/web/src/onboarding.tsx": [
+      "apps/web/src/api.ts",
+      "apps/web/src/workspace-access-layout.tsx",
+      "apps/web/src/session-access.tsx",
+      "packages/core/src/organization-types.ts"
+    ],
+    "apps/web/src/billing.css": [],
+    "apps/web/src/onboarding.css": [],
+    "apps/web/src/styles.css": [],
+    "apps/web/src/workspace-diagnostics.css": [],
+    "apps/web/src/source-table.css": [],
+    "apps/web/src/organization-admin.css": [],
+    "apps/web/src/workspace-access-layout.css": [],
+    "scripts/desktop-main.test.mjs": [
+      "apps/desktop/runtime.cjs"
+    ],
+    "apps/desktop/runtime.cjs": [],
+    "scripts/desktop-runtime.test.mjs": [
+      "apps/desktop/runtime.cjs"
+    ],
+    "scripts/desktop-setup.test.mjs": [],
+    "scripts/package-desktop.test.mjs": [
+      "scripts/package-desktop.mjs"
+    ],
+    "scripts/package-desktop.mjs": [],
+    "apps/server/src/desktop-access.test.ts": [
+      "apps/server/src/desktop-access.ts",
+      "apps/server/src/http.ts",
+      "packages/core/src/types.ts"
+    ],
+    "packages/core/src/provider.test.ts": [
+      "packages/core/src/provider.ts"
+    ],
+    "packages/core/src/calculation-recovery.test.ts": [
+      "packages/core/src/index.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/types.ts",
+      "packages/data-layer/src/tabular/types.ts"
+    ],
+    "packages/core/src/source-scope.test.ts": [
+      "packages/core/src/index.ts",
+      "packages/core/src/source-scope.ts"
+    ],
+    "packages/core/src/context-budget.test.ts": [
+      "packages/core/src/context-budget.ts",
+      "packages/core/src/provider.ts"
+    ],
+    "packages/core/src/credential-vault.test.ts": [
+      "packages/core/src/connections.ts",
+      "packages/core/src/credential-vault.ts",
+      "packages/core/src/errors.ts",
+      "packages/core/src/index.ts"
+    ],
+    "packages/core/src/file-import.test.ts": [
+      "packages/core/src/file-import.ts",
+      "packages/core/src/errors.ts"
+    ],
+    "packages/data-layer/src/csv.test.ts": [
+      "packages/data-layer/src/csv.ts",
+      "packages/data-layer/src/errors.ts"
+    ],
+    "packages/data-layer/src/tabular-ranking.test.ts": [
+      "packages/data-layer/src/tabular/index.ts"
+    ],
+    "packages/data-layer/src/tabular-filters.test.ts": [
+      "packages/data-layer/src/errors.ts",
+      "packages/data-layer/src/tabular/index.ts",
+      "packages/data-layer/src/tabular/input.ts"
+    ],
+    "packages/data-layer/src/tabular-labels.test.ts": [
+      "packages/data-layer/src/tabular/index.ts",
+      "packages/data-layer/src/tabular/input.ts",
+      "packages/data-layer/src/tabular/labels.ts",
+      "packages/data-layer/src/tabular/types.ts"
+    ],
+    "packages/data-layer/src/source-semantics.test.ts": [
+      "packages/data-layer/src/store.ts",
+      "packages/data-layer/src/sync.ts",
+      "packages/data-layer/src/adapters/meta-graph.ts",
+      "packages/data-layer/src/adapters/youtube.ts",
+      "packages/data-layer/src/adapters/provider-table.ts",
+      "packages/data-layer/src/source-semantics.ts",
+      "packages/data-layer/src/types.ts"
+    ],
+    "packages/presentation/src/weekly-review-email.test.ts": [
+      "packages/data-layer/src/tabular/index.ts",
+      "packages/data-layer/src/source-review.ts",
+      "packages/data-layer/src/source-semantics.ts",
+      "packages/core/src/types.ts",
+      "apps/web/src/dashboards.tsx",
+      "packages/presentation/src/weekly-review-email.ts"
+    ],
+    "apps/web/src/draft-store.test.tsx": [
+      "apps/web/src/draft-store.ts"
+    ],
+    "apps/web/src/tabular-interpretation.test.tsx": [
+      "packages/data-layer/src/tabular/index.ts",
+      "packages/data-layer/src/tabular/types.ts",
+      "packages/presentation/src/tabular-interpretation.ts",
+      "apps/web/src/tabular-analysis.tsx"
+    ],
+    "apps/web/src/report-takeaways.test.tsx": [
+      "packages/data-layer/src/tabular/index.ts",
+      "packages/data-layer/src/tabular/types.ts",
+      "apps/web/src/report-takeaways.tsx"
+    ],
+    "apps/web/src/agent-session-evidence.test.tsx": [
+      "packages/data-layer/src/tabular/index.ts",
+      "packages/core/src/types.ts",
+      "apps/web/src/example-work.ts",
+      "packages/data-layer/src/source-semantics.ts",
+      "apps/web/src/agent-session.tsx"
+    ],
+    "apps/web/vite.config.ts": [],
+    "apps/desktop/main.cjs": [
+      "apps/desktop/runtime.cjs"
+    ],
+    "apps/desktop/preload.cjs": [],
+    "apps/desktop/setup.js": []
+  },
+  "rightsStatus": "Apache-2.0; repository owner confirmed rights for included source, examples and reviewed demo media on 2026-10-20; third-party licenses retained",
+  "localChanges": [
+    {
+      "path": ".nvmrc",
+      "sha256": "7e8a2fa94951112b894a3dbe3d05efef5e9263741fa49125f0a70f40fedab4cc",
+      "reason": "Pin source checks and CI to the tested Node 24.19.0 runtime."
+    },
+    {
+      "path": "apps/desktop/main.cjs",
+      "sha256": "7c2cc24d4613b171b32ec13d12743b2cfcaae7ad66a2afdf28010b174d9c9632",
+      "reason": "Port the approved parent working-tree desktop capability, catalog/model-settings UI and associated tests; original pinned blob provenance remains unchanged.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "7c2cc24d4613b171b32ec13d12743b2cfcaae7ad66a2afdf28010b174d9c9632"
+      }
+    },
+    {
+      "path": "apps/desktop/package-lock.json",
+      "sha256": "1a9e99726c7d99227d1c3a19b4412e14b9efe0b50debf06bf70616589701a54b",
+      "reason": "Synchronize the owner-approved Apache-2.0 source license; preserve locked desktop runtime versions/integrities."
+    },
+    {
+      "path": "apps/desktop/package.json",
+      "sha256": "47170ff3bafc807740975869329fb2edc4c8c756ef68cead017321ea52a6de7a",
+      "reason": "Apply the owner-approved Apache-2.0 source license, keep npm publication disabled and expose only isolated contributor tests."
+    },
+    {
+      "path": "apps/server/src/desktop-access.test.ts",
+      "sha256": "d3e3c727f8efcde48d6090b9cafe8df0a3cf1e8505c2fedef55728984c22b9f1",
+      "reason": "Port the tested r3 desktop JSON-object output, bounded selected-dataset recovery and explicit publication-period checks; preserve parser, permission, action and time limits.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "d3e3c727f8efcde48d6090b9cafe8df0a3cf1e8505c2fedef55728984c22b9f1"
+      }
+    },
+    {
+      "path": "apps/server/src/http.ts",
+      "sha256": "97c134a7f48bb58fa2be89b2574a040467e5f254a5bfb697ea0e62e268fcaeb0",
+      "reason": "Port the approved parent working-tree desktop capability, catalog/model-settings UI and associated tests; original pinned blob provenance remains unchanged.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "97c134a7f48bb58fa2be89b2574a040467e5f254a5bfb697ea0e62e268fcaeb0"
+      }
+    },
+    {
+      "path": "apps/server/src/index.ts",
+      "sha256": "27e1d72f6793e4879ead2a4e1bdfef30c716da070bbcafa23299ead9562e8500",
+      "reason": "Port the tested r3 desktop JSON-object output, bounded selected-dataset recovery and explicit publication-period checks; preserve parser, permission, action and time limits.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "27e1d72f6793e4879ead2a4e1bdfef30c716da070bbcafa23299ead9562e8500"
+      }
+    },
+    {
+      "path": "apps/web/index.html",
+      "sha256": "cb6d37fcfcfd951b5bce5f0d5409d90dfe9c281fa25aae3bbec4989417044f84",
+      "reason": "Remove reference to excluded product favicon artwork."
+    },
+    {
+      "path": "apps/web/src/connection-model.ts",
+      "sha256": "e906f42405439b15fedde1f9763e97746f31a9c4d32b366b1c79a1223b69be8b",
+      "reason": "Port the approved parent working-tree desktop capability, catalog/model-settings UI and associated tests; original pinned blob provenance remains unchanged.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "e906f42405439b15fedde1f9763e97746f31a9c4d32b366b1c79a1223b69be8b"
+      }
+    },
+    {
+      "path": "apps/web/src/connectors.tsx",
+      "sha256": "1a8d3edfc4a295d874b8486653199da72eb5f9a1ccf435839e31a30c40b440fd",
+      "reason": "Use existing Lucide Cable icon in place of excluded Google Drive artwork."
+    },
+    {
+      "path": "apps/web/src/platform-icon.tsx",
+      "sha256": "34b7c1760de9da2bcb3063d3748fe7c48e9a06f8e688e856626f8cf41b3d9007",
+      "reason": "Use existing Lucide Cable icon in place of excluded public brand artwork."
+    },
+    {
+      "path": "apps/web/src/source-connect-page.css",
+      "sha256": "daa38f6d6e65894062d925b8f700109f43986e14633e672277def359a30732d2",
+      "reason": "Port the approved parent working-tree desktop capability, catalog/model-settings UI and associated tests; original pinned blob provenance remains unchanged.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "daa38f6d6e65894062d925b8f700109f43986e14633e672277def359a30732d2"
+      }
+    },
+    {
+      "path": "apps/web/src/source-connect-page.tsx",
+      "sha256": "16129cf3c3828fc2ec7fa60e24b76f7acdb8fd828a8b15aeedfba922622f1e11",
+      "reason": "Port the approved parent working-tree desktop capability, catalog/model-settings UI and associated tests; original pinned blob provenance remains unchanged.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "16129cf3c3828fc2ec7fa60e24b76f7acdb8fd828a8b15aeedfba922622f1e11"
+      }
+    },
+    {
+      "path": "apps/web/src/tables-library.tsx",
+      "sha256": "f76f4d96a1ddf483498c6d8b223e643f884dc3f6bbf24c21fdd983290bc7e032",
+      "reason": "Port the approved parent working-tree desktop capability, catalog/model-settings UI and associated tests; original pinned blob provenance remains unchanged.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "f76f4d96a1ddf483498c6d8b223e643f884dc3f6bbf24c21fdd983290bc7e032"
+      }
+    },
+    {
+      "path": "apps/web/src/team-admin.tsx",
+      "sha256": "2718ae1d10403a61375bfcdaac4658933ffb7525d48f81ada5fd5d5c41c18049",
+      "reason": "Remove one inherited trailing-whitespace-only line for the initial staged-source check; no runtime behavior change."
+    },
+    {
+      "path": "apps/web/src/workspace.tsx",
+      "sha256": "32e60ef23e468d8c61829c7a1ea01c151b159f3674b373c35b0df860f59599a1",
+      "reason": "Port the approved parent working-tree desktop capability, catalog/model-settings UI and associated tests; original pinned blob provenance remains unchanged.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "32e60ef23e468d8c61829c7a1ea01c151b159f3674b373c35b0df860f59599a1"
+      }
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "622dd5a37f46dc55d5a75e1c1b4b1043493bd360fa0f94e9af3989a30cc14022",
+      "reason": "Synchronize approved Apache-2.0 source-alpha metadata, prune unused tools/hosted SDKs and lock Vite 8.3.4 with required development-toolchain updates; preserve unrelated resolutions/integrities."
+    },
+    {
+      "path": "package.json",
+      "sha256": "37a91aaeb626084beb062b21046300d9474d2a0b673a1b6e4bf8435a4055176c",
+      "reason": "Owner-approved Apache-2.0 source-alpha metadata with npm publication disabled; isolated checks and private package/verify/launch commands; patch Vite to 8.3.4; omit unused browser/Stripe CLI tools and unimported Stripe/Svix hosted SDKs."
+    },
+    {
+      "path": "packages/core/src/index.ts",
+      "sha256": "01707fbd80425a6d936ed116d0e84b8e74dfd5f31478078a7d0e9e84154a4926",
+      "reason": "Port the tested r3 desktop JSON-object output, bounded selected-dataset recovery and explicit publication-period checks; preserve parser, permission, action and time limits.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "01707fbd80425a6d936ed116d0e84b8e74dfd5f31478078a7d0e9e84154a4926"
+      }
+    },
+    {
+      "path": "packages/core/src/provider.test.ts",
+      "sha256": "64f91a80aed4bf5a18dc7c7e72af4fced3612b78811036b92c9e418e4cb7b12e",
+      "reason": "Port the tested r3 desktop JSON-object output, bounded selected-dataset recovery and explicit publication-period checks; preserve parser, permission, action and time limits.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "64f91a80aed4bf5a18dc7c7e72af4fced3612b78811036b92c9e418e4cb7b12e"
+      }
+    },
+    {
+      "path": "packages/core/src/provider.ts",
+      "sha256": "712d04a26061f2ecb474ecddd4b99f48ee08906aefc48bef46793816cf6558e0",
+      "reason": "Port the tested r3 desktop JSON-object output, bounded selected-dataset recovery and explicit publication-period checks; preserve parser, permission, action and time limits.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "712d04a26061f2ecb474ecddd4b99f48ee08906aefc48bef46793816cf6558e0"
+      }
+    },
+    {
+      "path": "packages/core/src/tabular-followup.ts",
+      "sha256": "8fedb82a99cda7b4b1f9419c87faf4e715043e1b56de70ba0bd46a7b7911a49a",
+      "reason": "Port the tested r3 desktop JSON-object output, bounded selected-dataset recovery and explicit publication-period checks; preserve parser, permission, action and time limits.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "8fedb82a99cda7b4b1f9419c87faf4e715043e1b56de70ba0bd46a7b7911a49a"
+      }
+    },
+    {
+      "path": "packages/core/src/types.ts",
+      "sha256": "65b10de7b83970b2bd9a8a7d42e1b6dbb7ca03a265e169d5487eee047a58f2b0",
+      "reason": "Port the approved parent working-tree desktop capability, catalog/model-settings UI and associated tests; original pinned blob provenance remains unchanged.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "65b10de7b83970b2bd9a8a7d42e1b6dbb7ca03a265e169d5487eee047a58f2b0"
+      }
+    },
+    {
+      "path": "packages/presentation/src/weekly-review-email.test.ts",
+      "sha256": "11dd15cfa7b6380ee388bf9cb22abd767be73ab36871ea78d4fb96aca66a226d",
+      "reason": "Replace a person-shaped example email with a generic fictional address."
+    },
+    {
+      "path": "scripts/desktop-main.test.mjs",
+      "sha256": "5de9732cf975018c55c4f2ee017c685d4ec4058a2cc93b0280d0fea049371836",
+      "reason": "Port the approved parent working-tree desktop capability, catalog/model-settings UI and associated tests; original pinned blob provenance remains unchanged.",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "5de9732cf975018c55c4f2ee017c685d4ec4058a2cc93b0280d0fea049371836"
+      }
+    },
+    {
+      "path": "scripts/package-desktop.mjs",
+      "sha256": "41aa7fb48aa181c673de81bd2392849421ba204dfb2dad722581cbd119733af4",
+      "reason": "Keep the curated ancillary allowlist, omitted assets/fixtures/helpers and workspace preload; preserve approved LICENSE/NOTICE in local packages; verify the complete app inventory and DMG before normal macOS launch with no security bypass."
+    },
+    {
+      "path": "scripts/package-desktop.test.mjs",
+      "sha256": "49e08e597cb247eb4c62c9663bfc6a9ab1b1e6b6cf0887b24da9515aa6a3d51e",
+      "reason": "Cover exact packaging commands, retained product notices, artifact integrity, executable runtimes, safe paths and inert launch dispatch; retain the narrow source boundary and generic brand fixture names."
+    }
+  ],
+  "addedFiles": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "sha256": "2cded067aed7576cfe13eabc7eb088e692de394859331448cf231b0f0731b1fd"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "sha256": "d062a0374571db8c03e984b02826795aebf93e45063ea51a5513061c30d2ecf4"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "sha256": "488e6a4067ee0cfcf663736e3db2eeeef220cd0860f5fc85f0df2ee978209da8"
+    },
+    {
+      "path": ".github/workflows/checks.yml",
+      "sha256": "4a6fb78ce9e267492b2554d87dcc18c5bd9af35fa68e6ca9752187ae6c31f5ff"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "1e2c5c8c9afd06b1e8ba09e5e996f5ed2d8bab2b7bbdd00db42c8d9bf1ccfaa3"
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "d11dc3a1e5d59cfde3e28097a125de035716487e281bd03dd762045f85f5a8cc"
+    },
+    {
+      "path": "apps/desktop/workspace-preload.cjs",
+      "sha256": "49395d976e88876918049ecb46e1d65736ceacc34b63eb4b13b95354d66e9217",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "49395d976e88876918049ecb46e1d65736ceacc34b63eb4b13b95354d66e9217"
+      }
+    },
+    {
+      "path": "apps/web/src/desktop-model-notice.test.tsx",
+      "sha256": "9ff56cb8f90d9b4fbf91ec283fa536c9a8ea10e1862d9538b69fb5b16e93b6ae",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "9ff56cb8f90d9b4fbf91ec283fa536c9a8ea10e1862d9538b69fb5b16e93b6ae"
+      }
+    },
+    {
+      "path": "apps/web/src/desktop-model-notice.tsx",
+      "sha256": "7771b7ce91743804b0d99cd8f19c6e6a65f34571fc1d598eddf20716e93874c2",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "7771b7ce91743804b0d99cd8f19c6e6a65f34571fc1d598eddf20716e93874c2"
+      }
+    },
+    {
+      "path": "apps/web/src/source-connect-options.test.tsx",
+      "sha256": "ddde2427ca11dd897d38d4ba5b41ff181af3ede127bc953ab3f5708f1761e83b",
+      "transformations": [
+        "Replace three upstream artwork expectations with assertions for the retained generic Cable icons and absence of excluded brand images."
+      ],
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "3349b35dcea3125e2bf3874b19e190b12e559b66dbdedc965f9951fa5495dea2"
+      }
+    },
+    {
+      "path": "apps/web/src/tables-library.test.tsx",
+      "sha256": "f7e59471333fcd5821b2ac5d8789980a7b6f69477f64088c3c0b6b5acb0c8150",
+      "origin": {
+        "kind": "parent-working-tree",
+        "repository": "rivetfields-research/harness",
+        "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+        "capturedSha256": "f7e59471333fcd5821b2ac5d8789980a7b6f69477f64088c3c0b6b5acb0c8150"
+      }
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "4939351bbc8bbbb0ef4e4cd216190fd8c3c25a19139319ad88f8c27213e9a922"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "1a97e29a706b34d892c24ee2278aab8036b2866d8819c725192628efedc12346"
+    },
+    {
+      "path": "docs/media/rivet-workflow.gif",
+      "sha256": "96016637c1a9bf4168abc1209f040c83821c2485023c6a314acf35c833a916a9",
+      "bytes": 1788297,
+      "mediaType": "image/gif",
+      "origin": {
+        "kind": "reviewed-reference-media",
+        "reviewedSha256": "96016637c1a9bf4168abc1209f040c83821c2485023c6a314acf35c833a916a9",
+        "source": "Parent-reviewed final export; raw frames, metadata and private crops excluded.",
+        "approvalScope": "Owner-approved public source inclusion, including media rights, on 2026-10-20.",
+        "capture": "Edited hosted UI using a 240-row QA/sample social CSV; not verified live-account performance, completed OAuth, native-desktop parity or email-delivery proof."
+      }
+    },
+    {
+      "path": "docs/media/rivet-workflow.mp4",
+      "sha256": "836524de20db8c59c8c520f2658753b7c719ba0caf0423218611d819b67738bc",
+      "bytes": 950825,
+      "mediaType": "video/mp4",
+      "origin": {
+        "kind": "reviewed-reference-media",
+        "reviewedSha256": "836524de20db8c59c8c520f2658753b7c719ba0caf0423218611d819b67738bc",
+        "source": "Parent-reviewed final export; raw frames, metadata and private crops excluded.",
+        "approvalScope": "Owner-approved public source inclusion, including media rights, on 2026-10-20.",
+        "capture": "Edited hosted UI using a 240-row QA/sample social CSV; not verified live-account performance, completed OAuth, native-desktop parity or email-delivery proof."
+      }
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "c91ce9db17db1a008163865de708393178c41ef716c4b9e27587714084e49645"
+    },
+    {
+      "path": "packages/core/src/desktop-report.test.ts",
+      "sha256": "31e9d7abc17acc8ca5c78bcdb217736a1212cf98d44ce1d6c0d4f7caa16b2f7a"
+    },
+    {
+      "path": "README.md",
+      "sha256": "fcd58f1260c4e1bd311f13f6910176e0ef7dcd4d64091622d8b960e5a4ac8939"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "840c21b9f9cff3dd797c81add28e10e637b8bddd2610197601e3332e2e639ff8"
+    },
+    {
+      "path": "SOURCE_BOUNDARY.md",
+      "sha256": "07caa585ed01e81324be82b6d9f4a237e4cb42e9fb2bf9ed5447860ed9216e1c"
+    },
+    {
+      "path": "tools/audit-index.mjs",
+      "sha256": "d262d34838385e628ff62b12498d0d2ba7ce751ec4b7ad94f5ae4fd5aaba0256"
+    },
+    {
+      "path": "tools/audit-index.test.mjs",
+      "sha256": "79d4723a93685623cafd10d8570239248fb9346d6b7c03d300e1cf9d96469ab5"
+    },
+    {
+      "path": "tools/check-source.mjs",
+      "sha256": "959cb8e0a39fd9f0443f91e9efbcf3fcc1dae16f07945ebfd9d5c0cff628a7fb"
+    },
+    {
+      "path": "tools/check.mjs",
+      "sha256": "0f4a06a1140e40c35821ea302a7f0f3e9dcebb491d8b4cfd16f4eac4fa36de8b"
+    },
+    {
+      "path": "tools/configure-candidate.mjs",
+      "sha256": "eaa667c5cf003553523f08049c992b2f5bec21c896af4b543fa2d7105f615be8"
+    },
+    {
+      "path": "tools/export-source.mjs",
+      "sha256": "4a4c18bc6531eb8db9b68a2f739205f396e2c13bab0fb1aeaf04a8055ec14680"
+    },
+    {
+      "path": "tools/offline-guard.mjs",
+      "sha256": "15697862ca66b5869ef366fcd944363e264dca2587657473e8b28200d36db55a"
+    },
+    {
+      "path": "tools/offline-guard.test.mjs",
+      "sha256": "b3bcf6e510db8cdda9c745e5486c9dd31318f21bc3d76e5ab4bbeedb4a37f1da"
+    },
+    {
+      "path": "tools/record-provenance.mjs",
+      "sha256": "b5f5cfd9f2b1c808e978fb4fbd60b2b911a319855e1c700a92fa628fae4762ff"
+    },
+    {
+      "path": "tools/reviewed-media.mjs",
+      "sha256": "3542b2b58c37ac98252ee1e04dde26d42acd9fb7912a85bba9f22d212584965a"
+    },
+    {
+      "path": "tools/reviewed-media.test.mjs",
+      "sha256": "362514640d65f5276f3121e5daeaf34e25f1c4c2fc6c5d19e5ddbdd888ad8a09"
+    },
+    {
+      "path": "tools/source-license.mjs",
+      "sha256": "8d1ec5eb75a71d2b418425a81ea33472903d1d2ab23f6be6090cbf0222b6115c"
+    },
+    {
+      "path": "tools/source-license.test.mjs",
+      "sha256": "1aac8872b876c77868fc8681c66f72faad5efcbe09d6947af598b1c9c7d73393"
+    }
+  ],
+  "workingTreeImports": [
+    {
+      "repository": "rivetfields-research/harness",
+      "sourceHead": "1574d8b7533b0f63e0b882c36b346e03ffea913d",
+      "state": "working-tree snapshot; these file contents are not claimed as blobs from sourceHead",
+      "files": [
+        {
+          "path": "apps/web/src/connection-model.ts",
+          "sha256": "e906f42405439b15fedde1f9763e97746f31a9c4d32b366b1c79a1223b69be8b"
+        },
+        {
+          "path": "apps/web/src/source-connect-page.tsx",
+          "sha256": "16129cf3c3828fc2ec7fa60e24b76f7acdb8fd828a8b15aeedfba922622f1e11"
+        },
+        {
+          "path": "apps/web/src/source-connect-page.css",
+          "sha256": "daa38f6d6e65894062d925b8f700109f43986e14633e672277def359a30732d2"
+        },
+        {
+          "path": "apps/web/src/tables-library.tsx",
+          "sha256": "f76f4d96a1ddf483498c6d8b223e643f884dc3f6bbf24c21fdd983290bc7e032"
+        },
+        {
+          "path": "apps/web/src/workspace.tsx",
+          "sha256": "32e60ef23e468d8c61829c7a1ea01c151b159f3674b373c35b0df860f59599a1"
+        },
+        {
+          "path": "apps/web/src/desktop-model-notice.tsx",
+          "sha256": "7771b7ce91743804b0d99cd8f19c6e6a65f34571fc1d598eddf20716e93874c2"
+        },
+        {
+          "path": "apps/web/src/desktop-model-notice.test.tsx",
+          "sha256": "9ff56cb8f90d9b4fbf91ec283fa536c9a8ea10e1862d9538b69fb5b16e93b6ae"
+        },
+        {
+          "path": "apps/server/src/http.ts",
+          "sha256": "97c134a7f48bb58fa2be89b2574a040467e5f254a5bfb697ea0e62e268fcaeb0"
+        },
+        {
+          "path": "apps/server/src/desktop-access.test.ts",
+          "sha256": "d3e3c727f8efcde48d6090b9cafe8df0a3cf1e8505c2fedef55728984c22b9f1"
+        },
+        {
+          "path": "apps/server/src/index.ts",
+          "sha256": "27e1d72f6793e4879ead2a4e1bdfef30c716da070bbcafa23299ead9562e8500"
+        },
+        {
+          "path": "packages/core/src/index.ts",
+          "sha256": "01707fbd80425a6d936ed116d0e84b8e74dfd5f31478078a7d0e9e84154a4926"
+        },
+        {
+          "path": "packages/core/src/provider.ts",
+          "sha256": "712d04a26061f2ecb474ecddd4b99f48ee08906aefc48bef46793816cf6558e0"
+        },
+        {
+          "path": "packages/core/src/provider.test.ts",
+          "sha256": "64f91a80aed4bf5a18dc7c7e72af4fced3612b78811036b92c9e418e4cb7b12e"
+        },
+        {
+          "path": "packages/core/src/tabular-followup.ts",
+          "sha256": "8fedb82a99cda7b4b1f9419c87faf4e715043e1b56de70ba0bd46a7b7911a49a"
+        },
+        {
+          "path": "packages/core/src/types.ts",
+          "sha256": "65b10de7b83970b2bd9a8a7d42e1b6dbb7ca03a265e169d5487eee047a58f2b0"
+        },
+        {
+          "path": "apps/desktop/main.cjs",
+          "sha256": "7c2cc24d4613b171b32ec13d12743b2cfcaae7ad66a2afdf28010b174d9c9632"
+        },
+        {
+          "path": "apps/desktop/workspace-preload.cjs",
+          "sha256": "49395d976e88876918049ecb46e1d65736ceacc34b63eb4b13b95354d66e9217"
+        },
+        {
+          "path": "scripts/desktop-main.test.mjs",
+          "sha256": "5de9732cf975018c55c4f2ee017c685d4ec4058a2cc93b0280d0fea049371836"
+        },
+        {
+          "path": "apps/web/src/source-connect-options.test.tsx",
+          "sha256": "3349b35dcea3125e2bf3874b19e190b12e559b66dbdedc965f9951fa5495dea2"
+        },
+        {
+          "path": "apps/web/src/tables-library.test.tsx",
+          "sha256": "f7e59471333fcd5821b2ac5d8789980a7b6f69477f64088c3c0b6b5acb0c8150"
+        }
+      ]
+    }
+  ],
+  "publicationApproval": {
+    "date": "2026-10-20",
+    "license": "Apache-2.0",
+    "confirmedBy": "repository owner",
+    "scope": "included source, examples and reviewed demo media",
+    "history": "fresh root with GitHub no-reply attribution; private preparation history excluded",
+    "distribution": "source only; no signed or notarized desktop download"
+  }
+}

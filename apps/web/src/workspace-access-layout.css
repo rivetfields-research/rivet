@@ -1,0 +1,102 @@
+.org-app.workspace-access { display:flex; align-items:center; justify-content:center; padding:64px 24px; min-height:100dvh; background:#f7f7f7; }
+.workspace-access-content { width:100%; max-width:440px; }
+.workspace-access-content .org-brand { justify-content:center; margin-bottom:36px; }
+.workspace-access-content h1 { font-size:26px; line-height:1.3; letter-spacing:0; text-align:center; margin:0 0 24px; overflow-wrap:anywhere; }
+.workspace-access-body { font-size:14px; line-height:1.7; overflow-wrap:anywhere; }
+.workspace-access-body > p { margin:0 0 20px; text-align:center; color:#626262; }
+.workspace-access-body > .org-button { display:flex; width:100%; min-height:44px; margin:20px 0; }
+.workspace-access-body .org-error { text-align:left; }
+.org-workspace-picker .org-content { max-width:760px; }
+.signup-invite-form label { display:grid; gap:8px; font-size:13px; font-weight:500; min-width:0; }
+.signup-invite-form input,.signup-invite-form select { box-sizing:border-box; width:100%; min-width:0; min-height:44px; padding:10px 12px; border:1px solid #ddd; border-radius:6px; background:#fff; color:#222; font:inherit; }
+.signup-invite-form input:focus-visible,.signup-invite-form select:focus-visible { outline:2px solid #626262; outline-offset:2px; }
+.signup-invite-form { display:flex; align-items:flex-end; flex-wrap:wrap; gap:12px; margin:24px 0 12px; }
+.signup-invite-form label { flex:1; min-width:180px; }
+.signup-invite-form .org-button { min-height:44px; }
+@media(max-width:620px) { .signup-invite-form { display:grid; } .signup-invite-form label { min-width:0; } }
+@media(max-width:620px) { .org-app.workspace-access { align-items:flex-start; padding:80px 24px 32px; } .workspace-access-content h1 { font-size:24px; } }
+
+.signup-tour { position: fixed; z-index: 80; right: 28px; bottom: 28px; width: min(400px, calc(100vw - 32px)); padding: 22px; background: white; border: 1px solid #dededb; border-radius: 12px; box-shadow: 0 12px 40px #00000016; }
+.signup-tour-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 12px; color: #666; }
+.signup-tour h2 { margin: 18px 0 8px; font-size: 20px; }
+.signup-tour p { font-size: 14px; line-height: 1.6; color: #666; }
+.signup-tour-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 18px; }
+@media (max-width: 600px) { .signup-tour { right: 16px; bottom: 16px; padding: 18px; } }
+
+.team-settings section { margin-top: 28px; }
+.team-settings .org-page-heading h2 { margin: 0; }
+.team-settings table { width: 100%; min-width: 560px; border-collapse: collapse; font-size: 13px; }
+.team-settings th, .team-settings td { padding: 14px 12px; text-align: left; border-bottom: 1px solid #e5e5e3; }
+.team-settings th { font-weight: 500; color: #666; }
+.team-settings td small { display: block; margin-top: 4px; color: #777; }
+.team-settings .org-note { margin-top: 18px; }
+.signup-tour { width:min(360px, calc(100vw - 32px)); padding:24px; }
+.signup-tour-top { font-size:12px; }
+.signup-tour-top > span { display:flex; gap:10px; align-items:center; }
+.tour-count { color:#888; font-variant-numeric:tabular-nums; }
+.signup-tour-top .org-button { border:0; background:none; padding:4px 0; font-size:12px; color:#777; }
+.tour-symbol { display:grid; place-items:center; width:44px; height:44px; background:#edf1ee; color:#36584b; border-radius:12px; margin-top:22px; }
+.signup-tour h2 { margin-top:14px; font-size:20px; letter-spacing:-.3px; }
+.signup-tour p { margin-bottom:12px; }
+.signup-tour-actions { padding-top:16px; border-top:1px solid #eee; align-items:center; }
+.signup-tour-actions > .org-button:first-child { margin-right:auto; }
+.team-name { display:flex; align-items:center; gap:10px; }
+.team-count { display:inline-grid; place-items:center; min-width:22px; height:22px; margin-left:6px; padding:0 6px; background:#f1f1ef; border-radius:6px; color:#777; font-size:12px; font-weight:400; }
+.team-person { display:flex; align-items:center; gap:12px; }
+.team-avatar { width:32px; height:32px; display:grid; place-items:center; flex-shrink:0; border-radius:50%; background:#edf0ec; color:#637460; font-size:13px; font-weight:500; }
+.team-badge { display:inline-flex; align-items:center; gap:6px; font-size:12px; padding:3px 8px; border-radius:5px; background:#f3f3f1; color:#666; text-transform:capitalize; }
+.team-badge.active { color:#36584b; background:#edf1ee; }
+.team-badge.active::before { content:''; width:5px; height:5px; border-radius:50%; background:#668875; }
+.team-remove:hover { color:#a1453c; }
+.team-settings h2 { font-size:15px; }
+.team-settings .signup-invite-form { background:#fafaf9; padding:18px; border:1px solid #e5e5e3; border-radius:8px; margin-top:16px; }
+.team-settings th:last-child { font-size:0; }
+.team-settings td:last-child { text-align:right; }
+@media(max-width:600px) {
+  .signup-tour-actions { display:grid; grid-template-columns:1fr auto; }
+  .signup-tour-actions > .org-button:first-child { grid-column:1 / -1; width:100%; margin-right:0; }
+  .signup-tour-actions > .org-button:last-child { grid-column:2; }
+}
+
+.signup-tour { display:flex; flex-direction:column; height:340px; max-height:calc(100dvh - 32px); overflow-y:auto; }
+.signup-tour-progress { display:flex; gap:6px; margin-top:14px; }
+.signup-tour-progress button { flex:1; height:24px; display:flex; align-items:center; padding:0; border:0; background:none; cursor:pointer; }
+.signup-tour-progress button span { width:100%; height:3px; border-radius:2px; background:#e6e8e4; }
+.signup-tour-progress button.visited span { background:#809580; }
+.signup-tour-progress button.current span { background:#36584b; }
+.signup-tour-progress button:focus-visible { outline:2px solid #36584b; outline-offset:2px; border-radius:3px; }
+.signup-tour-content { flex:1; }
+.signup-tour-content .tour-symbol { margin-top:10px; }
+.signup-tour-actions { flex-shrink:0; flex-wrap:nowrap; }
+.signup-tour-actions > .org-button:first-child { font-size:13px; }
+@media(max-width:600px) { .signup-tour { height:390px; } }
+
+/* Compact floating guide: progress precedes the header and content. */
+.signup-tour { width:min(360px, calc(100vw - 32px)); height:350px; padding:20px; border-radius:14px; box-shadow:0 8px 32px #00000012; }
+.signup-tour-progress { width:72px; margin:0 0 12px; gap:4px; }
+.signup-tour-progress button { height:12px; }
+.signup-tour-progress button span { height:2px; }
+.signup-tour-top { font-size:11px; }
+.signup-tour-top > span { gap:8px; }
+.signup-tour-top .org-button { font-size:11px; }
+.signup-tour-content .tour-symbol { width:36px; height:36px; border-radius:10px; margin-top:20px; }
+.signup-tour h2 { font-size:18px; margin-top:14px; }
+.signup-tour p { font-size:13px; line-height:1.6; margin-top:8px; }
+.signup-tour-actions { display:grid; grid-template-columns:32px 1fr; gap:8px; margin-top:12px; padding-top:12px; }
+.signup-tour-actions > .org-button:first-child { grid-column:1 / -1; width:100%; margin:0; }
+.signup-tour-actions > .org-button:nth-child(2) { width:32px; padding:0; border:0; background:none; }
+.signup-tour-actions > .org-button:last-child { grid-column:2; justify-self:end; border:0; background:none; padding-right:0; }
+@media(max-width:600px) { .signup-tour { width:min(360px, calc(100vw - 32px)); height:350px; } }
+.tour-window-controls { display:flex; align-items:center; gap:2px; }
+.tour-window-controls .icon-button { width:28px; height:28px; min-height:28px; }
+.signup-tour-launcher { position:fixed; right:28px; bottom:28px; z-index:80; display:flex; align-items:center; gap:10px; background:white; color:#36584b; border:1px solid #dededb; border-radius:14px; padding:12px 14px; box-shadow:0 8px 24px #00000012; cursor:pointer; }
+.tour-launcher-progress { font-size:11px; font-variant-numeric:tabular-nums; }
+@media(max-width:600px) { .signup-tour-launcher { right:16px; bottom:16px; } }
+
+.signup-tour-actions { grid-template-columns:32px 1fr auto; }
+.signup-tour-actions > .org-button:first-child { grid-column:1 / -1; }
+.signup-tour-actions > .signup-tour-progress { grid-column:2; display:flex; justify-content:center; width:auto; margin:0; gap:6px; }
+.signup-tour-actions > .signup-tour-progress button { flex:0 0 28px; width:28px; height:32px; justify-content:center; }
+.signup-tour-actions > .signup-tour-progress button span { width:6px; height:6px; border-radius:50%; }
+.signup-tour-actions > .signup-tour-progress button.current span { width:16px; border-radius:4px; }
+.signup-tour-actions > .org-button:last-child { grid-column:3; }
