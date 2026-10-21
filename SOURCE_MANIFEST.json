@@ -3920,7 +3920,7 @@
     },
     {
       "path": "CONTRIBUTING.md",
-      "sha256": "1a97e29a706b34d892c24ee2278aab8036b2866d8819c725192628efedc12346"
+      "sha256": "d8d227ff5e3dbcf7419a4fd898580f1e877cb959f63aea65b8d0f94f0eb35348"
     },
     {
       "path": "docs/media/rivet-workflow.gif",
@@ -3962,7 +3962,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "fcd58f1260c4e1bd311f13f6910176e0ef7dcd4d64091622d8b960e5a4ac8939"
+      "sha256": "451ced0d114b903f391723d66530933ea997194fe754abf759a2a48cc32db1c3"
     },
     {
       "path": "SECURITY.md",
@@ -3986,11 +3986,15 @@
     },
     {
       "path": "tools/check.mjs",
-      "sha256": "0f4a06a1140e40c35821ea302a7f0f3e9dcebb491d8b4cfd16f4eac4fa36de8b"
+      "sha256": "a4021c68182e7ff65a9c353dfe6b707c0e2dc667ea0f987431ff5afac4f07a10"
     },
     {
       "path": "tools/configure-candidate.mjs",
       "sha256": "eaa667c5cf003553523f08049c992b2f5bec21c896af4b543fa2d7105f615be8"
+    },
+    {
+      "path": "tools/contributor-entry.test.mjs",
+      "sha256": "f6aaadd13bbc3496737964db454175ff18b7712b94c9348953d6507bae60a0a2"
     },
     {
       "path": "tools/export-source.mjs",
@@ -4006,7 +4010,7 @@
     },
     {
       "path": "tools/record-provenance.mjs",
-      "sha256": "b5f5cfd9f2b1c808e978fb4fbd60b2b911a319855e1c700a92fa628fae4762ff"
+      "sha256": "f9a47ceac338301942a787eb04e1a97bf6ccdf7df1c05d09e80062564def9395"
     },
     {
       "path": "tools/reviewed-media.mjs",

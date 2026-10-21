@@ -121,6 +121,7 @@ const added = new Set([
   '.gitignore', 'AGENTS.md', 'CONTRIBUTING.md', 'README.md', 'SECURITY.md', 'SOURCE_BOUNDARY.md',
   'tools/export-source.mjs', 'tools/configure-candidate.mjs', 'tools/record-provenance.mjs',
   'tools/check.mjs', 'tools/check-source.mjs', 'tools/offline-guard.mjs', 'tools/offline-guard.test.mjs',
+  'tools/contributor-entry.test.mjs',
   'tools/audit-index.mjs', 'tools/audit-index.test.mjs',
   '.github/ISSUE_TEMPLATE/bug_report.md', '.github/ISSUE_TEMPLATE/feature_request.md',
   '.github/pull_request_template.md', '.github/workflows/checks.yml',

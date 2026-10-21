@@ -13,6 +13,10 @@ implemented capability. A signed, notarized Mac download is not available yet.
 [Security](SECURITY.md) | [License](LICENSE) | [Changelog](CHANGELOG.md) |
 [Source boundary](SOURCE_BOUNDARY.md)
 
+[Star Rivet on GitHub](https://github.com/rivetfields-research/rivet) |
+[Contribute to Rivet](#your-first-contribution) |
+[Report an issue](https://github.com/rivetfields-research/rivet/issues/new?template=bug_report.md)
+
 [![Rivet workflow in the hosted UI](docs/media/rivet-workflow.gif)](docs/media/rivet-workflow.mp4)
 
 [Watch the full-quality MP4](docs/media/rivet-workflow.mp4). The GIF preview runs at 2x.
@@ -175,6 +179,34 @@ security assessment. Never place credentials, real customer records, screenshots
 of private workspaces or application data in an issue, PR or source tree.
 
 ## Contributing And Releases
+
+### Your First Contribution
+
+New to Rivet or open source? A focused documentation correction or a reproducible
+bug report is a useful place to start. You do not need a local model, provider
+account or desktop build to run the source checks.
+
+1. Browse [open issues](https://github.com/rivetfields-research/rivet/issues),
+   including any labeled
+   [good first issue](https://github.com/rivetfields-research/rivet/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22).
+   Comment on one you want to work on so maintainers can confirm its scope.
+   If you found an unclear setup step or a bug, open an issue with the source
+   revision, expected behavior and a minimal example using invented data.
+2. Follow [Fork And Set Up](CONTRIBUTING.md#fork-and-set-up) to create your fork
+   and a branch, install the locked dependencies, and run `npm run check`.
+3. Make one small change. For example, clarify a setup instruction you verified
+   locally, or add a synthetic reproduction to an existing test. Review the
+   explicit paths and [record provenance](CONTRIBUTING.md#validate-and-record-provenance),
+   then run the full check and staged audit, including for documentation changes.
+4. Follow [Open Your First PR](CONTRIBUTING.md#open-your-first-pr) to commit to
+   your fork and open a pull request against `main`. Link the issue, explain the
+   change, and include check results and anything you could not validate.
+
+Use [private security reporting](SECURITY.md) for suspected vulnerabilities.
+Keep examples synthetic and leave private workspace captures and app data out
+of issues and pull requests.
+
+### Release Boundaries
 
 Keep proposals focused and linked to an issue. Follow [CONTRIBUTING.md](CONTRIBUTING.md)
 for local checks and provenance updates, and [SECURITY.md](SECURITY.md) for private
