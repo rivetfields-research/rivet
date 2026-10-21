@@ -25,7 +25,7 @@ const phases = {
   test: ['--import', guard, '--import', import.meta.resolve('tsx'), '--test', '--test-concurrency=4',
     '--test-reporter=spec', ...TEST_FILES, 'tools/offline-guard.test.mjs', 'tools/audit-index.test.mjs', 'tools/reviewed-media.test.mjs',
     'apps/web/src/desktop-model-notice.test.tsx', 'apps/web/src/source-connect-options.test.tsx', 'apps/web/src/tables-library.test.tsx',
-    'packages/core/src/desktop-report.test.ts', 'tools/source-license.test.mjs'],
+    'packages/core/src/desktop-report.test.ts', 'tools/source-license.test.mjs', 'tools/contributor-entry.test.mjs'],
   build: ['node_modules/vite/bin/vite.js', 'build', '--config', 'apps/web/vite.config.ts'],
 };
 const requested = process.argv[2] ?? 'all';
