@@ -157,8 +157,8 @@ function walk(directory, prefix = '') {
       additions.push({ path: name, sha256: hash,
         ...(media ? { bytes: media.bytes, mediaType: media.mediaType,
           origin: { kind: 'reviewed-reference-media', reviewedSha256: media.sha256,
-            source: 'Parent-reviewed final export; raw frames, metadata and private crops excluded.',
-            approvalScope: 'Owner-approved public source inclusion, including media rights, on 2026-10-20.',
+            source: 'https://rivetfields.com/media/rivet-workflow-20261020-paced.mp4',
+            approvalScope: 'Owner requested reuse of the public Rivet product-page demo in this repository on 2026-10-26.',
             capture: 'Edited hosted UI using a 240-row QA/sample social CSV; not verified live-account performance, completed OAuth, native-desktop parity or email-delivery proof.' } } : {}),
         ...(name === 'apps/web/src/source-connect-options.test.tsx' ? {
           transformations: ['Replace three upstream artwork expectations with assertions for the retained generic Cable icons and absence of excluded brand images.'] } : {}),

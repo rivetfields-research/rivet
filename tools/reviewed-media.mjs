@@ -6,15 +6,15 @@ export const REFERENCE_MEDIA_PATHS = Object.freeze([
   'docs/media/rivet-workflow.mp4',
 ]);
 
-// Exact reviewed exports; the owner approved public source inclusion on 2026-10-20.
+// Exact product-page recording and its 2x GIF; reuse requested on 2026-10-26.
 export const APPROVED_REFERENCE_MEDIA = Object.freeze({
   'docs/media/rivet-workflow.gif': Object.freeze({
-    sha256: '96016637c1a9bf4168abc1209f040c83821c2485023c6a314acf35c833a916a9',
-    bytes: 1788297,
+    sha256: '9d2a1a07ecb338d935d36a3d9966c0b9e6b8f8b4d00f3338aa378bf9babd3e0c',
+    bytes: 2108587,
   }),
   'docs/media/rivet-workflow.mp4': Object.freeze({
-    sha256: '836524de20db8c59c8c520f2658753b7c719ba0caf0423218611d819b67738bc',
-    bytes: 950825,
+    sha256: '4225d4e2ba9808af8445d94cebd6ccf1efaa37cc4ca6b39a870d6c7d5cd44718',
+    bytes: 2328875,
   }),
 });
 const MAX_BYTES = 8 * 1024 * 1024;

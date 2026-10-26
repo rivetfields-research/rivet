@@ -3924,27 +3924,27 @@
     },
     {
       "path": "docs/media/rivet-workflow.gif",
-      "sha256": "96016637c1a9bf4168abc1209f040c83821c2485023c6a314acf35c833a916a9",
-      "bytes": 1788297,
+      "sha256": "9d2a1a07ecb338d935d36a3d9966c0b9e6b8f8b4d00f3338aa378bf9babd3e0c",
+      "bytes": 2108587,
       "mediaType": "image/gif",
       "origin": {
         "kind": "reviewed-reference-media",
-        "reviewedSha256": "96016637c1a9bf4168abc1209f040c83821c2485023c6a314acf35c833a916a9",
-        "source": "Parent-reviewed final export; raw frames, metadata and private crops excluded.",
-        "approvalScope": "Owner-approved public source inclusion, including media rights, on 2026-10-20.",
+        "reviewedSha256": "9d2a1a07ecb338d935d36a3d9966c0b9e6b8f8b4d00f3338aa378bf9babd3e0c",
+        "source": "https://rivetfields.com/media/rivet-workflow-20261020-paced.mp4",
+        "approvalScope": "Owner requested reuse of the public Rivet product-page demo in this repository on 2026-10-26.",
         "capture": "Edited hosted UI using a 240-row QA/sample social CSV; not verified live-account performance, completed OAuth, native-desktop parity or email-delivery proof."
       }
     },
     {
       "path": "docs/media/rivet-workflow.mp4",
-      "sha256": "836524de20db8c59c8c520f2658753b7c719ba0caf0423218611d819b67738bc",
-      "bytes": 950825,
+      "sha256": "4225d4e2ba9808af8445d94cebd6ccf1efaa37cc4ca6b39a870d6c7d5cd44718",
+      "bytes": 2328875,
       "mediaType": "video/mp4",
       "origin": {
         "kind": "reviewed-reference-media",
-        "reviewedSha256": "836524de20db8c59c8c520f2658753b7c719ba0caf0423218611d819b67738bc",
-        "source": "Parent-reviewed final export; raw frames, metadata and private crops excluded.",
-        "approvalScope": "Owner-approved public source inclusion, including media rights, on 2026-10-20.",
+        "reviewedSha256": "4225d4e2ba9808af8445d94cebd6ccf1efaa37cc4ca6b39a870d6c7d5cd44718",
+        "source": "https://rivetfields.com/media/rivet-workflow-20261020-paced.mp4",
+        "approvalScope": "Owner requested reuse of the public Rivet product-page demo in this repository on 2026-10-26.",
         "capture": "Edited hosted UI using a 240-row QA/sample social CSV; not verified live-account performance, completed OAuth, native-desktop parity or email-delivery proof."
       }
     },
@@ -3962,7 +3962,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "451ced0d114b903f391723d66530933ea997194fe754abf759a2a48cc32db1c3"
+      "sha256": "9854716fc8f0661f8fdbbbb9c52b5957d5c4a5e988b0a5d0d0faa82fb04f2435"
     },
     {
       "path": "SECURITY.md",
@@ -3970,7 +3970,7 @@
     },
     {
       "path": "SOURCE_BOUNDARY.md",
-      "sha256": "07caa585ed01e81324be82b6d9f4a237e4cb42e9fb2bf9ed5447860ed9216e1c"
+      "sha256": "94a8efc72166de28a69476f2c0faf1c7cf19d3dc9c1b8f1a02183fedee1483ab"
     },
     {
       "path": "tools/audit-index.mjs",
@@ -4010,15 +4010,15 @@
     },
     {
       "path": "tools/record-provenance.mjs",
-      "sha256": "f9a47ceac338301942a787eb04e1a97bf6ccdf7df1c05d09e80062564def9395"
+      "sha256": "a9676d6154ae01d2a0dc4a008619d0038b01507c87699b97a87dc5572a78bf29"
     },
     {
       "path": "tools/reviewed-media.mjs",
-      "sha256": "3542b2b58c37ac98252ee1e04dde26d42acd9fb7912a85bba9f22d212584965a"
+      "sha256": "5a5fb253bb1fae2c0c06c8528dd8d8ad118f97e3c88838170ea792c87587da78"
     },
     {
       "path": "tools/reviewed-media.test.mjs",
-      "sha256": "362514640d65f5276f3121e5daeaf34e25f1c4c2fc6c5d19e5ddbdd888ad8a09"
+      "sha256": "f09310ed54d407bb18e231fb6f9bde40d0ec966d71f4723eb182d8c13a2bfb90"
     },
     {
       "path": "tools/source-license.mjs",
