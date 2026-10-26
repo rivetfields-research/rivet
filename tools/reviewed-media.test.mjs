@@ -63,10 +63,17 @@ test('every active approval is for an exact present file with its reviewed bytes
     assert.equal(record.bytes, review.bytes);
     assert.equal(record.origin.kind, 'reviewed-reference-media');
     assert.equal(record.origin.reviewedSha256, review.sha256);
-    assert.equal(record.origin.approvalScope, 'Owner-approved public source inclusion, including media rights, on 2026-10-20.');
+    assert.equal(record.origin.source, 'https://rivetfields.com/media/rivet-workflow-20261020-paced.mp4');
+    assert.equal(record.origin.approvalScope, 'Owner requested reuse of the public Rivet product-page demo in this repository on 2026-10-26.');
     assert.match(record.origin.capture, /QA\/sample social CSV/);
   }
   assert.deepEqual(Object.keys(APPROVED_REFERENCE_MEDIA).sort(), [...REFERENCE_MEDIA_PATHS].sort());
+});
+test('the full-quality recording matches the exact MP4 served by the Rivet product page', () => {
+  // Pin the reviewed website bytes without fetching a live service during checks.
+  assert.equal(APPROVED_REFERENCE_MEDIA[mp4Name].sha256,
+    '4225d4e2ba9808af8445d94cebd6ccf1efaa37cc4ca6b39a870d6c7d5cd44718');
+  assert.equal(APPROVED_REFERENCE_MEDIA[mp4Name].bytes, 2328875);
 });
 test('README has one linked preview, a full-quality link and precise hosted-capture limits', () => {
   const readme = readFileSync(new URL('../README.md', import.meta.url), 'utf8');
@@ -74,6 +81,8 @@ test('README has one linked preview, a full-quality link and precise hosted-capt
   assert.equal(previews.length, 1);
   assert(previews[0].index < readme.indexOf('## Current Capabilities'));
   assert.match(readme, /\[Watch the full-quality MP4\]\(docs\/media\/rivet-workflow\.mp4\)/);
+  assert.match(readme, /\[Rivet product page\]\(https:\/\/rivetfields\.com\/products\/rivet\)/);
+  assert.match(readme, /The GIF preview runs at 2x/);
   assert.match(readme, /Edited hosted-UI capture using a 240-row QA\/sample social CSV, not verified\s+live-account performance/);
   assert.match(readme, /does not demonstrate completed OAuth, native-desktop\s+parity or email delivery/);
 });

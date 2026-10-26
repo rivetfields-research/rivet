@@ -126,16 +126,19 @@ under-8-MiB per-file limit. The source walk, index audit and provenance recorder
 share that validator. No directory-wide media or binary exemption is granted;
 links, ignored/generated files and every other image/video path stay excluded.
 
-The final exports, contact sheet and canvas-only crops were reviewed during
-private preparation. The owner cleared public inclusion and media rights on
-2026-10-20. Only the two final exports are imported; raw frames, capture metadata
-and failed private crops are excluded. A hash/signature check is not itself a
-visual, privacy, playback or rights certification.
+On 2026-10-26 the owner requested the same demo as the public Rivet product page.
+The MP4 is byte-for-byte identical to that page's
+`/media/rivet-workflow-20261020-paced.mp4`; the looping GIF is derived from the
+complete recording at 2x, matching the website's playback speed. Its frames were
+reviewed before import. Only these two final exports are imported; raw frames,
+capture metadata and private preparation files are excluded. The original source
+and media-rights approval remains dated 2026-10-20. A hash/signature check is not
+itself a visual, privacy, playback or rights certification.
 
 The README animation links to the full MP4 and identifies an edited hosted-UI
 capture using a 240-row QA/sample social CSV, not verified live-account performance.
-Setup stops before OAuth. The existing schedule and email setting are shown
-unchanged; no new task, schedule, account or email action is demonstrated. This is
-not completed OAuth, native-desktop parity or email-delivery proof. Desktop account
+It shows source data, report creation, vertical bars, a line chart, CSV inspection
+and the existing weekly-review setup. No completed OAuth, new schedule, account
+connection, native-desktop parity or email delivery is demonstrated. Desktop account
 connections and email remain disabled. Source publication does not authorize
 an app-binary release or a production deployment.

@@ -20,6 +20,8 @@ implemented capability. A signed, notarized Mac download is not available yet.
 [![Rivet workflow in the hosted UI](docs/media/rivet-workflow.gif)](docs/media/rivet-workflow.mp4)
 
 [Watch the full-quality MP4](docs/media/rivet-workflow.mp4). The GIF preview runs at 2x.
+This is the same recording shown on the [Rivet product page](https://rivetfields.com/products/rivet):
+source data, a report with bar and line charts, CSV inspection, and weekly-review setup.
 
 Edited hosted-UI capture using a 240-row QA/sample social CSV, not verified
 live-account performance. It does not demonstrate completed OAuth, native-desktop
